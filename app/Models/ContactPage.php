@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class ContactPage extends Model
 {
     use HasFactory;
+    protected $guarded = [];
 }

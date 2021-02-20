@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\AboutPage;
+use App\Models\ContactPage;
 use App\Models\HomePage;
+use App\Models\ProductPage;
 use App\Models\Team;
 use Illuminate\Http\Request;
 
@@ -14,20 +16,25 @@ class MainController extends Controller
         $homepage = HomePage::first();
         return view('home',compact('homepage'));
     }
+
     public function about()
     {
         $aboutpage = AboutPage::first();
         $teams = Team::all();
         return view('about',compact(['aboutpage','teams']));
     }
+
     public function product()
     {
-        return view('product');
+        $productpage = ProductPage::first();
+        return view('product',compact('productpage'));
 
     }
+
     public function contact()
     {
-        return view('contact');
+        $contactpage = ContactPage::first();
+        return view('contact',compact('contactpage'));
     }
 
 }
