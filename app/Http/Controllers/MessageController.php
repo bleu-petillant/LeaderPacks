@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Mail\FormContact;
 use App\Models\Contact;
+use App\Mail\FormContact;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
-use Session;
+use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
 class MessageController extends Controller
 {

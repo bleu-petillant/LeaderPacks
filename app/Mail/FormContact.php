@@ -38,7 +38,7 @@ class FormContact extends Mailable
         $sujet = $request->sujet;
         $societe = $request->societe;
         $message = $request->message;
-        $contact_mail = 'virgil.dablon@bleupetillant.com';
+        $contact_mail = '';
         return $this
         ->subject($sujet)
         ->from($email)
