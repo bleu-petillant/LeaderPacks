@@ -14,39 +14,11 @@ class ContactPageController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\ContactPage  $contactPage
-     * @return \Illuminate\Http\Response
-     */
-    public function show(ContactPage $contactPage)
-    {
-        //
+        $contactpage = ContactPage::first();
+        return redirect()->route('contactpage.edit',
+        [
+            'contactpage'=>$contactpage
+        ]);
     }
 
     /**
@@ -72,14 +44,5 @@ class ContactPageController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\ContactPage  $contactPage
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(ContactPage $contactPage)
-    {
-        //
-    }
+
 }

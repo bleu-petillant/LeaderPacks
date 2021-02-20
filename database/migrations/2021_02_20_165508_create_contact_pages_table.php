@@ -15,6 +15,7 @@ class CreateContactPagesTable extends Migration
     {
         Schema::create('contact_pages', function (Blueprint $table) {
             $table->id();
+            $table->string('contact_text')->nullable();
             $table->timestamps();
         });
     }

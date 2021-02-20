@@ -7,8 +7,10 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomePageController;
 use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\ContactPageController;
 use App\Http\Controllers\ProductPageController;
 use App\Http\Controllers\TeamController;
+use App\Models\ContactPage;
 
 /*
 |--------------------------------------------------------------------------
@@ -40,6 +42,7 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function(){
         'homepage'=> HomePageController::class,
         'aboutpage'=> AboutPageController::class,
         'productpage'=> ProductPageController::class,
+        'contactpage'=> ContactPageController::class,
         'team'=>TeamController::class
 
     ]);
