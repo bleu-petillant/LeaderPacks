@@ -139,7 +139,7 @@ class HomePageController extends Controller
         $homepage->save();
 
         $request->session()->flash('success', 'congratulation! the homepage has been modified successfully');
-        return redirect('/');
+        return redirect()->route('home');
     }
 
 }
