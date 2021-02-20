@@ -64,6 +64,11 @@
                 </a>
             </li>
             <li class="nav-item my-2 bg-white">
+                <a href="{{route('contactpage.index')}}" class="nav-link">
+                        <i class="nav-icon fas fa-envelope"></i>Build Contact page
+                </a>
+            </li>
+            <li class="nav-item my-2 bg-white">
                 <a href="{{ route('team.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-user-plus"></i>Manage the Team
                 </a>
@@ -106,14 +111,12 @@
         @yield('admin.dashboard')
         @yield('admin.index')
         @yield('admin.create')
-        @yield('admin.homepage')
         @yield('admin.homepage.edit')
-        @yield('admin.about')
         @yield('admin.about.edit')
-        @yield('admin.product')
         @yield('admin.product.edit')
         @yield('admin.team.create')
         @yield('admin.team.edit')
+        @yield('admin.contact.edit')
         @yield('admin.team')
     </div>
 <!-- Control Sidebar -->

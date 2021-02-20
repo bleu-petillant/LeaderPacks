@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('admin.about.edit')
+@section('admin.contact.edit')
     <div class="content-header">
     <div class="container-fluid mb-4">
         <div class="row mb-2">

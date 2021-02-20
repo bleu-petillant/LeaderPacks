@@ -267,6 +267,8 @@
                 <option value="Zambia">Zambia</option>
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
+
+            <textarea name="message" id="message" cols="70" rows="20" required>votre message ici</textarea>
             <div>
                 <button class="btn btn-info" type="submit">Send Message</button>
             </div>

@@ -27,9 +27,11 @@ class ContactPageController extends Controller
      * @param  \App\Models\ContactPage  $contactPage
      * @return \Illuminate\Http\Response
      */
-    public function edit(ContactPage $contactPage)
+    public function edit(ContactPage $contactpage)
     {
-        //
+        $contactpage = ContactPage::where('id',$contactpage->id)->first(); 
+
+        return view('admin.contactpage.edit',compact(['contactpage']));
     }
 
     /**
@@ -39,9 +41,23 @@ class ContactPageController extends Controller
      * @param  \App\Models\ContactPage  $contactPage
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, ContactPage $contactPage)
+    public function update(Request $request, ContactPage $contactpage)
     {
-        //
+        $this->validate($request,
+        [
+            'contact_text'=>'required',
+        ]);
+           
+            if($contactpage->isClean('contact_text'))
+            {
+                
+                $contactpage->contact_text  = $contactpage->contact_text;
+            }
+            $contactpage->contact_text  = $request->contact_text;
+            $contactpage->save();
+
+        $request->session()->flash('success', 'congratulation! the contact page has been modified successfully');
+        return redirect()->route('contact');
     }
 
 
