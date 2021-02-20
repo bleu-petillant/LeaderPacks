@@ -14,18 +14,13 @@ class ProductPageController extends Controller
      */
     public function index()
     {
-        //
+        $productpage = ProductPage::first();
+        return redirect()->route('productpage.edit',
+        [
+            'productpage'=>$productpage
+        ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
@@ -38,16 +33,7 @@ class ProductPageController extends Controller
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\ProductPage  $productPage
-     * @return \Illuminate\Http\Response
-     */
-    public function show(ProductPage $productPage)
-    {
-        //
-    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -72,14 +58,5 @@ class ProductPageController extends Controller
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\ProductPage  $productPage
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(ProductPage $productPage)
-    {
-        //
-    }
+
 }

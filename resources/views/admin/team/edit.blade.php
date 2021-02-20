@@ -4,85 +4,37 @@
 <style>
   [x-cloak=""] { display: none; }
 </style>
-<div class="content-header">
-    <div class="container-fluid mb-4">
-        <div class="row mb-2">
-            <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item"><a href="{{ route('home') }}">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Teammate edit</li>
-                </ol>
-            </div><!-- /.col -->
-        </div><!-- /.row -->
-    </div><!-- /.container-fluid -->
-    <div class="container-fluid">
-        <div class="col-lg-12">
-            @include('includes.errors')
-            <form class="text-center" action="{{ route('teampage.update',$teampage->id) }}" method="POST"
-                enctype="multipart/form-data">
-                @method('PATCH')
-                @csrf
-                <section id="header_homepage" class="card my-4">
-                    <h2 class=" font-bold text-4xl text-center"> Header section</h2>
-                    <div class="col-lg-10 my-4 flex">
-                        <label class="label" for="header_video">Youtube vidéo link (change it if needed)</label>
-                        <input type="url" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
-                            id="header_video" onchange="return videoValidation() " required>
-                        <div id="alertvideo"></div>
-                        <div id="videoPreview" class="col-lg-4">
-                            <iframe width="560" height="315" src="{{$homepage->header_video}}" frameborder="0"
-                                allowfullscreen></iframe>
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
+                        <li class="breadcrumb-item  text-red-500">Edit {{$team->firstname}} {{$team->lastname}}</li>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+        <div class="row justify-content-center">
+            <div class="col-md-6 card">
+                <form class="text-center" action="{{route('team.update',$team->id)}}" method="POST" enctype="multipart/form-data">
+                    @method('PATCH')
+                    @csrf
+                    @include('includes.errors')
+                    <label for="firstname">Change FirstName</label>
+                    <input type="text" id="firstname" name="firstname" class="form-control my-4" value="{{$team->firstname}}" autofocus placeholder="{{$team->firstname}}">
+                    <label for="lastname" class="label">Change LastName</label>
+                    <input type="text" name="lastname" id="lastname" class="form-control my-4" value="{{$team->lastname}}" placeholder="{{$team->lastname}}">
+                    <label class="label" for="job_title">Change Job Title</label>
+                        <input type="text" name="job_title" id="job_title" class="form-control my-4" value="{{$team->job_title}}" placeholder="{{$team->job_title}}">
+                        <div class="container my-2">
+                            <label for="desc">Change description : (max 255 character)</label> <br>
+                            <textarea name="desc" id="desc" cols="50">{{$team->desc}}</textarea>
                         </div>
-                    </div>
-                    <div class="card-body">
-                        <h3 class="text-2xl">Change the header text :</h3>
-                        <textarea name="header_text" id="header_text" cols="150" required>{{$homepage->header_text}}</textarea>
-                    </div>
-                </section>
-                <section class="card my-4" id="inovation_homepage">
-                    <h2 class=" font-bold text-4xl text-center card-text"> Inovation homepage section</h2>
-                    <div class="card-body">
-                        <h3 class="text-2xl">Change the inovation text :</h3>
-                        <textarea name="inovation_text" id="inovation_text" cols="150" required>{{$homepage->inovation_text}}</textarea>
-                    </div>
-                </section>
-                <section id="number" class="card my-4">
-                      <h2 class=" font-bold text-4xl text-center card-text"> Number  homepage section</h2>
-                    <div class="card-body">
-                        <div class="flex">
-                            <div class="col-lg-4">
-                                <label for="first_number">Modify the first number if needed</label>
-                                    <input type="number" class="form-control" id="first_number" name="first_number" value="{{$homepage->first_number}}" required>
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="second_number">Modify the second number if needed</label>
-                                    <input type="number" class="form-control" id="second_number" name="second_number" value="{{$homepage->second_number}}" required>
-                            </div>
-                            <div class="col-lg-4">
-                                <label for="third_number">Modify the third number if needed</label>
-                                    <input type="number" class="form-control" id="third_number" name="third_number" value="{{$homepage->third_number}}" required>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section class="card my-4" id="about_homepage">
-                    <h2 class=" font-bold text-4xl text-center card-text"> About Us homepage section</h2>
-                    <div class="card-body">
-                        <h3 class="text-2xl">Change the about us text :</h3>
-                        <textarea name="about_text" id="about_text" cols="150" required>{{$homepage->about_text}}</textarea>
-                    </div>
-                </section>
-                <section class="card my-4" id="product_homepage">
-                    <h2 class=" font-bold text-4xl text-center card-text"> Product homepage section</h2>
-                    <div class="card-body">
-                        <h3 class="text-2xl">Change the product text :</h3>
-                        <textarea name="product_text" id="product_text" cols="150" required>{{$homepage->product_text}}</textarea>
-                    </div>
-                    <div class="card-footer">
-                    <div class="d-flex">
-                    <div class="col-lg-4">
-                         <h3 class="text-2xl">Change the product image :</h3>
+                    <div class="container my-5">
+                         <div class="col-lg-4">
+                         <h3 class="text-2xl">Change image profil :</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
                                 onchange="return fileValidation()">
@@ -91,34 +43,27 @@
                         </div>
                     </div>
                     <div id="imagePreview" class="col-lg-6">
-                        <div style="max-width:100%;max-height:250px;">
-                            <figure class="figure">
-                                <figcaption class="figure-caption text-right">Your actual image</figcaption>
-                                <img src="{{ asset($homepage->product_image) }}" class="figure-img img-fluid" alt="">
-                            </figure>
+                        <div class="col-lg-4">
+                            <img src="{{asset($team->image)}}" class="img-fluid" alt="avatar">
                         </div>
-                        <div>
-                        </div>
-                        <div>
+                    <div>
+                     </div>
                     </div>
-                </section>
-                            <button class="btn btn-success btn-md" type="submit"><span
-                                    class="fas fa-pen pr-2"></span>Update the homepage</button>
-                        </div>
-            </form>
+                    </div>
+                    <button class="btn btn-outline-dark my-4" type="submit"><span class="fas fa-pen pr-2"></span>Apply change to this teammate</button>
+                </form>
+            </div>
         </div>
     </div>
-</div>
 
-
-<script>
+    <script>
     $(document).ready(function () {
-        //$('#video').val("");
+
         $('#alert').html("");
-        $('#alertvideo').html("");
+
     });
 
-    function fileValidation() {
+        function fileValidation() {
         var fileInput = document.getElementById('image');
 
         var filePath = fileInput.value;
@@ -151,18 +96,6 @@
             }
         }
     }
+    </script>
 
-    function videoValidation() {
-        console.log('try change video');
-        var videolink = document.getElementById('header_video');
-        let link_src = videolink.value;
-
-        var alertvideo = document.getElementById('alertvideo');
-        alertvideo.innerHTML = "";
-        // Video preview 
-        document.getElementById('videoPreview').innerHTML =
-            '<iframe width="560" height="315"  src="' + link_src +' " frameborder="0 " allowfullscreen></iframe>'; 
-    };
-
-</script>
 @endsection
