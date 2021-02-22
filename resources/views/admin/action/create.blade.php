@@ -18,29 +18,24 @@
             @csrf
             @include('includes.errors')
             <div>
-                
-                <label for="name" value="" >{{ __('nom de famille du super admin') }}</label>
+                <label for="name" value="" >{{ __('Name of the super admin') }}</label>
                 <input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" placeholder="Super-Admin" />
             </div>
-
             <div class="mt-4">
                 <label for="email" value="" >{{ __('Email') }}</label>
                 <input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required placeholder="admin@super-admin.fr"/>
             </div>
-
             <div class="mt-4">
                 <label for="password" value="" >{{ __('Password') }}</label>
-                <span class="muted text-cool-gray-600">8 caractère minimum contenant 1 majuscule et 1 chiffre</span>
+                <span class="muted text-cool-gray-600">8 character min</span>
                 <input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" placeholder="Password1234"/>
             </div>
-
             <div class="mt-4">
                 <label for="password_confirmation" value="" >{{ __('Confirm Password') }}</label>
                 <input id="password_confirmation" class="block mt-1 w-full" type="password" name="password_confirmation" required autocomplete="new-password" />
             </div>
-
             <div class="flex items-center justify-end mt-4">
-                <button class=" btn btn-success">{{ __('Register') }}</button>
+                <button class=" btn btn-success">{{ __('Create this super admin') }}</button>
             </div>
         </form>
     </div>

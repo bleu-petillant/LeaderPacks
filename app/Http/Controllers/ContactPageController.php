@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class ContactPageController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -43,6 +47,7 @@ class ContactPageController extends Controller
      */
     public function update(Request $request, ContactPage $contactpage)
     {
+
         $this->validate($request,
         [
             'contact_text'=>'required',

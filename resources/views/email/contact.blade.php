@@ -7,11 +7,13 @@
     <title>mail</title>
 </head>
 <body>
-    <h4>bonjour, vous avez reçu un message de {{$contact->email}}</h4>
+    <h4>hi, you receive a mail from {{$contact->email}}</h4>
+    <p>firstname: {{$contact->firstname}}</p>
+    <p>lastname: {{$contact->lastname}} </p>
+    <p>country: {{$contact->country}}</p>
     <div>
-    <h2>je vous contact au sujet de: {{ $contact->sujet }}</h2>
-    <p style="color:black; font-size: 2em;">mon message: {{ $contact->message }}</p>
-    <p style="color:black; font-size: 2em;">répondez à cette adresse email <a href="mailto:{{$contact->email}}">{{$contact->email}}</a></p>
+    <p style="color:black; font-size: 2em;">the message: {{ $contact->message }}</p>
+    <p style="color:black; font-size: 2em;">you can answer by clicking this email <a href="mailto:{{$contact->email}}">{{$contact->email}}</a></p>
     </div>
 </body>
 </html>

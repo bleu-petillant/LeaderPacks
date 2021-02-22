@@ -79,11 +79,11 @@
                 </a>
             </li>
             <div class="divide-y ">
-                <li class="nav-item my-2 bg-white mt-5">
+                {{-- <li class="nav-item my-2 bg-white mt-5">
                     <a class="nav-link" href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                         <i class="nav-icon fas fa-cog px-2"></i>Settings
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item my-2 bg-white">
                     <a class="nav-link" href="{{ route('admin.list') }}" :active="request()->routeIs('admin.list')">
                         <i class="nav-icon fas fa-key px-2"></i>Manage Admins
