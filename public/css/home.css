@@ -1,0 +1,477 @@
+/*genenal*/
+
+.title-blue{
+    color: #02558B;
+}
+
+.vertical-point-content{
+    position: absolute;
+}
+
+.horizontale-point-content{
+    position: absolute;
+}
+
+.round-red{
+    width: 8px;
+    height: 8px;
+    background: #FF636A;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+
+
+
+/* header */
+
+.home-header{
+    background: url("../img/rectangle7.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+}
+
+.home-h1{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    bottom: 0;
+    right: 20%;
+    margin: auto;
+    font-size: 72px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.home-h1::after{
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 2px;
+    background: #FFFFFF;
+    bottom: 15px;
+    margin-left: 20px;
+}
+
+.icon-content-header-home{
+    position: absolute;
+    font-size: 25px;
+    left: 1vw;
+    display: grid;
+    bottom: 6vh;
+}
+
+.icon-header-home{
+    color: #02558B!important;
+}
+
+
+
+/* video */
+#header_homepage{
+    margin-bottom: 3vh;
+}
+
+.video-home{
+    z-index: 2;
+    margin-top: -6vh;
+    width: 100%;
+    height: 441px;
+}
+
+#vertical-video-circles{
+    left: 88%;
+    bottom: 0;
+}
+
+#horizontale-video-circles{
+    right: -50px;
+    bottom: -50px;
+}
+
+/*heder text*/
+
+.header-text{
+    color: #2B465A;
+    margin: 11vh auto;
+    font-size: 24px;
+    width: 56%;
+    text-align: justify;
+    font-weight: 500;
+}
+
+/*innovation*/
+#inovation_homepage{
+    margin: 15vh 0 22vh 0;
+    padding-left:8vw;
+}
+
+.home-innovation-content{
+    padding-top: 8vh;
+}
+
+.home-h2{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    color: #02558B;
+    position: relative;
+    width: fit-content;
+}
+
+#home-innovation_title{
+    margin-left: 11vw;
+    
+}
+
+#home-innovation_title::after{
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 2px;
+    background: #D9272D;
+    bottom: 15px;
+    margin-left: 20px;
+}
+
+.home-innovation-text{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 7vh;
+
+}
+
+.blue-square-content{
+    width: 360px;
+    position: absolute;
+    right: 0;
+    height: 335px;
+}
+
+
+.blue-square{
+    z-index: 2;
+    position: absolute;
+    width: 360px;
+    height: 335px;
+    background: #9CDAEA;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    right: 0px;
+}
+
+#home-innovation-circles{
+    right: 251px;
+    bottom: -49px;
+}
+
+/* number */
+
+.number{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    color: #FF636A;
+    line-height: 75px;
+    border-bottom: 2px #FF636A solid;
+    width: fit-content;
+    margin: auto;
+}
+
+.number-text{
+    font-family: 'Roboto' , sans-serif;
+    padding-top: 1vh;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    text-transform: capitalize;
+
+    color: #2B465A;
+}
+
+
+/* About Us*/
+
+#about_homepage{
+    margin-bottom: 11vh;
+}
+
+#home-aboutUs{
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+
+#home-aboutUs::before{
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 2px;
+    background: #D9272D;
+    bottom: 15px;
+    margin-left: -144px;
+}
+
+.bouton{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    padding: 10px 75px;
+    color: #02558B;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.15)
+}
+
+.us{
+    
+}
+
+.bouton:hover{
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.3)
+}
+
+/* Product */
+
+.product-home-img{
+    position: relative;
+    z-index: 2;
+    border-top: solid 16px #9CDAEA;
+}
+
+#home-product-circles{
+    right: -51px;
+    top: -51px;
+}
+
+
+
+#home-product-title{
+    padding-left: 11vw;
+}
+
+#home-product-title::after{
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 2px;
+    background: #D9272D;
+    bottom: 15px;
+    margin-left: 20px;
+}
+
+
+#home-product-title-mobile::after{
+    content: "";
+    position: absolute;
+    width: 129px;
+    height: 2px;
+    background: #D9272D;
+    bottom: 15px;
+    margin-left: 20px;
+}
+
+.home-product-content{
+    margin-left: 2vw;
+    margin-top: 6vh;
+}
+
+.home-product-text{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    width: 484px;
+    color: #2B465A;
+    margin-bottom: 7vh;
+}
+
+.home-product-frame{
+    width: 132.49px;
+    height: 148.82px;
+    margin-left: 5vw;
+}
+
+.home-product-bouton{
+    width: fit-content;
+    margin: auto;
+    margin-top: 5vh;
+}
+
+/* mobile */
+
+.header-home-text-container-mobile{
+    display: none;
+}
+
+#number_homepage_mobile{
+    display: none;
+}
+
+.bouton-aboutus-home-mobile{
+    display: none;
+    width: fit-content;
+    margin: auto;
+}
+
+.product-home-content-mobile{
+    display: none;
+}
+
+#home-product-title-mobile{
+    display: none;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+}
+
+/* responsive */
+
+
+@media (max-width: 992px){
+
+    .home-h1 {
+
+        right: 0;
+        left: 2vw;
+        font-size: 40px;
+    }
+
+    .home-h2 {
+        font-size: 53px;
+    }
+
+    .video-home {
+        margin-top: 0vh;
+    }
+
+    .header-home-text-container{
+        display: none;
+    }
+
+    .header-home-text-container-mobile{
+        display: block;
+    }
+
+    #horizontale-video-circles {
+        right: 0;
+        left: 0;
+        bottom: -50px;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    .blue-square-content{
+        display: none;
+    }
+
+    #inovation_homepage {
+        margin: 15vh 0 4vh 0;
+        padding-left: 2vw;
+    }
+
+    .home-innovation-text{
+        text-align: justify;
+        padding-right: 20px;
+    }
+
+    #home-innovation_title {
+        margin-left: 0;
+    }
+
+    #home-innovation_title::after {
+        width: 25vw;
+    }
+
+    #number_homepage{
+        display: none;
+    }
+
+    #number_homepage_mobile{
+        display: block;
+    } 
+
+    .aboutus-home-img{
+        width: 100%;
+        margin-top: 19vh;
+    }
+
+    .bouton-aboutus-home {
+        display: none;
+    }
+
+    .bouton-aboutus-home-mobile{
+        display: block;
+    }
+
+    .product-home-content{
+        display: none;
+    }
+
+    .product-home-content-mobile{
+        display: block;
+    }
+
+    #home-product-title{
+        display: none;
+    }
+
+    #home-product-title-mobile{
+        display: block;
+    }
+
+    .home-product-frame {
+        width: 74.49px;
+        height: 72.82px;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        margin-top: 4vh;
+    }
+
+    .product-home-img-container{
+        width: 76%!important;
+    }
+
+    #home-product-circles {
+        right: -51px;
+        top: inherit;
+        bottom: -51px;
+    }
+
+    .home-product-text {
+        margin-top: 3vh;
+    }
+
+    .home-product-bouton {
+        width: fit-content;
+        /* margin: auto; */
+        margin-left: 5vw;
+        margin-top: 0vh;
+        margin-bottom: 5vh;
+    }
+
+}
+
+@media (max-width: 574px){
+
+    .aboutus-home-img{
+        width: 100%;
+        margin-top: 33vh;
+    }
+
+    .number{
+        font-size: 47px;
+    }
+
+    .number-text{
+        font-size:14px;
+    }
+}

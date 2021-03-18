@@ -1,0 +1,31 @@
+.menu-content{
+    height: 100px;
+}
+
+.menu-laptop{
+    right: 2%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    height: fit-content;
+}
+
+.nav-link{
+    height: fit-content;
+    font-size: 24px;
+    color: black!important;
+}
+
+.nav-link:hover{
+    height: fit-content;
+    font-size: 24px;
+    color: #2B465A!important;
+    font-weight: bold;
+}
+
+.nav-user-button{
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 50%;
+    margin-top: 10px;
+}

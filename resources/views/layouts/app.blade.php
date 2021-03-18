@@ -13,30 +13,54 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/animation.css') }}">
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/about.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/product.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+        <link rel="stylesheet" href="{{ asset('js/sal.js/dist/sal.css') }}">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.css'/>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css'/>
-         @livewireStyles
+        
+
+        @livewireStyles
         <!-- Scripts -->
+        
         <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.js" defer></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
         <script src="{{ asset('js/app.js') }}"></script>
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100">
+        <div class="min-h-screen ">
             @auth
                 @include('layouts.navigation')
             @endauth
-            @include('layouts.navigation_guest')
+            <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 navbar navbar-expand-lg">
+                <div class="relative menu-content container-fluid">
+                <a href="{{route('home')}}" class="nav-logo"><img src="{{asset('img/logo.png')}}" alt="" style="width: 86%;"></a> 
+                        <div class="absolute  menu-laptop flex">
+                            <a href="{{route('about')}}" class="nav-link">About us</a>
+                            <a href="{{route('products')}}" class="nav-link">Products</a>
+                            <a href="{{route('contact')}}" class="nav-link">Contact</a>
+                            <a href="#"><span class="fas fa-user nav-user-button bg-red-700 text-white"></span></a>
+                        </div>
+                </div>
+            </nav>
+
             <!-- Page Heading -->
-            <header class="bg-white shadow">
+            <!-- <header class="bg-white shadow">
                 <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     {{ $header ?? ''}}
                 </div>
-            </header>
+            </header> -->
 
             <!-- Page Content -->
             <main>
@@ -46,10 +70,37 @@
                 @yield('products')
                 @yield('contact')
             </main>
+            
         </div>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.js'></script>
-        @livewireScripts
+    <footer class="flex relative ">
+        <div class="">
+            <img class="footer-logo" src="{{asset('img/logo-white.svg')}}" alt="">
+            <div class="footer-contact">
+                <p class="text-white" >Zona de Industria Ligeira <br>
+                    Rua Hervé Joseph Matias, Lote 10-A, 7580-250,<br>
+                    Alcácer do Sal, Portugal.</p>
+                
+                <a  class="text-white" href="">06.00.00.00.00</a>
+            </div>
+        </div>
+        <div class=" footer-legale">
+            <p class="mention-legale"><a href="">Mentions Légales</a> </p>
+            <p>©2021</p>
+
+        </div>
+
+
+    </footer>
+    
+    <script src="{{ asset('js/sal.js/dist/sal.js') }}"></script>
+    <script>
+        sal()
+    </script>
+    <script src="{{ asset('js/animation.js') }}"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.js'></script>
+    
+    @livewireScripts
     <script>
         @if(Session::has('success'))
             toastr.success("{{ Session::get('success') }}");

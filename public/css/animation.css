@@ -1,0 +1,25 @@
+/* reaveal */
+
+.reveal-right{
+    opacity: 0;
+    transform: translateX(28vw);
+}
+
+.reveal-right-visible{
+    opacity: 1;
+    transform: translateX(0) ;
+    transition: 1s ease;
+    transition-delay: .5s;
+}
+
+.reveal-left-video{
+    opacity: 0;
+    transform: translateX(-35vw);
+}
+
+.reveal-left-video-visible{
+    opacity: 1;
+    transform: translateX(0) ;
+    transition: 1s ease;
+    transition-delay: .5s;
+}
