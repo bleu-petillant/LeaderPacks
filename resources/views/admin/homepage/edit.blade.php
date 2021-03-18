@@ -34,14 +34,16 @@
                     </div>
                     <div class="card-body">
                         <h3 class="text-2xl">Change the header text :</h3>
-                        <textarea name="header_text" id="header_text" cols="150" required>{{$homepage->header_text}}</textarea>
+                        <textarea name="header_text" id="header_text" cols="150" required minlength="100" maxlength="255">{{$homepage->header_text}}</textarea>
+                        <span id="compt_header" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
                 <section class="card my-4" id="inovation_homepage">
                     <h2 class=" font-bold text-4xl text-center card-text"> Inovation homepage section</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change the inovation text :</h3>
-                        <textarea name="inovation_text" id="inovation_text" cols="150" required>{{$homepage->inovation_text}}</textarea>
+                        <textarea name="inovation_text" id="inovation_text" cols="150" required minlength="100" maxlength="255">{{$homepage->inovation_text}}</textarea>
+                        <span id="compt_innovation" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
                 <section id="number" class="card my-4">
@@ -68,14 +70,16 @@
                     <h2 class=" font-bold text-4xl text-center card-text"> About Us homepage section</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change the about us text :</h3>
-                        <textarea name="about_text" id="about_text" cols="150" required>{{$homepage->about_text}}</textarea>
+                        <textarea name="about_text" id="about_text" cols="150" required minlength="100" maxlength="255">{{$homepage->about_text}}</textarea>
+                        <span id="compt_about" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
                 <section class="card my-4" id="product_homepage">
                     <h2 class=" font-bold text-4xl text-center card-text"> Product homepage section</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change the product text :</h3>
-                        <textarea name="product_text" id="product_text" cols="150" required>{{$homepage->product_text}}</textarea>
+                        <textarea name="product_text" id="product_text" cols="150" required minlength="100" maxlength="255">{{$homepage->product_text}}</textarea>
+                        <span id="compt_product" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                     <div class="card-footer">
                     <div class="d-flex">
@@ -111,9 +115,30 @@
 
 <script>
     $(document).ready(function () {
-        //$('#video').val("");
+      
         $('#alert').html("");
         $('#alertvideo').html("");
+
+        let compteur = $('textarea');
+
+        for (let i = 0; i < compteur.length; i++) {
+            
+        $(compteur[i]).keyup(function() {
+            
+            var nombreCaractere2 = $(this).val().length;
+            var nombreCaractere2 = 255 - nombreCaractere2;
+            
+            var nombreMots2 = jQuery.trim($(this).val()).split(' ').length;
+            if($(this).val() === '') {
+                nombreMots2 = 0;
+            }
+            var msg2 = ' ' + nombreMots2 + ' mot(s) | ' + nombreCaractere2 + ' Caractere(s) restant';
+           //compteur[i].after('<span class="text-right">'+msg2+'</span>');
+
+
+        }); 
+        }
+
     });
 
     function fileValidation() {

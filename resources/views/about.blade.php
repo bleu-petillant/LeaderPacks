@@ -169,16 +169,24 @@ Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue
 
         </div>
             
-        <!-- @if ($teams ?? '')
+        @if ($teams ?? '')
             @foreach ($teams as $team)
                 <div class="card">
                     <div class="card-top">
                         <img src="{{asset($team->image)}}" class="img-fluid " alt="">
                     </div>
+                    <div class="card-body">
+                        <p>{{$team->firstname}} {{$team->lastname}} </p>
+                        <p>{{$team->job_title}}</p> 
+                        <p>{{$team->desc}}</p>
+                    </div>
                 </div>
             @endforeach
+            </div>
         @else
-            
-        @endif -->
+            <div>
+                <p>No Teammate for the moment</p>
+            </div>
+        @endif
     </section>
 @endsection

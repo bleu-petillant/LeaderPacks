@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-    
+    LeaderPacks
 @endsection
 @section('meta')
     

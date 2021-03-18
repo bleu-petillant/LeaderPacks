@@ -1,14 +1,17 @@
 <?php
 
-use App\Http\Controllers\AboutPageController;
+use App\Models\ContactPage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\HomePageController;
-use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\ProductPageController;
 use App\Http\Controllers\TeamController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\HomePageController;
+use App\Http\Controllers\AboutPageController;
+use App\Http\Controllers\Admin\AdminController;
+use App\Http\Controllers\ContactPageController;
+use App\Http\Controllers\ProductPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,12 +37,13 @@ Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function(){
     Route::get('list',[AdminController::class,'index'])->name('admin.list');
     Route::get('/add-super',[AdminController::class,'create'])->name('admin.create');
     Route::post('/create-super',[AdminController::class,'store'])->name('admin.store');
-    Route::get('/user',[UserController::class,'index'])->name('user.index');
+    Route::get('/profil',[UserController::class,'profil'])->name('user.profil');
    Route::get('/dashboard',[AdminController::class,'dashboard'])->name('admin.dashboard');
     Route::resources([
         'homepage'=> HomePageController::class,
         'aboutpage'=> AboutPageController::class,
         'productpage'=> ProductPageController::class,
+        'contactpage'=> ContactPageController::class,
         'team'=>TeamController::class
 
     ]);

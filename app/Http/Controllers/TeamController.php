@@ -7,6 +7,10 @@ use Illuminate\Http\Request;
 
 class TeamController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -116,7 +120,75 @@ class TeamController extends Controller
      */
     public function update(Request $request, Team $team)
     {
-        
+        $this->validate($request,
+        [
+            'firstname'=>'required',
+            'lastname'=>'required',
+            'job_title'=>'required',
+            'desc'=>'required',
+        ]);
+           
+            if($team->isClean('firstname'))
+            {
+                
+                $team->firstname  = $team->firstname;
+            }
+            if($team->isClean('lastname'))
+            {
+                
+                $team->lastname  = $team->lastname;
+            }
+            if($team->isClean('job_title'))
+            {
+                
+                $team->job_title  = $team->job_title;
+            }
+            if($team->isClean('desc'))
+            {
+                
+                $team->desc  = $team->desc;
+            }
+
+            $team->firstname  = $request->firstname;
+            $team->lastname = $request->lastname;
+            $team->job_title =$request->job_title;
+            $team->desc = $request->desc;
+
+        if($request->hasFile('image'))
+        {
+
+            $file = $request->file('image');
+     
+            // Get filename with extension
+            $filenameWithExt = $file->getClientOriginalName();
+
+            // Get file path
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+
+            // Remove unwanted characters
+            $filename = preg_replace("/[^A-Za-z0-9 ]/", '', $filename);
+            $filename = preg_replace("/\s+/", '-', $filename);
+
+            // Get the original image extension
+            $extension = $file->getClientOriginalExtension();
+           
+            // Create unique file name
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+
+            $file->move('storage/team/',$fileNameToStore);
+            $team->image = 'storage/team/' .$fileNameToStore;
+
+            
+        }
+
+        $team->save();
+
+        $request->session()->flash('success', 'congratulation! the teamate has been modified successfully');
+        return redirect()->route('team.index');
+
+
+
     }
 
     /**

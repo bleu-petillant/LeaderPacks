@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 
 class HomePageController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -21,38 +26,6 @@ class HomePageController extends Controller
         ]);
 
     }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    // public function create()
-    // {
-        
-    // }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    // public function store(Request $request)
-    // {
-       
-    // }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\HomePage  $homePage
-     * @return \Illuminate\Http\Response
-     */
-    // public function show(HomePage $id)
-    // {
-        
-    // }
 
     /**
      * Show the form for editing the specified resource.
@@ -171,17 +144,7 @@ class HomePageController extends Controller
         $homepage->save();
 
         $request->session()->flash('success', 'congratulation! the homepage has been modified successfully');
-        return redirect('/');
+        return redirect()->route('home');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\HomePage  $homePage
-     * @return \Illuminate\Http\Response
-     */
-    // public function destroy(HomePage $id)
-    // {
-        
-    // }
 }
