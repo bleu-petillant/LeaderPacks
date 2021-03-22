@@ -74,15 +74,15 @@
             <div class="flex justify-center">
                 <div class="col-md-4" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-bounce">
                     <p class="number">{{$homepage->first_number}}</p>
-                    <p class="text-center number-text">Lorem ipsum dolor sit <br> amet, consectetur </p>
+                    <p class="text-center number-text">years of cumulated experience </p>
                 </div>
                 <div class="col-md-4" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="350" data-sal-easing="ease-out-bounce">
                     <p class="number">{{$homepage->second_number}}</p>
-                    <p class="text-center number-text">Lorem ipsum dolor sit <br> amet, consectetur </p>
+                    <p class="text-center number-text"> continents </p>
                 </div>
                 <div class="col-md-4" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="450" data-sal-easing="ease-out-bounce">
                     <p class="number">{{$homepage->third_number}}</p>
-                    <p class="text-center number-text">Lorem ipsum dolor sit <br> amet, consectetur </p>
+                    <p class="text-center number-text">m2 build area</p>
                 </div>
             </div>
         </div>

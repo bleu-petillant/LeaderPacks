@@ -152,8 +152,7 @@
     padding: 10px;
 }
 
-.description-products{
-    
+.description-products{  
     background: linear-gradient(180deg, rgba(34,160,216,0) 0%, rgba(0,0,0,0.4234068627450981) 22%, rgba(0,0,0,0.6951155462184874) 65%);
     color: white;
     bottom: 0;

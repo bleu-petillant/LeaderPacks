@@ -46,6 +46,7 @@
             <h2 class="technology-title about-h2 uppercase">technology</h2>
             <div class="flex">
                 <div class="col-lg-6 w-full">
+                    <img src="{{asset('img/rectangle25.png')}}" alt="">
                     <div id="horizontale-technology-circles" class="horizontale-point-content">
                         <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                         <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>

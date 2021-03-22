@@ -67,7 +67,7 @@
                 {{ $slot ?? '' }}
                 @yield('home')
                 @yield('about')
-                @yield('product')
+                @yield('products')
                 @yield('contact')
             </main>
             
