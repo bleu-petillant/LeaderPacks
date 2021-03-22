@@ -49,7 +49,7 @@
                     <h2 class=" font-bold text-4xl text-center card-text">Technology section</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change the technology text :</h3>
-                        <textarea name="technologie_text" id="technologie_text" cols="150"  minlength="100" maxlength="255">{{$productpage->technologie_text}}</textarea>
+                        <textarea name="technologie_text" class="tiny" id="technologie_text" cols="150"  minlength="100" maxlength="255">{{$productpage->technologie_text}}</textarea>
                         <span id="compt_factory" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
@@ -57,7 +57,7 @@
                       <h2 class=" font-bold text-4xl text-center card-text">Innovation section</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change the innovation text :</h3>
-                        <textarea name="innovation_text" id="innovation_text" cols="150" required>{{$productpage->innovation_text}}</textarea>
+                        <textarea name="innovation_text" class="tiny" id="innovation_text" cols="150" required>{{$productpage->innovation_text}}</textarea>
                         <span id="compt_research" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>

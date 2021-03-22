@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="col-lg-8">
-            <p class="text-white contact-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. </p>
+            <p class="text-white contact-text ">{{$contactpage->contact_text}} </p>
 
             <div class="contact-form">
             <form class="grid form-contact" action="{{route('message')}}" method="post" id="message">
@@ -44,47 +44,8 @@
                 </div>
 
                 <div class="flex justify-between">
-                    <div class="required col-lg-3"><input type="text" class=" input-contact required" name="country" id="country" required autofocus placeholder="Country"></div>
-                    <div class="required col-lg-3"><input type="email" class=" input-contact required" name="email" id="email" required placeholder="Email"></div>    
-                    <div class="col-lg-3 empty-input"></div>
-
-                </div>
-
-                <textarea name="message" class="textarea-contact" id="message" required placeholder="Message"></textarea>
-
-                <bouton type="submit" id="submit" class="bouton">Submit</bouton>
-
-            </form>
-            
-            </div>
-        </div>
-
-    </div>
-
-
-
-
-
-</section>
-
-
-
-
-@section('contact')
-    <section id="contact">
-        <p>{{$contactpage->contact_text}}</p>
-        <div class="container">
-           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11152.821468156262!2d0.162613!3d45.6667774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1613840430465!5m2!1sfr!2sfr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <form action="{{route('message')}}" method="post">
-                @csrf
-                <label for="firstname">Firstname</label><span style="color: red !important; display: inline; float: none;">*</span>  
-                <input type="text" name="firstname" id="firstname" class="form-control" required>
-                <label for="lastname">Lastname</label><span style="color: red !important; display: inline; float: none;">*</span>  
-                <input type="text" name="lastname" id="lastname" class="form-control" required>
-                <label for="email">Email</label><span style="color: red !important; display: inline; float: none;">*</span>  
-                <input type="email" name="email" id="email" class="form-control" required>
-                <label for="country">Country</label><span style="color: red !important; display: inline; float: none;">*</span>      
-            <select id="country" name="country" class="form-control">
+                    <div class="required col-lg-3">
+                <select id="country" name="country" class="input-contact required" required>
                 <option value="" selected>Select Your Country</option>
                 <option value="Afghanistan">Afghanistan</option>
                 <option value="Åland Islands">Åland Islands</option>
@@ -332,11 +293,22 @@
                 <option value="Zimbabwe">Zimbabwe</option>
             </select>
 
-            <textarea name="message" id="message" cols="70" rows="20" required>votre message ici</textarea>
-            <div>
-                <button class="btn btn-info" type="submit">Send Message</button>
-            </div>
+                    </div>
+
+                    <div class="required col-lg-3"><input type="email" class=" input-contact required" name="email" id="email" required placeholder="Email"></div>    
+                    <div class="col-lg-3 empty-input"></div>
+
+                </div>
+
+                <textarea name="message" class="textarea-contact" id="message" required placeholder="Message"></textarea>
+
+                <bouton type="submit" id="submit" class="bouton">Submit</bouton>
+
             </form>
+            
+            </div>
         </div>
-    </section>
+
+    </div>
+</section>
 @endsection
