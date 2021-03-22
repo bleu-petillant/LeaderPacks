@@ -39,10 +39,10 @@
                     </div>
                 </section>
                 <section class="card my-4" id="inovation_homepage">
-                    <h2 class=" font-bold text-4xl text-center card-text"> Inovation homepage section</h2>
+                    <h2 class=" font-bold text-4xl text-center card-text"> Our Vision homepage section</h2>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change the inovation text :</h3>
-                        <textarea name="inovation_text" id="inovation_text" cols="150" required minlength="100" maxlength="255">{{$homepage->inovation_text}}</textarea>
+                        <h3 class="text-2xl">Change Our Vision text :</h3>
+                        <textarea name="inovation_text" class="tiny" id="inovation_text" cols="150" required minlength="100" maxlength="255">{{$homepage->inovation_text}}</textarea>
                         <span id="compt_innovation" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
@@ -70,7 +70,7 @@
                     <h2 class=" font-bold text-4xl text-center card-text"> About Us homepage section</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change the about us text :</h3>
-                        <textarea name="about_text" id="about_text" cols="150" required minlength="100" maxlength="255">{{$homepage->about_text}}</textarea>
+                        <textarea name="about_text" class="tiny" id="about_text" cols="150" required minlength="100" maxlength="255">{{$homepage->about_text}}</textarea>
                         <span id="compt_about" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
@@ -78,7 +78,7 @@
                     <h2 class=" font-bold text-4xl text-center card-text"> Product homepage section</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change the product text :</h3>
-                        <textarea name="product_text" id="product_text" cols="150" required minlength="100" maxlength="255">{{$homepage->product_text}}</textarea>
+                        <textarea name="product_text" class="tiny" id="product_text" cols="150" required minlength="100" maxlength="255">{{$homepage->product_text}}</textarea>
                         <span id="compt_product" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                     <div class="card-footer">
