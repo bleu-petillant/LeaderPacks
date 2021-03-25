@@ -108,7 +108,7 @@ class ProductPageController extends Controller
 
         $productpage->save();
 
-        $request->session()->flash('success', 'congratulation! the product page has been modified successfully');
+        $request->session()->flash('success', 'Congratulations ! The product page has been modified successfully.');
         return redirect()->route('products');
     }
 

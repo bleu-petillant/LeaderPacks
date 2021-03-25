@@ -21,9 +21,9 @@
                 @method('PATCH')
                 @csrf
                 <section id="header_homepage" class="card my-4">
-                    <h2 class=" font-bold text-4xl text-center"> Header section</h2>
+                    <h2 class=" font-bold text-4xl text-center">Header</h2>
                     <div class="col-lg-10 my-4 flex">
-                        <label class="label" for="header_video">Youtube vidéo link (change it if needed)</label>
+                        <label class="label" for="header_video">Youtube video link (change it if needed)</label>
                         <input type="url" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
                             id="header_video" onchange="return videoValidation() " required>
                         <div id="alertvideo"></div>
@@ -33,21 +33,21 @@
                         </div>
                     </div>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change the header text :</h3>
+                        <h3 class="text-2xl">Change header :</h3>
                         <textarea name="header_text" id="header_text" cols="150" required minlength="100" maxlength="255">{{$homepage->header_text}}</textarea>
                         <span id="compt_header" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
                 <section class="card my-4" id="inovation_homepage">
-                    <h2 class=" font-bold text-4xl text-center card-text"> Our Vision homepage section</h2>
+                    <h2 class=" font-bold text-4xl text-center card-text"> Our Vision </h2>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change Our Vision text :</h3>
+                        <h3 class="text-2xl">Change text :</h3>
                         <textarea name="inovation_text" class="tiny" id="inovation_text" cols="150" required minlength="100" maxlength="255">{{$homepage->inovation_text}}</textarea>
                         <span id="compt_innovation" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
                 <section id="number" class="card my-4">
-                      <h2 class=" font-bold text-4xl text-center card-text"> Number  homepage section</h2>
+                      <h2 class=" font-bold text-4xl text-center card-text"> Numbers</h2>
                     <div class="card-body">
                         <div class="flex">
                             <div class="col-lg-4">
@@ -67,24 +67,24 @@
                 </section>
 
                 <section class="card my-4" id="about_homepage">
-                    <h2 class=" font-bold text-4xl text-center card-text"> About Us homepage section</h2>
+                    <h2 class=" font-bold text-4xl text-center card-text"> About us</h2>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change the about us text :</h3>
+                        <h3 class="text-2xl">Change text : </h3>
                         <textarea name="about_text" class="tiny" id="about_text" cols="150" required minlength="100" maxlength="255">{{$homepage->about_text}}</textarea>
                         <span id="compt_about" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
                 <section class="card my-4" id="product_homepage">
-                    <h2 class=" font-bold text-4xl text-center card-text"> Product homepage section</h2>
+                    <h2 class=" font-bold text-4xl text-center card-text">Products</h2>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change the product text :</h3>
+                        <h3 class="text-2xl">Change text :</h3>
                         <textarea name="product_text" class="tiny" id="product_text" cols="150" required minlength="100" maxlength="255">{{$homepage->product_text}}</textarea>
                         <span id="compt_product" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                     <div class="card-footer">
                     <div class="d-flex">
                     <div class="col-lg-4">
-                         <h3 class="text-2xl">Change the product image :</h3>
+                         <h3 class="text-2xl">Change image :</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
                                 onchange="return fileValidation()">
@@ -95,7 +95,7 @@
                     <div id="imagePreview" class="col-lg-6">
                         <div style="max-width:100%;max-height:250px;">
                             <figure class="figure">
-                                <figcaption class="figure-caption text-right">Your actual image</figcaption>
+                                <figcaption class="figure-caption text-right">Your current image</figcaption>
                                 <img src="{{ asset($homepage->product_image) }}" class="figure-img img-fluid" alt="">
                             </figure>
                         </div>
@@ -105,7 +105,7 @@
                     </div>
                 </section>
                             <button class="btn btn-success btn-md" type="submit"><span
-                                    class="fas fa-pen pr-2"></span>Update the homepage</button>
+                                    class="fas fa-pen pr-2"></span>Update homepage</button>
                         </div>
             </form>
         </div>

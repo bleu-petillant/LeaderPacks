@@ -55,7 +55,7 @@
             </li>
             <li class="nav-item my-2 bg-white hover:bg-black hover:text-white ">
                 <a href="{{route('aboutpage.index')}}" class="nav-link">
-                    <i class="nav-icon fas fa-users"></i>Build About page
+                    <i class="nav-icon fas fa-users"></i>Build About us page
                 </a>
             </li>
             <li class="nav-item my-2 bg-white">

@@ -20,10 +20,10 @@
                 @method('PATCH')
                 @csrf
                 <section id="our_spirit" class="card my-4">
-                    <h2 class=" font-bold text-4xl text-center"> Our Spirit section</h2>
+                    <h2 class=" font-bold text-4xl text-center">Our Spirit</h2>
                     <div class="d-flex">
                     <div class="col-lg-4">
-                         <h3 class="text-2xl">Change the Our Spirit image :</h3>
+                         <h3 class="text-2xl">Change image :</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
                                 onchange="return fileValidation()">
@@ -34,7 +34,7 @@
                     <div id="imagePreview" class="col-lg-6">
                         <div style="max-width:100%;max-height:250px;">
                             <figure class="figure">
-                                <figcaption class="figure-caption text-right">Your actual image</figcaption>
+                                <figcaption class="figure-caption text-right">Your current image</figcaption>
                                 <img src="{{ asset($aboutpage->image) }}" class="figure-img img-fluid" alt="">
                             </figure>
                         </div>
@@ -43,28 +43,28 @@
                     </div>
                     </div>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change the Our Spirit text :</h3>
+                        <h3 class="text-2xl">Change text :</h3>
                         <textarea class="tiny" name="spirit_text" id="spirit_text" cols="150"  minlength="100" maxlength="255">{{$aboutpage->spirit_text}}</textarea>
                         <span id="compt_spirit" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
                 <section class="card my-4" id="factory_aboutpage">
-                    <h2 class=" font-bold text-4xl text-center card-text"> Factory section</h2>
+                    <h2 class=" font-bold text-4xl text-center card-text"> Factory</h2>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change the factory text :</h3>
+                        <h3 class="text-2xl">Change text :</h3>
                         <textarea class="tiny" name="factory_text" id="factory_text" cols="150"  minlength="100" maxlength="255">{{$aboutpage->factory_text}}</textarea>
                         <span id="compt_factory" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
                 <section id="research_aboutpage" class="card my-4">
-                      <h2 class=" font-bold text-4xl text-center card-text">Research & Development section</h2>
+                      <h2 class=" font-bold text-4xl text-center card-text">Research & Development</h2>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change the research & development text :</h3>
+                        <h3 class="text-2xl">Change text :</h3>
                         <textarea name="research_text" class="tiny" id="research_text" cols="150" required>{{$aboutpage->research_text}}</textarea>
                         <span id="compt_research" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
                     </div>
                 </section>
-                    <button class="btn btn-success btn-md" type="submit"><span class="fas fa-pen pr-2"></span>Update the aboutpage</button>
+                    <button class="btn btn-success btn-md" type="submit"><span class="fas fa-pen pr-2"></span>Update the About us page</button>
                 </div>
             </form>
         </div>
