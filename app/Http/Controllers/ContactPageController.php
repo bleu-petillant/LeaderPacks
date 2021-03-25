@@ -61,7 +61,7 @@ class ContactPageController extends Controller
             $contactpage->contact_text  = $request->contact_text;
             $contactpage->save();
 
-        $request->session()->flash('success', 'congratulation! the contact page has been modified successfully');
+        $request->session()->flash('success', 'Congratulations ! The contact page has been modified successfully.');
         return redirect()->route('contact');
     }
 

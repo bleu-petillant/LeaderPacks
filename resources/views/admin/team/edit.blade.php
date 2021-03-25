@@ -10,7 +10,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                        <li class="breadcrumb-item  text-red-500">Edit {{$team->teammates}} {{$team->lastname}}</li>
+                        <li class="breadcrumb-item  text-red-500">Edit {{$team->teammates}} </li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -21,18 +21,19 @@
                     @method('PATCH')
                     @csrf
                     @include('includes.errors')
-                    <label for="teammates">Change teammates</label>
+                    <label for="teammates">Change department</label>
                     <input type="text" id="teammates" name="teammates" class="form-control my-4" value="{{$team->teammates}}" autofocus placeholder="{{$team->teammates}}">
-                    <label class="label" for="job_title">Change Job Title</label>
+                    <label class="label" for="job_title">Change slogan</label>
                         <input type="text" name="job_title" id="job_title" class="form-control my-4" value="{{$team->job_title}}" placeholder="{{$team->job_title}}">
                         <div class="container my-2">
-                            <label for="desc">Change description : (max 255 character)</label> <br>
+                            <label for="desc">Change description : </label> max 255 signs<br>
                             <textarea name="desc" id="desc" cols="50">{{$team->desc}}</textarea>
+                            
                         </div>
 
                     <div class="container my-5">
                          <div class="col-lg-4">
-                         <h3 class="text-2xl">Change image profil :</h3>
+                         <h3 class="text-2xl">Change profile picture :</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
                                 onchange="return fileValidation()">
@@ -48,7 +49,7 @@
                      </div>
                     </div>
                     </div>
-                    <button class="btn btn-outline-dark my-4" type="submit"><span class="fas fa-pen pr-2"></span>Apply change to this teammate</button>
+                    <button class="btn btn-outline-dark my-4" type="submit"><span class="fas fa-pen pr-2"></span>Update this department</button>
                 </form>
             </div>
         </div>

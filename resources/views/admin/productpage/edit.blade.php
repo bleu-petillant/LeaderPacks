@@ -25,7 +25,7 @@
                         <div class="card-body">
                             <h2 class="text-2xl text-center">Change text : </h2>
                             <textarea name="product_text" id="product_text" cols="150"  minlength="100" maxlength="255">{{$productpage->product_text}}</textarea>
-                            <span id="compt_spirit" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
+                            <span id="compt_spirit" class="text-right">max 255 signs</span>
                         </div>
                     </section>
                     <div class="d-flex">
@@ -50,7 +50,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea name="technologie_text" class="tiny" id="technologie_text" cols="150"  minlength="100" maxlength="255">{{$productpage->technologie_text}}</textarea>
-                        <span id="compt_factory" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
+                        <span id="compt_factory" class="text-right">max 255 signs</span>
                     </div>
                 </section>
                 <section id="innovation" class="card my-4">
@@ -58,7 +58,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea name="innovation_text" class="tiny" id="innovation_text" cols="150" required>{{$productpage->innovation_text}}</textarea>
-                        <span id="compt_research" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
+                        <span id="compt_research" class="text-right">max 255 signs</span>
                     </div>
                 </section>
                     <button class="btn btn-success my-3" type="submit"><span class="pr-2 fas fa-pen"></span>Update modification</button>

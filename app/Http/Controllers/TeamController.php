@@ -90,13 +90,11 @@ class TeamController extends Controller
 
         $team->save();
 
-        $request->session()->flash('success', 'the new teammate has been created successfully');
+        $request->session()->flash('success', 'Congratulations ! The new department has been created successfully.');
 
         return redirect('admin/team');
 
     }
-
-
 
     /**
      * Show the form for editing the specified resource.
@@ -180,12 +178,9 @@ class TeamController extends Controller
 
         $team->save();
 
-        $request->session()->flash('success', 'congratulation! the teamate has been modified successfully');
+        $request->session()->flash('success', 'Congratulations ! The Department has been modified successfully.');
         return redirect()->route('team.index');
-
-
-
-    }
+   }
 
     /**
      * Remove the specified resource from storage.

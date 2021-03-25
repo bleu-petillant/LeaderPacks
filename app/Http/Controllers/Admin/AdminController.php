@@ -58,7 +58,7 @@ class AdminController extends Controller
             'email' => $request['email'],
             'password' => Hash::make($request['password']),
         ]);
-        $request->session()->flash('success', 'a new admin has been created with success');
+        $request->session()->flash('success', 'Congratulations ! A new admin has been created successfully.');
         return redirect()->to('admin/list');
 
 

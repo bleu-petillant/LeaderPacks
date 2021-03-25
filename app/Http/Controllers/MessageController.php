@@ -22,7 +22,7 @@ class MessageController extends Controller
 
 
         Mail::send(new FormContact($request));
-        Session::flash('success', 'Votre message à été envoyez avec succes merci.');
+        Session::flash('success', 'Congratulations ! Your message has been sent successfully.');
         return redirect()->back();
     }
 }

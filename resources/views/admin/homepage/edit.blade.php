@@ -35,7 +35,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change header :</h3>
                         <textarea name="header_text" id="header_text" cols="150" required minlength="100" maxlength="255">{{$homepage->header_text}}</textarea>
-                        <span id="compt_header" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
+                        <span id="compt_header" class="text-right">max 255 signs</span>
                     </div>
                 </section>
                 <section class="card my-4" id="inovation_homepage">
@@ -43,7 +43,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea name="inovation_text" class="tiny" id="inovation_text" cols="150" required minlength="100" maxlength="255">{{$homepage->inovation_text}}</textarea>
-                        <span id="compt_innovation" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
+                        <span id="compt_innovation" class="text-right">max 255 signs</span>
                     </div>
                 </section>
                 <section id="number" class="card my-4">
@@ -71,7 +71,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text : </h3>
                         <textarea name="about_text" class="tiny" id="about_text" cols="150" required minlength="100" maxlength="255">{{$homepage->about_text}}</textarea>
-                        <span id="compt_about" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
+                        <span id="compt_about" class="text-right">max 255 signs</span>
                     </div>
                 </section>
                 <section class="card my-4" id="product_homepage">
@@ -79,7 +79,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea name="product_text" class="tiny" id="product_text" cols="150" required minlength="100" maxlength="255">{{$homepage->product_text}}</textarea>
-                        <span id="compt_product" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
+                        <span id="compt_product" class="text-right">max 255 signs</span>
                     </div>
                     <div class="card-footer">
                     <div class="d-flex">

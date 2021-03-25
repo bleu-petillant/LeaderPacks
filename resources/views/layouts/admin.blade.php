@@ -70,7 +70,7 @@
             </li>
             <li class="nav-item my-2 bg-white">
                 <a href="{{ route('team.index') }}" class="nav-link">
-                    <i class="nav-icon fas fa-user-plus"></i>Manage the Team
+                    <i class="nav-icon fas fa-user-plus"></i>Manage Team
                 </a>
             </li>
             <li class="nav-item my-2 bg-white">
