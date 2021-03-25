@@ -38,4 +38,15 @@ class MainController extends Controller
         return view('contact',compact('contactpage'));
     }
 
+    public function GetMembers(Request $request)
+    {
+        if ($request->ajax()) {
+
+            $id = $request->id;
+
+            $memberSelect = Team::where("id",$id)->first();
+            return response()->json(['status'=>'success',$memberSelect]);
+        }
+    }
+
 }

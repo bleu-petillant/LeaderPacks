@@ -30,6 +30,7 @@ Route::get('/products',[MainController::class,'product'])->name('products');
 Route::get('/contact',[MainController::class,'contact'])->name('contact');
 // send messages
 Route::post('/message',[MessageController::class,'send'])->name('message');
+Route::post('get/member',[MainController::class,'GetMembers'])->name('getmember');
 
 
 // admin routes

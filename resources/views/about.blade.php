@@ -142,23 +142,15 @@
                     <i class="cursor-pointer prev team-arrow fas fa-chevron-left"></i>
                     <i class="cursor-pointer next team-arrow fas fa-chevron-right"></i>
                 </div>
-
                 <div>
-                @foreach ($teams as $team)
-                    <div id="{{$team->id}}" class="team-id hidden">
-                        <input id="id-member" type="hidden" value="{{$team->id}}" >
-                        <input id="firstName-member" type="hidden" value="{{$team->firstname}}"> 
-                        <input id="lastName-member" type="hidden" value="{{$team->lastname}}"> 
-                        <input id="jobTitle-member" type="hidden" value="{{$team->job_title}}"> 
-                        <input id="desc-member" type="hidden" value="{{$team->desc}}"> 
-                        <input id="image-member" type="hidden" value="{{asset($team->image)}}"> 
-                    </div>
-                @endforeach
                 </div>
 
                 <div class="flex justify-around w-full absolute members-image-container"> 
                     @foreach ($teams as $team) 
-                        <img src="{{asset($team->image)}}" id="member-{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt="">
+                    <form action="" method="post">
+                    @csrf
+                        <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt="">
+                    </form>
                     @endforeach
                 </div>
                 
@@ -214,9 +206,9 @@
            
             <!-- -------------------------------------------------------------- -->
     </section>
-
+    <script src="{{asset('js/Members.js')}}"></script>
     <script>
-
+        const member_obj = new Members();
         let mainImage = $("#img-product").attr('src');
         let bioContainer = $("#memberBioContainer");
 
@@ -226,19 +218,8 @@
         let jobMember  = $('#jobTitle-member').val();
         let descMember  = $('#desc-member').val();
         let imageMember  = $('#image-member').val();
-
-        //  get all  small images in variable
         let C_Image = $('.product-miniature-img');
-        // set the clicked image in big image container
-        $(C_Image).each(function(){
-            $(this).click(function(){
-                    let member = $(this).attr('id');
-                    // console.log(member)
-                    // $("#img-product").attr('src', sourceImg)
-                    bioContainer.html("");
-                    bioContainer.append('<h3 class="name-member" >'+ firstNameMember +'</h3')  
-            });
-        });
+
     </script>
 
 @endsection
