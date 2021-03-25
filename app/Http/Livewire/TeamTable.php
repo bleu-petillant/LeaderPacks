@@ -21,12 +21,9 @@ class TeamTable extends LivewireDatatable
                  ->defaultSort('asc'),
              
 
-            Column::name('firstname')
-                ->label('FirstName')
+            Column::name('teammates')
+                ->label('Teammates')
                 ->filterable(),
-
-                Column::name('lastname')
-                ->label('LastName'),
                 
                 Column::name('job_title')
                 ->label('Job Title'),

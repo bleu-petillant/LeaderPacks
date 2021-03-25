@@ -42,16 +42,16 @@ class TeamController extends Controller
     {
         $this->validate($request,
         [
-            'firstname'=>'required',
-            'lastname'=>'required',
+            'teammates'=>'required',
+
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
             'desc'=>'required',
             'job_title'=>'required',
         ]);
 
         $team = Team::create([
-            'firstname' => $request->firstname,
-            'lastname' => $request->lastname,
+            'teammates' => $request->teammates,
+
             'image' => 'image',
             'job_title'=>$request->job_title,
             'desc'=>$request->desc,
@@ -122,22 +122,18 @@ class TeamController extends Controller
     {
         $this->validate($request,
         [
-            'firstname'=>'required',
-            'lastname'=>'required',
+            'teammates'=>'required',
+
             'job_title'=>'required',
             'desc'=>'required',
         ]);
            
-            if($team->isClean('firstname'))
+            if($team->isClean('teammates'))
             {
                 
-                $team->firstname  = $team->firstname;
+                $team->teammates = $team->teammates;
             }
-            if($team->isClean('lastname'))
-            {
-                
-                $team->lastname  = $team->lastname;
-            }
+           
             if($team->isClean('job_title'))
             {
                 
@@ -149,8 +145,8 @@ class TeamController extends Controller
                 $team->desc  = $team->desc;
             }
 
-            $team->firstname  = $request->firstname;
-            $team->lastname = $request->lastname;
+            $team->teammates  = $request->teammates;
+
             $team->job_title =$request->job_title;
             $team->desc = $request->desc;
 

@@ -45,7 +45,7 @@
             @auth
                 @include('layouts.navigation')
             @endauth
-            <nav x-data="{ open: false }" class="bg-white border-b border-gray-100 navbar navbar-expand-lg">
+            <nav id="laptop-menu" x-data="{ open: false }" class="bg-white border-b border-gray-100 navbar navbar-expand-lg">
                 <div class="relative menu-content container-fluid">
                 <a href="{{route('home')}}" class="nav-logo"><img src="{{asset('img/logo.png')}}" alt="" style="width: 86%;"></a> 
                         <div class="absolute  menu-laptop flex">
@@ -56,6 +56,20 @@
                         </div>
                 </div>
             </nav>
+            <!-- ------------------- mobile nav -->
+            <nav id="mobile-menu">
+                <div id="mainbox" onclick="openFunction()">&#9776; Open</div>
+                <div id="menu" class="sidemenu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Login</a>
+                <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+                </div>
+            
+            </nav>
+
+            <!-- ------------------- -->
 
             <!-- Page Heading -->
             <!-- <header class="bg-white shadow">

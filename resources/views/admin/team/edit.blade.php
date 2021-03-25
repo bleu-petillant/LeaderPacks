@@ -10,7 +10,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                        <li class="breadcrumb-item  text-red-500">Edit {{$team->firstname}} {{$team->lastname}}</li>
+                        <li class="breadcrumb-item  text-red-500">Edit {{$team->teammates}} {{$team->lastname}}</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -21,10 +21,8 @@
                     @method('PATCH')
                     @csrf
                     @include('includes.errors')
-                    <label for="firstname">Change FirstName</label>
-                    <input type="text" id="firstname" name="firstname" class="form-control my-4" value="{{$team->firstname}}" autofocus placeholder="{{$team->firstname}}">
-                    <label for="lastname" class="label">Change LastName</label>
-                    <input type="text" name="lastname" id="lastname" class="form-control my-4" value="{{$team->lastname}}" placeholder="{{$team->lastname}}">
+                    <label for="teammates">Change teammates</label>
+                    <input type="text" id="teammates" name="teammates" class="form-control my-4" value="{{$team->teammates}}" autofocus placeholder="{{$team->teammates}}">
                     <label class="label" for="job_title">Change Job Title</label>
                         <input type="text" name="job_title" id="job_title" class="form-control my-4" value="{{$team->job_title}}" placeholder="{{$team->job_title}}">
                         <div class="container my-2">

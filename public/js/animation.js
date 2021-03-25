@@ -9,8 +9,8 @@ $(document).ready(function(){
     }) 
     
     $('.members-image-container').slick({
-        infinite: true,
-        slidesToShow: 3,
+        infinite: false,
+        slidesToShow: 4,
         slidesToScroll: 1,
         arrows: true,
         nextArrow: $('.next'),
@@ -23,7 +23,7 @@ $(document).ready(function(){
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                infinite: true,
+                infinite: false,
                 dots: false,
                 nextArrow: $('.next'),
                 prevArrow: $('.prev'),
@@ -34,7 +34,7 @@ $(document).ready(function(){
             settings: {
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                infinite: true,
+                infinite: false,
                 dots: false,
                 nextArrow: $('.next'),
                 prevArrow: $('.prev'),

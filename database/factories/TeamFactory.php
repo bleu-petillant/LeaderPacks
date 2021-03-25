@@ -23,8 +23,7 @@ class TeamFactory extends Factory
     {
         return [
             'image'=>'https://picsum.photos/200/200?random=' .$this->faker->numberBetween($min = 1, $max = 75) ,
-            'firstname'=>$this->faker->firstName,
-            'lastname'=>$this->faker->lastName,
+            'teammates'=>$this->faker->firstName,
             'job_title'=>$this->faker->jobTitle,
             'desc' =>$this->faker->sentence(5),
             'page_id'=>1

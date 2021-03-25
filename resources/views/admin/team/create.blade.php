@@ -20,10 +20,8 @@
                 <form class="text-center" action="{{route('team.store')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @include('includes.errors')
-                    <label for="firstname">FirstName</label>
-                    <input type="text" id="firstname" name="firstname" class="form-control my-4" autofocus placeholder="Tom" required>
-                    <label for="lastname" class="label">LastName</label>
-                    <input type="text" name="lastname" id="lastname" class="form-control my-4" required placeholder="Hiddleston">
+                    <label for="teammates">teammates</label>
+                    <input type="text" id="teammates" name="teammates" class="form-control my-4" autofocus placeholder="Tom" required>
                     <label class="label" for="job_title">Job Title</label>
                         <input type="text" name="job_title" id="job_title" class="form-control my-4" required placeholder="Actor (Loki)">
                         <div class="container my-2">

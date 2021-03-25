@@ -132,7 +132,7 @@
         <div id="team-laptop" class="flex relative">
             <div class="col-lg-8 col-sm-12 relative">
                 <div id="memberBioContainer" class="member-bio-container">
-                    <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">{{$firstTeam->firstname}} {{$firstTeam->lastname}}</h3>
+                    <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">{{$firstTeam->teammates}} </h3>
                     <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> {{$firstTeam->job_title}}</p>
                     <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
                     {{$firstTeam->desc}}
@@ -158,7 +158,7 @@
 
 
             <div class="col-lg-4 col-sm-12">
-                <div class=" relative">
+                <div id="teamImage" class=" relative">
                     <img class="w-full team-image relative" src="{{asset($firstTeam->image)}}" alt="">
                 </div>
                 

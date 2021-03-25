@@ -21,7 +21,7 @@ class MainController extends Controller
     {
         $aboutpage = AboutPage::first();
         $teams = Team::all();
-        $firstTeam = Team::where('id',1)->first();
+        $firstTeam = Team::first();
         return view('about',compact(['aboutpage','teams','firstTeam']));
     }
 
