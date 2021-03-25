@@ -36,13 +36,14 @@
     position: absolute;
     width: fit-content;
     height: fit-content;
-    top: 0;
+    top: 23%;
     bottom: 0;
     right: 20%;
     margin: auto;
     font-size: 72px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    display: inline-table;
 }
 
 .home-h1::after{
@@ -78,7 +79,7 @@
     z-index: 2;
     margin-top: -6vh;
     width: 100%;
-    height: 441px;
+    height: 50vh;
 }
 
 #vertical-video-circles{
@@ -93,7 +94,7 @@
 
 /*heder text*/
 
-.header-text{
+.header-text, .header-text p{
     color: #2B465A;
     margin: 11vh auto;
     font-size: 24px;
@@ -121,7 +122,7 @@
     line-height: 75px;
     color: #02558B;
     position: relative;
-    width: fit-content;
+    width: max-content;
 }
 
 #home-innovation_title{
@@ -180,7 +181,7 @@
     color: #FF636A;
     line-height: 75px;
     border-bottom: 2px #FF636A solid;
-    width: fit-content;
+    width: max-content;
     margin: auto;
 }
 
@@ -282,15 +283,15 @@
 .home-product-content{
     margin-left: 2vw;
     margin-top: 6vh;
+    margin-right: 6vw;
 }
 
-.home-product-text{
+.home-product-text p{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
-    width: 484px;
     color: #2B465A;
     margin-bottom: 7vh;
 }
@@ -298,13 +299,14 @@
 .home-product-frame{
     width: 132.49px;
     height: 148.82px;
-    margin-left: 5vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
 }
 
 .home-product-bouton{
-    width: fit-content;
     margin: auto;
     margin-top: 5vh;
+    width: max-content;
 }
 
 /* mobile */
@@ -319,7 +321,7 @@
 
 .bouton-aboutus-home-mobile{
     display: none;
-    width: fit-content;
+    width: max-content;
     margin: auto;
 }
 
@@ -332,6 +334,8 @@
     margin-bottom: 5vh;
     margin-left: 5vw;
 }
+
+
 
 /* responsive */
 
@@ -366,7 +370,7 @@
         left: 0;
         bottom: -50px;
         margin: 0 auto;
-        width: fit-content;
+        width: max-content;
     }
 
     .blue-square-content{
@@ -378,7 +382,7 @@
         padding-left: 2vw;
     }
 
-    .home-innovation-text{
+    .home-innovation-text p{
         text-align: justify;
         padding-right: 20px;
     }
@@ -446,12 +450,11 @@
         bottom: -51px;
     }
 
-    .home-product-text {
-        margin-top: 3vh;
-    }
+
+    
 
     .home-product-bouton {
-        width: fit-content;
+        width: max-content;;
         /* margin: auto; */
         margin-left: 5vw;
         margin-top: 0vh;
@@ -460,7 +463,27 @@
 
 }
 
+@media (max-width: 768px){
+
+    .home-product-text p {
+        margin-top: 3vh;
+        width: initial;
+        text-align: justify;
+        margin-right: 8vw;
+    }
+}
+
 @media (max-width: 574px){
+
+    .icon-content-header-home {
+
+        left: 3vw;
+
+    }
+
+    #frame-mobile-home{
+        display: none;
+    }
 
     .aboutus-home-img{
         width: 100%;
@@ -474,4 +497,24 @@
     .number-text{
         font-size:14px;
     }
+
+    #home-innovation_title::after {
+        width: 50px;
+    }
+
+    #home-product-title-mobile::after {
+        width: 50px;
+    }
+}
+
+
+@media (max-width: 400px){
+    .home-product-text p {
+        margin-top: 3vh;
+        width: initial;
+        text-align: justify;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    
 }

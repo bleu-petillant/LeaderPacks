@@ -35,20 +35,20 @@
         </div>
 
         <div class="col-lg-6 col-sm-12 header-home-text-container relative">
-            <p class="header-text" data-sal-duration="1200" data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease-out-bounce">{{$homepage->header_text}}</p>
+            <div class="header-text" data-sal-duration="1200" data-sal="slide-left" data-sal-delay="300" data-sal-easing="ease-out-bounce">{{$homepage->header_text}}</div>
         </div>
         
     </section>
 <!-- --------------------------------------------------------------mobile -->
     <div class="col-sm-12 header-home-text-container-mobile">
-        <p class="header-text" >{{$homepage->header_text}}</p>
+        <div  class="header-text">{{$homepage->header_text}}</div>
     </div>
 <!-- ------------------------- -->
     <section id="inovation_homepage">
         <div class="flex">
             <div class="col-lg-6 innovation-content"  data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">
                 <h2 id="home-innovation_title" class="home-h2">Our vision</h2>
-                <p class="home-innovation-text ">{!!$homepage->inovation_text!!}</p>
+                <div class="home-innovation-text">{!!$homepage->inovation_text!!}</div>
             </div>
             <div class=" blue-square-content">
                 <div class="blue-square"></div>
@@ -113,7 +113,7 @@
             </div>
             <div class="col-lg-6">
                 <h2 id="home-aboutUs" class="home-h2">About <span class="skinny-h2">Us</span></h2>
-                <p class="home-innovation-text" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">{{$homepage->about_text}}</p>
+                <div class="home-innovation-text" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">{!!$homepage->about_text!!}</div>
                 <a href="" class=" bouton-aboutus-home bouton">Bouton</a>
             </div>
         </div>
@@ -146,7 +146,7 @@
             <div class="col-lg-7 col-sm-12 product-home-content">
                 <h2 id="home-product-title" class="home-h2">Products </h2>
                 <div class="flex relative home-product-content" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce"> 
-                    <p class="home-product-text" >{{$homepage->product_text}}</p>  
+                    <div class="home-product-text">{!!$homepage->product_text!!}</div>
                     <img class="home-product-frame" src="{{asset('img/frame.png')}}" alt="">
                     
                 </div>
@@ -159,8 +159,8 @@
         <!-- --------------------------------------------------------------mobile -->
         <div class=" col-sm-12 product-home-content-mobile">
             <div class="flex relative home-product-content" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce"> 
-                <p class="home-product-text" >{{$homepage->product_text}}</p>  
-                <img class="home-product-frame" src="{{asset('img/frame.png')}}" alt="">
+                <div class="home-product-text">{!!$homepage->product_text!!}</div> 
+                <img id="frame-mobile-home" class="home-product-frame" src="{{asset('img/frame.png')}}" alt="">
                 
             </div>
             <div class="home-product-bouton">

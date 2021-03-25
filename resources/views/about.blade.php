@@ -16,38 +16,38 @@
     <section id="spirit" >
         <div class="flex">
             <div class="col-lg-8 relative spirit-txt-container">
-                <h2 class=" spirit-title about-h2 text-right"><span class="skinny-h2">Our</span> Spirit</h2>
-                <p class="spirit-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.<br><br>
-
-                neque arcu ut dictumst enim. Et vulputate purus, erat interdum. Gravida et eget sed sit.
-                Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue hendrerit risus et arcu ipsum. Urna, eget justo pretium non feugiat laoreet vitae. Morbi dictum sed proin eu. Accumsan consequat ut praesent viverra risus aliquet. Sed id tincidunt nullam pulvinar donec lorem. At ut urna neque velit in ultrices mattis. Imperdiet viverra porttitor sapien, a adipiscing tempus, </p>
-            </div>
+                <h2 class=" spirit-title about-h2 text-right"><span class="skinny-h2">Our</span> Values </h2>
+                <div class="spirit-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+                    {!!$aboutpage->spirit_text!!}
+                </div>
+            </div>  
             
             <div class="col-lg-4 relative ourspirit-img-container">
                     <div class=" relative ourspirit-img">
-                        <img class="w-full spirit-image relative" src="{{asset('img/aboutus.png')}}" alt="">
+                    
+                        <img class="w-full spirit-image relative" src="{{asset('img/aboutus.png')}}" alt="">    
+                        <div id="horizontale-spirit-circles" class="horizontale-point-content">
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                            <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                        </div>
                     </div>
-                    <div id="horizontale-spirit-circles" class="horizontale-point-content">
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    </div>
+                    
             </div>
         </div>
         <!-- --------------------------------------------------------------mobile -->
-        <div class="col-lg-8 relative spirit-txt-container-mobile">
-            <h2 class=" spirit-title about-h2 text-right"><span class="skinny-h2">Our</span> Spirit</h2>
-            <p class="spirit-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.<br><br>
-
-            neque arcu ut dictumst enim. Et vulputate purus, erat interdum. Gravida et eget sed sit.
-            Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue hendrerit risus et arcu ipsum. Urna, eget justo pretium non feugiat laoreet vitae. Morbi dictum sed proin eu. Accumsan consequat ut praesent viverra risus aliquet. Sed id tincidunt nullam pulvinar donec lorem. At ut urna neque velit in ultrices mattis. Imperdiet viverra porttitor sapien, a adipiscing tempus, </p>
+        <div class="col-lg-8 col-sm-12 relative spirit-txt-container-mobile">
+            <h2 class=" spirit-title about-h2 text-right"><span class="skinny-h2">Our</span> Values</h2>
+            <div class="spirit-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+                {!!$aboutpage->spirit_text!!}
+            </div>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -100,10 +100,7 @@
 
             </div>
             <div class="col-lg-6 col-sm-12 w-full factory-text-container">
-                <p class="factory-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.<br><br>
-
-neque arcu ut dictumst enim. Et vulputate purus, erat interdum. Gravida et eget sed sit.
-Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue hendrerit risus et arcu ipsum. Urna, eget justo pretium non feugiat laoreet vitae. Morbi dictum sed proin eu. Accumsan consequat ut praesent viverra risus aliquet. Sed id tincidunt nullam pulvinar donec lorem. At ut urna </p>
+                <p class="factory-text">{!!$aboutpage->factory_text!!}</p>
 
             </div>
         </div>
@@ -111,30 +108,97 @@ Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue
     </section>
 
     <section id="recherche">
-        <h2 class="uppercase about-h2 recherche-title">research <span class="skinny-h2">and</span> development</h2>
+        <h2 class="uppercase about-h2 recherche-title">Wordlwide commercial organization</h2>
         <div class="row mt-3">
             <div class="col-lg-6 col-sm-12">
-                <p class="recherche-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.<br><br>
-
-neque arcu ut dictumst enim. Et vulputate purus, erat interdum. Gravida et eget sed sit.
-Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue hendrerit risus et arcu ipsum. Urna, eget justo pretium non feugiat laoreet vitae. Morbi dictum sed proin eu. Accumsan consequat ut praesent viverra risus aliquet. </p>
+                <p class="recherche-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce"> {!!$aboutpage->research_text!!} </p>
 
             </div>
             <div class="col-lg-6 col-sm-12 relative" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="400" data-sal-easing="ease-out-bounce">
                 <img class="frame-recherche" src="{{asset('img/mapmonde.svg')}}" alt="">
                 <!-- --------------------------------------------------------------mobile -->
                 <img class="frame-recherche-mobile" src="{{asset('img/mapmonde.svg')}}" alt="">
-                <!-- --------------------------------------------------------------mobile -->
+                <!-- -------------------------------------------------------------- -->
             </div>
         </div>
 
     </section>
 </div>
     
-    <section id="team">
-        <h2 class="about-h2 team-title uppercase" >Team</h2>
-        <div class="flex relative">
-            <div class="col-lg-8 relative">
+    <section id="team" class="relative">
+    @if ($teams ?? '')
+        <h2 class="about-h2 team-title uppercase"> Organization</h2>
+        
+        <div id="team-laptop" class="flex relative">
+            <div class="col-lg-8 col-sm-12 relative">
+                <div id="memberBioContainer" class="member-bio-container">
+                    <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">{{$firstTeam->firstname}} {{$firstTeam->lastname}}</h3>
+                    <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> {{$firstTeam->job_title}}</p>
+                    <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
+                    {{$firstTeam->desc}}
+                    </p>
+                </div>
+                <div class="team-arrow-container flex justify-between">
+                    <i class="cursor-pointer prev team-arrow fas fa-chevron-left"></i>
+                    <i class="cursor-pointer next team-arrow fas fa-chevron-right"></i>
+                </div>
+
+                <div>
+                @foreach ($teams as $team)
+                    <div id="{{$team->id}}" class="team-id hidden">
+                        <input id="id-member" type="hidden" value="{{$team->id}}" >
+                        <input id="firstName-member" type="hidden" value="{{$team->firstname}}"> 
+                        <input id="lastName-member" type="hidden" value="{{$team->lastname}}"> 
+                        <input id="jobTitle-member" type="hidden" value="{{$team->job_title}}"> 
+                        <input id="desc-member" type="hidden" value="{{$team->desc}}"> 
+                        <input id="image-member" type="hidden" value="{{asset($team->image)}}"> 
+                    </div>
+                @endforeach
+                </div>
+
+                <div class="flex justify-around w-full absolute members-image-container"> 
+                    @foreach ($teams as $team) 
+                        <img src="{{asset($team->image)}}" id="member-{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt="">
+                    @endforeach
+                </div>
+                
+            </div>
+
+
+            <div class="col-lg-4 col-sm-12">
+                <div class=" relative">
+                    <img class="w-full team-image relative" src="{{asset($firstTeam->image)}}" alt="">
+                </div>
+                
+            </div>
+        </div>
+
+        @else
+
+        @endif
+            
+
+            <!-- --------------------------------------------------------------mobile -->
+            <div id="team-mobile" class="w-full">
+                <div class=" relative">
+                    <img class="w-full relative" src="{{asset('img/johndoe.png')}}" alt="">
+                    <div class="slick-mobile-container">
+                        <div class="team-arrow-container-mobile flex h-full w-full justify-between">
+                            <i class="cursor-pointer prev-mobile team-arrow fas fa-chevron-left"></i>
+                            <i class="cursor-pointer next-mobile team-arrow fas fa-chevron-right"></i>
+                        </div>
+                        
+                        <div class="flex h-full w-full absolute members-image-container-mobile">
+                            <img class="cursor-pointer membre-img-mobile" src="{{asset('img/membre1.png')}}" alt="">
+                            <img class="cursor-pointer membre-img-mobile" src="{{asset('img/membre2.png')}}" alt="">
+                            <img class="cursor-pointer membre-img-mobile" src="{{asset('img/membre4.png')}}" alt="">
+                            <img class="cursor-pointer membre-img-mobile" src="{{asset('img/membre5.png')}}" alt="">
+                        </div>
+                    
+                    </div>
+
+                </div>
+
                 <div class="member-bio-container">
                     <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">Jean Leroy</h3>
                     <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> Lorem ipsum dolor </p>
@@ -143,50 +207,38 @@ Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue
                     aucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.
                     </p>
                 </div>
-                <div class="team-arrow-container flex justify-between">
-                    <i class="team-arrow fas fa-chevron-left"></i>
-                    <i class="team-arrow fas fa-chevron-right"></i>
-                </div>
-                <div class="flex justify-around w-full absolute members-image-container">
-                    <img class="membre-img" src="{{asset('img/membre1.png')}}" alt="">
-                    <img class="membre-img" src="{{asset('img/membre2.png')}}" alt="">
-                    <img class="membre-img" src="{{asset('img/membre4.png')}}" alt="">
-                    <img class="membre-img" src="{{asset('img/membre5.png')}}" alt="">
-                </div>
-            </div>
 
-            <div class="col-lg-4 col-sm-12">
-                <div class=" relative">
-                    <img class="w-full team-image relative" src="{{asset('img/johndoe.png')}}" alt="">
-                </div>
-                <div class=" team-image-mobile" style="background: url('{{asset('img/johndoe.png')}}'); background-repeat: no-repeat;
-                                        background-size: cover;
-                                        background-position: center center;">
-                </div>
-                
             </div>
 
 
-        </div>
-            
-        @if ($teams ?? '')
-            @foreach ($teams as $team)
-                <div class="card">
-                    <div class="card-top">
-                        <img src="{{asset($team->image)}}" class="img-fluid " alt="">
-                    </div>
-                    <div class="card-body">
-                        <p>{{$team->firstname}} {{$team->lastname}} </p>
-                        <p>{{$team->job_title}}</p> 
-                        <p>{{$team->desc}}</p>
-                    </div>
-                </div>
-            @endforeach
-            </div>
-        @else
-            <div>
-                <p>No Teammate for the moment</p>
-            </div>
-        @endif
+           
+            <!-- -------------------------------------------------------------- -->
     </section>
+
+    <script>
+
+        let mainImage = $("#img-product").attr('src');
+        let bioContainer = $("#memberBioContainer");
+
+        let idMember = $('#id-member').val();
+        let firstNameMember = $('#firstName-member').val();
+        let lastrNameMember  = $('#lastName-member').val();
+        let jobMember  = $('#jobTitle-member').val();
+        let descMember  = $('#desc-member').val();
+        let imageMember  = $('#image-member').val();
+
+        //  get all  small images in variable
+        let C_Image = $('.product-miniature-img');
+        // set the clicked image in big image container
+        $(C_Image).each(function(){
+            $(this).click(function(){
+                    let member = $(this).attr('id');
+                    // console.log(member)
+                    // $("#img-product").attr('src', sourceImg)
+                    bioContainer.html("");
+                    bioContainer.append('<h3 class="name-member" >'+ firstNameMember +'</h3')  
+            });
+        });
+    </script>
+
 @endsection

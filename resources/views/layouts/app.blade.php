@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+        @livewireStyles
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/main.css') }}">
         <link rel="stylesheet" href="{{ asset('css/animation.css') }}">
@@ -25,20 +26,21 @@
         <link rel="stylesheet" href="{{ asset('css/about.css') }}">
         <link rel="stylesheet" href="{{ asset('css/product.css') }}">
         <link rel="stylesheet" href="{{ asset('css/contact.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
         <link rel="stylesheet" href="{{ asset('js/sal.js/dist/sal.css') }}">
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.css'/>
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css' />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css'/>
         
-
-        @livewireStyles
         <!-- Scripts -->
-        
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.js" defer></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.js" defer></script> -->
         <script src="{{ asset('js/app.js') }}"></script>
+        <script src="{{ asset('js/animation.js') }}"></script>
     </head>
     <body class="font-sans antialiased">
+    @livewireScripts
         <div class="min-h-screen ">
             @auth
                 @include('layouts.navigation')
@@ -50,7 +52,7 @@
                             <a href="{{route('about')}}" class="nav-link">About us</a>
                             <a href="{{route('products')}}" class="nav-link">Products</a>
                             <a href="{{route('contact')}}" class="nav-link">Contact</a>
-                            <a href="#"><span class="fas fa-user nav-user-button bg-red-700 text-white"></span></a>
+                            <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button bg-red-700 text-white"></span></a>
                         </div>
                 </div>
             </nav>
@@ -96,7 +98,6 @@
     <script>
         sal()
     </script>
-    <script src="{{ asset('js/animation.js') }}"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.js'></script>
     

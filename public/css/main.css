@@ -5,16 +5,22 @@
     padding-left: 0!important;
 }
 
-body{
-    overflow-x: hidden;
+body, html{
+    overflow-x: hidden!important;
 }
 
 
 /* font */
 
+p{
+    color: #2B465A;
+}
+
 a, p, h1, h2, h3, h4, h5{
     font-family: 'Roboto', sans-serif;
 }
+
+/* */
 
 
 /* footer */

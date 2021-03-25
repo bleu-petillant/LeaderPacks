@@ -21,7 +21,8 @@ class MainController extends Controller
     {
         $aboutpage = AboutPage::first();
         $teams = Team::all();
-        return view('about',compact(['aboutpage','teams']));
+        $firstTeam = Team::where('id',1)->first();
+        return view('about',compact(['aboutpage','teams','firstTeam']));
     }
 
     public function product()
