@@ -13,7 +13,7 @@
 </header>
 <section>
     <div class="flex container-contact">
-        <div class="col-lg-4">
+        <div class="col-lg-4 container-map">
             <img class="map-contact" src="{{asset('img/rectanglemap.png')}}" alt="">
             <div id="horizontale-contact-circles" class="horizontale-point-content">
                 <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>

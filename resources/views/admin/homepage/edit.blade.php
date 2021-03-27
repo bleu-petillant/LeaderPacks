@@ -96,7 +96,7 @@
                         <div style="max-width:100%;max-height:250px;">
                             <figure class="figure">
                                 <figcaption class="figure-caption text-right">Your actual image</figcaption>
-                                <img src="{{ asset($homepage->product_image) }}" class="figure-img img-fluid" alt="">
+                                <img style="width: 50%;" src="{{ asset($homepage->product_image) }}" class="figure-img img-fluid" alt="">
                             </figure>
                         </div>
                         <div>

@@ -68,12 +68,15 @@
 
 /*map*/
 
+.container-map{
+    height: max-content;
+}
 
 .map-contact{
     position: relative;
     z-index: 4;
     margin-bottom: 110px;
-    width: 78%;
+    /* width: 78%; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -81,7 +84,7 @@
 .adress-container{
     background-color: #2470A1;
     position: absolute;
-    bottom: 19vh;
+    bottom: 0;
     right: 0;
     z-index: 1;
     padding: 72px 10px 10px 10px;
@@ -90,17 +93,17 @@
 #horizontale-contact-circles{
     position: absolute;
     z-index: 1;
-    right: 5px;
+    right: 42px;
     top: 0;
-    bottom: 20vh;
+    bottom: 0;
     margin: auto 0;
-    height: fit-content;
+    height: 160px;
 }
 
 /* contact form */
 
 .contact-form{
-    margin-top: 7vh;
+    margin-top: 16vh;
     padding: 3% 5%;
 }
 

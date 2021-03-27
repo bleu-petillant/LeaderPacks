@@ -29,11 +29,89 @@
     padding: 8px;
     font-size: 15px;
     border-radius: 50%;
-    margin-top: 10px;
 }
 
 
 .link-red-user-button{
     height: max-content;
     margin: auto;
+}
+
+/* mobile menu */
+
+
+#mainbox{
+    position: absolute;
+    color: #2B465A;
+    top: 24px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+    cursor: pointer;
+}
+
+.sidemenu{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    width: 0px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0px 4px 55px rgba(0, 0, 0, 0.25);
+    overflow-x: hidden;
+    transition: all .5s;
+}
+
+.sidemenu a{
+    padding: 14px 8px 14px 8px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #02558B;
+    display: block;
+    text-align: center;
+}
+
+.sidemenu a:hover{
+    color: black;
+}
+
+.sidemenu .closebtn{
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 32px;
+}
+
+/* mobile */
+
+#mobile-menu{
+    display: none;
+}
+
+.mobile-menu-link{
+    margin-top: 13vh;
+}
+
+.logo-mobile{
+    margin: 10vh auto;
+    width: 26%;
+}
+
+
+/* Responsive */
+
+@media (max-width: 800px){
+
+    #laptop-menu{
+        display: none;
+    }
+
+    #mobile-menu{
+        display: block;
+    }
+    
 }

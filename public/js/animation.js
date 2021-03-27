@@ -59,7 +59,7 @@ $(document).ready(function(){
     }) 
 
     $('.members-image-container-mobile').slick({
-        infinite: true,
+        infinite: false,
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,

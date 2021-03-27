@@ -12,6 +12,8 @@
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('admin/css/adminlte.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.9.2/tailwind.min.css" integrity="sha512-l7qZAq1JcXdHei6h2z8h8sMe3NbMrmowhOl+QkP3UhifPpCW2MC4M0i26Y8wYpbz1xD9t61MLT9L1N773dzlOA==" crossorigin="anonymous" />
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css'/>
     <!-- Google Font: Source Sans Pro -->
@@ -40,59 +42,60 @@
 <!-- /.navbar -->
 
 <!-- Main Sidebar Container -->
-<aside class="main-sidebar  elevation-4" style="background-color: #6d7aea;">
+<aside class="main-sidebar  elevation-4" >
 
-    <div class="sidebar">
-    </div>
+                    <a class="m-auto" href="{{ route('home') }}">
+                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                    </a>
 
     <!-- Sidebar Menu -->
-    <nav class="mt-2">
+    <nav class="pt-8 sidebar-menu">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-            <li class="nav-item my-2 bg-white hover:bg-black hover:text-white ">
+            <li class="nav-item nav-item-admin my-2 ">
                 <a href="{{route('homepage.index')}}" class="nav-link">
                     <i class="nav-icon fas fa-building"></i>Build Home page
                 </a>
             </li>
-            <li class="nav-item my-2 bg-white hover:bg-black hover:text-white ">
+            <li class="nav-item nav-item-admin my-2  ">
                 <a href="{{route('aboutpage.index')}}" class="nav-link">
                     <i class="nav-icon fas fa-users"></i>Build About page
                 </a>
             </li>
-            <li class="nav-item my-2 bg-white">
+            <li class="nav-item nav-item-admin my-2 ">
                 <a href="{{route('productpage.index')}}" class="nav-link">
                         <i class="nav-icon fas fa-store"></i>Build Product page
                 </a>
             </li>
-            <li class="nav-item my-2 bg-white">
+            <li class="nav-item nav-item-admin my-2 ">
                 <a href="{{route('contactpage.index')}}" class="nav-link">
                         <i class="nav-icon fas fa-envelope"></i>Build Contact page
                 </a>
             </li>
-            <li class="nav-item my-2 bg-white">
+            <li class="nav-item nav-item-admin my-2 ">
                 <a href="{{ route('team.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-user-plus"></i>Manage the Team
                 </a>
             </li>
-            <li class="nav-item my-2 bg-white">
+            <li class="nav-item nav-item-admin my-2 ">
                 <a href="{{ route('home') }}" class="nav-link" target="_blank">
                     <i class="nav-icon fas fa-eye"></i>See the website
                 </a>
             </li>
             <div class="divide-y ">
-                {{-- <li class="nav-item my-2 bg-white mt-5">
+                {{-- <li class="nav-item nav-item-admin my-2  mt-5">
                     <a class="nav-link" href="{{ route('admin.dashboard') }}" :active="request()->routeIs('admin.dashboard')">
                         <i class="nav-icon fas fa-cog px-2"></i>Settings
                     </a>
                 </li> --}}
-                <li class="nav-item my-2 bg-white">
+                <li class="nav-item nav-item-admin my-2 ">
                     <a class="nav-link" href="{{ route('admin.list') }}" :active="request()->routeIs('admin.list')">
                         <i class="nav-icon fas fa-key px-2"></i>Manage Admins
                     </a>
                 </li>
-            <li class="nav-item my-2 bg-gradient-dark mt-2">
+            <li class="nav-item my-2 mt-2">
                 <form method="POST" action="{{ route('logout') }}">
                     @csrf
-                    <a class="nav-link text-white" href="{{ route('logout') }}"
+                    <a class="nav-link nav-item-admin-logout " href="{{ route('logout') }}"
                             onclick="event.preventDefault();
                             this.closest('form').submit();">
                         <i class="nav-icon fas fa-sign-out-alt px-2"></i>{{ __('Logout') }}
