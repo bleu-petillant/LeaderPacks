@@ -22,24 +22,23 @@ class TeamTable extends LivewireDatatable
              
 
             Column::name('teammates')
-                ->label('Teammates')
+                ->label('Department')
                 ->filterable(),
                 
                 Column::name('job_title')
-                ->label('Job Title'),
+                ->label('Slogan'),
 
 
             Column::callback(['image'], function ($image) {
 
                 return view('admin.action.columunimage', ['image'=>$image]);
                
-            })->label('Image Profile'),
+            })->label('Profile Picture'),
 
             Column::callback(['id'], function ($id) {
                
-                    return view('admin.action.teamaction', ['id' => $id]);
+                return view('admin.action.teamaction', ['id' => $id]);
          
-
             }),
            
 

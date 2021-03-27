@@ -26,7 +26,7 @@ class Admintables extends LivewireDatatable
                  ->filterable(),
 
             Column::name('name')
-                ->label('Nom')
+                ->label('Name')
                 ->defaultSort('asc')
                 ->filterable(),
 

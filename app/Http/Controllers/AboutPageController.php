@@ -110,7 +110,7 @@ class AboutPageController extends Controller
 
         $aboutpage->save();
 
-        $request->session()->flash('success', 'congratulation! the aboutpage has been modified successfully');
+        $request->session()->flash('success', 'Congratulations ! The About us page has been modified successfully.');
         return redirect('/about us');
     }
 

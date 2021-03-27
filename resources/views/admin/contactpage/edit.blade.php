@@ -7,7 +7,7 @@
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
                     <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Conatct page builder</li>
+                    <li class="breadcrumb-item active">Contact page builder</li>
                 </ol>
             </div><!-- /.col -->
         </div><!-- /.row -->
@@ -20,14 +20,14 @@
                 @method('PATCH')
                 @csrf
                 <section id="contact_page" class="card my-4">
-                    <h2 class=" font-bold text-4xl text-center"> Contact section</h2>
+                    <h2 class=" font-bold text-4xl text-center"> Contact</h2>
                     <div class="card-body">
-                        <h3 class="text-2xl">Change the contact section text :</h3>
+                        <h3 class="text-2xl">Change text :</h3>
                         <textarea name="contact_text" id="contact_text" cols="150"  minlength="100" maxlength="255">{{$contactpage->contact_text}}</textarea>
-                        <span id="compt_spirit" class="text-right">0 mot(s) | 255 caractère(s) restant(s)</span>
+                        <span id="compt_spirit" class="text-right">max 255 signs</span>
                     </div>
                 </section>
-                    <button class="btn btn-success btn-md" type="submit"><span class="fas fa-pen pr-2"></span>Apply change to contact page</button>
+                    <button class="btn btn-success btn-md" type="submit"><span class="fas fa-pen pr-2"></span>Update contact page</button>
                 </div>
             </form>
         </div>

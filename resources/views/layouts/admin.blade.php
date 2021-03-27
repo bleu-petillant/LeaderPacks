@@ -58,7 +58,7 @@
             </li>
             <li class="nav-item nav-item-admin my-2  ">
                 <a href="{{route('aboutpage.index')}}" class="nav-link">
-                    <i class="nav-icon fas fa-users"></i>Build About page
+                    <i class="nav-icon fas fa-users"></i>Build About us page
                 </a>
             </li>
             <li class="nav-item nav-item-admin my-2 ">
@@ -73,7 +73,7 @@
             </li>
             <li class="nav-item nav-item-admin my-2 ">
                 <a href="{{ route('team.index') }}" class="nav-link">
-                    <i class="nav-icon fas fa-user-plus"></i>Manage the Team
+                    <i class="nav-icon fas fa-user-plus"></i>Manage Team
                 </a>
             </li>
             <li class="nav-item nav-item-admin my-2 ">

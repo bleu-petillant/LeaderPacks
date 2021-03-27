@@ -10,7 +10,7 @@
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Dashboard</a></li>
-                        <li class="breadcrumb-item active">Add a new teammate</li>
+                        <li class="breadcrumb-item active">Add a new department</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -20,18 +20,18 @@
                 <form class="text-center" action="{{route('team.store')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     @include('includes.errors')
-                    <label for="teammates">teammates</label>
+                    <label for="teammates">Department</label>
                     <input type="text" id="teammates" name="teammates" class="form-control my-4" autofocus placeholder="Tom" required>
-                    <label class="label" for="job_title">Job Title</label>
+                    <label class="label" for="job_title">Slogan</label>
                         <input type="text" name="job_title" id="job_title" class="form-control my-4" required placeholder="Actor (Loki)">
                         <div class="container my-2">
-                            <label for="desc">Enter a little description here: (max 255 character)</label> <br>
+                            <label for="desc">Enter a little description here: (max 255 signs)</label> <br>
                             <textarea name="desc" id="desc" cols="50"></textarea>
                         </div>
 
                     <div class="container my-5">
                          <div class="col-lg-4">
-                         <h3 class="text-2xl">Add your image profil :</h3>
+                         <h3 class="text-2xl">Add your profile picture</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
                                 onchange="return fileValidation()">
@@ -41,13 +41,13 @@
                     </div>
                     <div id="imagePreview" class="col-lg-6">
                         <div class="col-lg-4">
-                            <img src="https://akns-images.eonline.com/eol_images/Entire_Site/2016520/rs_600x600-160620064301-600.Tom-Hiddleston.jpg?fit=around%7C1080:1080&output-quality=90&crop=1080:1080;center,top" class="img-fluid" alt="avatar">
+                            <img src="" class="img-fluid" alt="avatar">
                         </div>
                     <div>
                      </div>
                     </div>
                     </div>
-                    <button class="btn btn-outline-pink raleway my-4" type="submit"><span class="fas fa-plus pr-2"></span>Add this teammate ?</button>
+                    <button class="btn btn-outline-pink raleway my-4" type="submit"><span class="fas fa-plus pr-2"></span>Add this department</button>
                 </form>
             </div>
         </div>
