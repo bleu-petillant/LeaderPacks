@@ -12,8 +12,8 @@
         <a href=""><i class="icon-header-contact fas fa-phone-alt"></i></a>
 </header>
 <section>
-    <div class="flex container-contact">
-        <div class="col-lg-4 container-map">
+    <div class="row container-contact">
+        <div class="col-lg-4 col-sm-12 container-map">
             <img class="map-contact" src="{{asset('img/rectanglemap.png')}}" alt="">
             <div id="horizontale-contact-circles" class="horizontale-point-content">
                 <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
@@ -31,7 +31,7 @@
                 <p class="text-white">Zona de Industria Ligeira<br>Rua Hervé Joseph Matias, Lote 10-A, 7580-250, <br>Alcácer do Sal, Portugal. </p>
             </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 col-sm-12">
             <p class="text-white contact-text ">{{$contactpage->contact_text}} </p>
 
             <div class="contact-form">

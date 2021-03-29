@@ -58,8 +58,8 @@
             </nav>
             <!-- ------------------- mobile nav -->
             <nav id="mobile-menu">
-                <div class="flex">
-                    <a href="{{route('home')}}" class="nav-logo"><img src="{{asset('img/logo.png')}}" alt="" style="width: 86%;"></a> 
+                <div class="flex mobile-flex">
+                    <a href="{{route('home')}}" class="nav-logo"><img class="logo-mobile-img" src="{{asset('img/logo.png')}}" alt="" ></a> 
                     <div class="menu-mobile-container">  
                         <div id="mainbox" onclick="openFunction()"><i class="fas fa-bars"></i></div>
                         <div id="menu" class="sidemenu">
@@ -98,8 +98,8 @@
             </main>
             
         </div>
-    <footer class="flex relative ">
-        <div class="">
+    <footer class="row relative ">
+        <div class="col-lg-6 col-sm-12">
             <img class="footer-logo" src="{{asset('img/logo-white.svg')}}" alt="">
             <div class="footer-contact">
                 <p class="text-white" >Zona de Industria Ligeira <br>
@@ -109,7 +109,7 @@
                 <a  class="text-white" href="">06.00.00.00.00</a>
             </div>
         </div>
-        <div class=" footer-legale">
+        <div class=" col-lg-6 col-sm-12 footer-legale">
             <p class="mention-legale"><a href="">Mentions Légales</a> </p>
             <p>©2021</p>
 

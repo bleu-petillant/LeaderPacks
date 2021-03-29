@@ -114,6 +114,7 @@
     border-right:0 ;
     margin: 10px 0px 10px 0px;
     position: relative;
+    width: 100%;
 }
 
 .empty-input{
