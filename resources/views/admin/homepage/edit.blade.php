@@ -46,10 +46,11 @@
                             <div id="alertvideo"></div>
                         </div>
                         
-                        <div id="videoPreview" class="col-lg-4">
+                        <div id="current_video_preview" class="col-lg-4">
                             <iframe width="560" height="315" src="{{$homepage->header_video}}" frameborder="0"
                                 allowfullscreen></iframe> 
                         </div>
+                        <div id="header_video_preview"></div>
                     </div>
                     <div class="card-body">
                         <h3 class="text-2xl">Change header :</h3>
@@ -242,15 +243,41 @@
     }
 
     function videoValidation() {
-        console.log('try change video');
-        var videolink = document.getElementById('header_video');
-        let link_src = videolink.value;
+  
+        var fileInput =  document.getElementById('header_video'); 
+              
+            var filePath = fileInput.value; 
+          var alert = document.getElementById('alertvideo');
+            // Allowing file type 
+            var allowedExtensions =  
+                    /(\.mp4)$/i; 
+              
+            if (!allowedExtensions.exec(filePath)) { 
+                
+                alert.innerHTML = "";
+                alert.innerHTML = '<span class="text-danger font-bold">Ceci n\'est pas une vidéo valide. Seules les extensions (mp4, mov, avi) sont autorisées ici.</span>';
+                fileInput.value = ''; 
+                 document.getElementById( 'header_video_preview').innerHTML ="";
+                 document.getElementById( 'current_video_preview').innerHTML ="";
+                return false; 
+            }  
+            else  
+            { 
+               alert.innerHTML = "";
+                // Image preview 
+                if (fileInput.files && fileInput.files[0]) { 
+                    var reader = new FileReader(); 
+                    reader.onload = function(e) { 
+                        document.getElementById('current_video_preview').innerHTML='';
+                        document.getElementById( 
+                            'header_video_preview').innerHTML =  
+                            '<video controls playsinline width="800" height"800"'+ ' src="' + e.target.result +'">'+'</video>'; 
+                    }; 
+                      
+                    reader.readAsDataURL(fileInput.files[0]); 
+                } 
+            } 
 
-        var alertvideo = document.getElementById('alertvideo');
-        alertvideo.innerHTML = "";
-        // Video preview 
-        document.getElementById('videoPreview').innerHTML =
-            '<iframe width="560" height="315"  src="' + link_src +' " frameborder="0 " allowfullscreen></iframe>'; 
     };
 
 </script>

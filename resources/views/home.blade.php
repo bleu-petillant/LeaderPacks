@@ -17,13 +17,18 @@
     <section id="header_homepage" class="flex ">
         <div class="col-lg-6 col-sm-12 relative ">
             <div class="flex relative">
+                @if (!empty($homepage->header_video))
             <video controls>
-                <source src="maVideo.mp4" type="video/mp4">
-                <source src="maVideo.webm" type="video/webm">
+                <source src="{{asset($homepage->header_video)}}" type="video/mp4">
+                <source src="{{asset($homepage->header_video)}}" type="video/webm">
                 <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
                     Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a>.</p>
             </video>
-                <iframe class=" video-home" src="{{$homepage->header_video}}" frameborder="0 " allowfullscreen></iframe>
+                <iframe class=" video-home" src="{{asset($homepage->header_video)}}" frameborder="0 " allowfullscreen></iframe>
+                @endif
+                @if ($homepage->header_image ?? '')
+                    <img src="{{asset($homepage->header_image)}}" alt="">
+                @endif
             </div>
             <div id="horizontale-video-circles" class="horizontale-point-content">
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
