@@ -17,6 +17,12 @@
     <section id="header_homepage" class="flex ">
         <div class="col-lg-6 col-sm-12 relative ">
             <div class="flex relative">
+            <video controls>
+                <source src="maVideo.mp4" type="video/mp4">
+                <source src="maVideo.webm" type="video/webm">
+                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                    Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a>.</p>
+            </video>
                 <iframe class=" video-home" src="{{$homepage->header_video}}" frameborder="0 " allowfullscreen></iframe>
             </div>
             <div id="horizontale-video-circles" class="horizontale-point-content">

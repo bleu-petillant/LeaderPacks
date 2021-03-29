@@ -32,18 +32,22 @@
                         
                         <div class="yellow msg">
                             <p>Image</p>
-                            <input type="url" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
-                            id="header_video" onchange="return videoValidation() " required>
+                            <input type="file" class="form-control my-2" value="{{$homepage->header_image}}" name="header_image"
+                            id="header_image" onchange="return fileValidation() " required>
+                            <div id="alert-image"></div>
                         </div>
                         <div class="red msg">
                             <p>video</p>
-                            <input type="url" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
-                            id="header_video" onchange="return videoValidation() " required>
+                            <input type="file" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
+                            id="header_video" onchange="return videoValidation() " required> 
+                            <label class="custom-file-label" for="image">Sélectionner une image</label>
+                            <div id="alertvideo"></div>
                         </div>
-                        <div id="alertvideo"></div>
+                        
                         <div id="videoPreview" class="col-lg-4">
                             <iframe width="560" height="315" src="{{$homepage->header_video}}" frameborder="0"
-                                allowfullscreen></iframe>
+                                allowfullscreen></iframe> 
+                                <label class="custom-file-label" for="image">Sélectionner une video</label>
                         </div>
                     </div>
                     <div class="card-body">
