@@ -178,9 +178,10 @@
             <!-- --------------------------------------------------------------mobile -->
             <div id="team-mobile" class="w-full">
                 <div class=" relative">
-                    <div id="teamImage" class="w-full relative">
+                    <div id="teamImageMobile" class="w-full relative">
                         <div id="{{$team->id}}" class="w-full team-image-mobile relative"  style="background: url('{{asset($firstTeam->image)}}')"></div>
                     </div>
+
                     <div class="slick-mobile-container">
                         <div class="team-arrow-container-mobile flex h-full w-full justify-between">
                             <i class="cursor-pointer prev-mobile team-arrow fas fa-chevron-left"></i>
@@ -191,7 +192,7 @@
                             @foreach ($teams as $team) 
                             <form action="" method="post">
                             @csrf
-                                <div id="{{$team->id}}" class="miniature-img-team-mobile cursor-pointer" style="background: url('{{asset($team->image)}}')"></div>
+                                <div id="{{$team->id}}" class="miniature-img-team-mobile mini-mobile cursor-pointer" style="background: url('{{asset($team->image)}}')"></div>
                                 <!-- <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt=""> -->
                             </form>
                             @endforeach
@@ -201,7 +202,7 @@
 
                 </div>
 
-                <div class="member-bio-container">
+                <div id="memberBioContainerMobile" class="member-bio-container">
                     <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">{{$firstTeam->teammates}} </h3>
                     <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> {{$firstTeam->job_title}}</p>
                     <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
@@ -216,18 +217,12 @@
             <!-- -------------------------------------------------------------- -->
     </section>
     <script src="{{asset('js/Members.js')}}"></script>
+    <script src="{{asset('js/MobileMembers.js')}}"></script>
+    
     <script>
         const member_obj = new Members();
-        let mainImage = $("#img-product").attr('src');
-        let bioContainer = $("#memberBioContainer");
-
-        let idMember = $('#id-member').val();
-        let firstNameMember = $('#firstName-member').val();
-        let lastrNameMember  = $('#lastName-member').val();
-        let jobMember  = $('#jobTitle-member').val();
-        let descMember  = $('#desc-member').val();
-        let imageMember  = $('#image-member').val();
-        let C_Image = $('.product-miniature-img');
+        const member_mobile_obj = new MembersMobile();
+     
 
     </script>
 

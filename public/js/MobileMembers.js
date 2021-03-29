@@ -1,20 +1,16 @@
-class Members
+class MembersMobile
 {
     constructor()
     {
-        let bioContainer = $("#memberBioContainer");
-        console.log(bioContainer);
-        this.C_Image = $('.miniature-img-team');
-        
         this.init();
     }
     init()
     {
-       this.C_Image.each(function(){
+        $('.miniature-img-team-mobile').each(function(){
             $(this).click(function(e){
-                
+                    console.log('mobile')
                     let member_id = $(this).attr('id');
-                    $("#memberBioContainer").html("");
+                    $("#memberBioContainerMobile").html("");
                 
                 $.ajaxSetup({
                     // make the header special laravel  Ajax
@@ -30,7 +26,7 @@ class Members
                     success:function(response){
                         if(response) {
     
-                            member_obj.SetMembers(response[0]); 
+                            member_mobile_obj.SetMembersMobile(response[0]); 
                             
                         }else{
                             // error no response
@@ -43,7 +39,7 @@ class Members
 
     }
 
-    SetMembers(data)
+    SetMembersMobile(data)
     {
         const base_url = window.location.origin;
         let teammates = data.teammates;
@@ -51,8 +47,8 @@ class Members
         let desc = data.desc;
         let image = data.image;
   
-        let bioContainer = $("#memberBioContainer");
-        let imageContainer = $("#teamImage");
+        let bioContainer = $("#memberBioContainerMobile");
+        let imageContainer = $("#teamImageMobile");
 
         imageContainer.html("");
         bioContainer.html("");
@@ -60,7 +56,7 @@ class Members
         bioContainer.append('<p class="fonction-member">' +job + '</p>');
         bioContainer.append('<p class="description-member">' +desc+ '</p>');
         // imageContainer.append(' <img class="w-full team-image relative" src="'+base_url+'/'+image+'" alt="">')
-        imageContainer.append('<div id="{{$team->id}}" class="w-full team-image relative"  style="background: url('+image+')"></div>');
+        imageContainer.append('<div id="{{$team->id}}" class="w-full team-image-mobile relative"  style="background: url('+image+')"></div>');
         
     }
 

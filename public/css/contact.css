@@ -93,7 +93,7 @@
 #horizontale-contact-circles{
     position: absolute;
     z-index: 1;
-    right: 42px;
+    right: 0px;
     top: 0;
     bottom: 0;
     margin: auto 0;
@@ -154,3 +154,70 @@
     box-shadow: 0px 0px 18px rgb(0 0 0 / 15%);
 }
 
+/*mobile*/
+
+.map-contact-mobile{
+    position: relative;
+    z-index: 4;
+    margin-bottom: 110px;
+    width: 78%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.map-contact-mobile{
+    display: none;
+}
+
+.contact-text-mobile{
+    display: none;
+}
+
+/*responsive */
+
+@media (max-width: 992px){
+
+
+    .container-contact{
+        margin-top: -5vh;
+    }
+
+    .contact-text{
+        display: none;
+    }
+
+    .map-contact{
+        display: none;
+    }
+
+    .map-contact-mobile{
+        display: block;
+    }
+
+    .contact-text{
+        display: none;
+    }
+
+    .contact-text-mobile{
+        display: block;
+    }
+
+
+    .contact-form{
+        margin-top: 3vh;
+        padding: 3% 5%;
+    }
+
+    #horizontale-contact-circles{
+        position: absolute;
+        right: initial;
+        top: initial;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+        margin:  initial;
+        height: 160px;
+    }
+    
+}

@@ -22,10 +22,24 @@
                 @csrf
                 <section id="header_homepage" class="card my-4">
                     <h2 class=" font-bold text-4xl text-center">Header</h2>
-                    <div class="col-lg-10 my-4 flex">
-                        <label class="label" for="header_video">Youtube video link (change it if needed)</label>
-                        <input type="url" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
+                    <div class="col-lg-10 my-4 ">
+                        <label class="label" for="header_video">Add video or Image</label>
+                        
+                        <div class="flex">
+                            <input type="radio" name="color" value="yellow"> image
+                            <input type="radio" name="color" value="red"> video
+                        </div>
+                        
+                        <div class="yellow msg">
+                            <p>Image</p>
+                            <input type="url" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
                             id="header_video" onchange="return videoValidation() " required>
+                        </div>
+                        <div class="red msg">
+                            <p>video</p>
+                            <input type="url" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
+                            id="header_video" onchange="return videoValidation() " required>
+                        </div>
                         <div id="alertvideo"></div>
                         <div id="videoPreview" class="col-lg-4">
                             <iframe width="560" height="315" src="{{$homepage->header_video}}" frameborder="0"
@@ -115,7 +129,17 @@
 
 <script>
     $(document).ready(function () {
-      
+
+
+        $('input[type="radio"]').click(function(){
+            var val = $(this).attr("value");
+            var target = $("." + val);
+            $(".msg").not(target).hide();
+            $(target).show();
+        });
+
+        //
+        
         $('#alert').html("");
         $('#alertvideo').html("");
 

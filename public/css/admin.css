@@ -19,3 +19,12 @@
 .nav-item-admin-logout{
     color: red!important;
 }
+
+
+/*hide/show image/video*/
+
+.msg{
+    margin-top: 25px;
+    padding: 25px;
+    display: none;
+  }

@@ -15,6 +15,12 @@
     <div class="row container-contact">
         <div class="col-lg-4 col-sm-12 container-map">
             <img class="map-contact" src="{{asset('img/rectanglemap.png')}}" alt="">
+            <!-- ------------------- mobile -->
+            <div>
+                <img class="map-contact-mobile" src="{{asset('img/rectangle128.png')}}" alt="">
+            </div>
+           
+            <!-- ------------------- -->
             <div id="horizontale-contact-circles" class="horizontale-point-content">
                 <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                 <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
