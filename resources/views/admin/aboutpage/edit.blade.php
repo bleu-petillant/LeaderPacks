@@ -20,7 +20,7 @@
                 @method('PATCH')
                 @csrf
                 <section id="our_spirit" class="card my-4">
-                    <h2 class=" font-bold text-4xl text-center">Our Spirit</h2>
+                    <h2 class=" font-bold text-4xl text-center">Our values</h2>
                     <div class="d-flex">
                     <div class="col-lg-4">
                          <h3 class="text-2xl">Change image :</h3>
@@ -44,24 +44,24 @@
                     </div>
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
-                        <textarea class="tiny" name="spirit_text" id="spirit_text" cols="150"  minlength="100" maxlength="255">{{$aboutpage->spirit_text}}</textarea>
-                        <span id="compt_spirit" class="text-right">max 255 signs</span>
+                        <textarea class="tiny" name="spirit_text" id="spirit_text" cols="150"  minlength="100" maxlength="650">{{$aboutpage->spirit_text}}</textarea>
+                        <span id="compt_spirit" class="text-right">max 650 signs</span>
                     </div>
                 </section>
                 <section class="card my-4" id="factory_aboutpage">
                     <h2 class=" font-bold text-4xl text-center card-text"> Factory</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
-                        <textarea class="tiny" name="factory_text" id="factory_text" cols="150"  minlength="100" maxlength="255">{{$aboutpage->factory_text}}</textarea>
-                        <span id="compt_factory" class="text-right">max 255 signs</span>
+                        <textarea class="tiny" name="factory_text" id="factory_text" cols="150"  minlength="100" maxlength="575">{{$aboutpage->factory_text}}</textarea>
+                        <span id="compt_factory" class="text-right">max 575 signs</span>
                     </div>
                 </section>
                 <section id="research_aboutpage" class="card my-4">
-                      <h2 class=" font-bold text-4xl text-center card-text">Research & Development</h2>
+                    <h2 class=" font-bold text-4xl text-center card-text">Wordlwide commercial organization</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
-                        <textarea name="research_text" class="tiny" id="research_text" cols="150" required>{{$aboutpage->research_text}}</textarea>
-                        <span id="compt_research" class="text-right">max 255 signs</span>
+                        <textarea name="research_text" class="tiny" id="research_text" cols="150" minlength="100" maxlength="550" required>{{$aboutpage->research_text}}</textarea>
+                        <span id="compt_research" class="text-right">max 550 signs</span>
                     </div>
                 </section>
                     <button class="btn btn-success btn-md" type="submit"><span class="fas fa-pen pr-2"></span>Update the About us page</button>

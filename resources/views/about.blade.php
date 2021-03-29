@@ -111,7 +111,10 @@
         <h2 class="uppercase about-h2 recherche-title">Wordlwide commercial organization</h2>
         <div class="row mt-3">
             <div class="col-lg-6 col-sm-12">
-                <p class="recherche-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce"> {!!$aboutpage->research_text!!} </p>
+                <div class="recherche-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+                    {!!$aboutpage->research_text!!} 
+                </div>
+                
 
             </div>
             <div class="col-lg-6 col-sm-12 relative" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="400" data-sal-easing="ease-out-bounce">
@@ -142,24 +145,26 @@
                     <i class="cursor-pointer prev team-arrow fas fa-chevron-left"></i>
                     <i class="cursor-pointer next team-arrow fas fa-chevron-right"></i>
                 </div>
-                <div>
-                </div>
 
-                <div class="flex justify-around w-full absolute members-image-container"> 
-                    @foreach ($teams as $team) 
-                    <form action="" method="post">
-                    @csrf
-                        <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt="">
-                    </form>
-                    @endforeach
-                </div>
+                <!-- <div class="team-miniature-container"> -->
+                    <div class="flex justify-around w-full absolute members-image-container"> 
+                        @foreach ($teams as $team) 
+                        <form action="" method="post">
+                        @csrf
+                            <div id="{{$team->id}}" class="miniature-img-team cursor-pointer" style="background: url('{{asset($team->image)}}')"></div>
+                            <!-- <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt=""> -->
+                        </form>
+                        @endforeach
+                    </div>
+                <!-- </div> -->
+
                 
             </div>
 
 
             <div class="col-lg-4 col-sm-12">
                 <div id="teamImage" class=" relative">
-                    <img class="w-full team-image relative" src="{{asset($firstTeam->image)}}" alt="">
+                    <div id="{{$team->id}}" class="w-full team-image relative"  style="background: url('{{asset($firstTeam->image)}}')"></div>
                 </div>
                 
             </div>
@@ -173,7 +178,9 @@
             <!-- --------------------------------------------------------------mobile -->
             <div id="team-mobile" class="w-full">
                 <div class=" relative">
-                    <img class="w-full relative" src="{{asset('img/johndoe.png')}}" alt="">
+                    <div id="teamImage" class="w-full relative">
+                        <div id="{{$team->id}}" class="w-full team-image-mobile relative"  style="background: url('{{asset($firstTeam->image)}}')"></div>
+                    </div>
                     <div class="slick-mobile-container">
                         <div class="team-arrow-container-mobile flex h-full w-full justify-between">
                             <i class="cursor-pointer prev-mobile team-arrow fas fa-chevron-left"></i>
@@ -181,10 +188,13 @@
                         </div>
                         
                         <div class="flex h-full w-full absolute members-image-container-mobile">
-                            <img class="cursor-pointer membre-img-mobile" src="{{asset('img/membre1.png')}}" alt="">
-                            <img class="cursor-pointer membre-img-mobile" src="{{asset('img/membre2.png')}}" alt="">
-                            <img class="cursor-pointer membre-img-mobile" src="{{asset('img/membre4.png')}}" alt="">
-                            <img class="cursor-pointer membre-img-mobile" src="{{asset('img/membre5.png')}}" alt="">
+                            @foreach ($teams as $team) 
+                            <form action="" method="post">
+                            @csrf
+                                <div id="{{$team->id}}" class="miniature-img-team-mobile cursor-pointer" style="background: url('{{asset($team->image)}}')"></div>
+                                <!-- <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt=""> -->
+                            </form>
+                            @endforeach
                         </div>
                     
                     </div>
@@ -192,11 +202,10 @@
                 </div>
 
                 <div class="member-bio-container">
-                    <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">Jean Leroy</h3>
-                    <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> Lorem ipsum dolor </p>
+                    <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">{{$firstTeam->teammates}} </h3>
+                    <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> {{$firstTeam->job_title}}</p>
                     <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.
-                    aucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.
+                    {{$firstTeam->desc}}
                     </p>
                 </div>
 

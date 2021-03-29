@@ -1,0 +1,21 @@
+.main-sidebar{
+    background-color: white;
+    position: fixed !important;
+}
+
+
+.sidebar-menu{
+    height: 100%;
+}
+
+.nav-item-admin a{
+    color: #2B465A!important;
+}
+
+.nav-item-admin a:hover{
+    color: #2470A2!important;
+}
+
+.nav-item-admin-logout{
+    color: red!important;
+}

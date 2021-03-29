@@ -58,13 +58,23 @@
             </nav>
             <!-- ------------------- mobile nav -->
             <nav id="mobile-menu">
-                <div id="mainbox" onclick="openFunction()">&#9776; Open</div>
-                <div id="menu" class="sidemenu">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-                <a href="#">Login</a>
-                <a href="#" class="closebtn" onclick="closeFunction()">&times;</a>
+                <div class="flex mobile-flex">
+                    <a href="{{route('home')}}" class="nav-logo"><img class="logo-mobile-img" src="{{asset('img/logo.png')}}" alt="" ></a> 
+                    <div class="menu-mobile-container">  
+                        <div id="mainbox" onclick="openFunction()"><i class="fas fa-bars"></i></div>
+                        <div id="menu" class="sidemenu">
+                            <div class="mobile-menu-link">
+                                <a href="{{route('home')}}"><i class="fas fa-home"></i></a>
+                                <a href="{{route('about')}}">About us</a>
+                                <a href="{{route('products')}}">Products</a>
+                                <a href="{{route('contact')}}">Contact</a>
+                                <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button bg-red-700 text-white"></span></a>
+                                <p class="text-center"><img class="logo-mobile" src="{{asset('img/frame.png')}}" alt=""></p>
+                            </div>
+                            
+                            <a href="#" class="closebtn" onclick="closeFunction()"><i class="far fa-times-circle"></i></a>
+                        </div>
+                    </div>
                 </div>
             
             </nav>
@@ -88,8 +98,8 @@
             </main>
             
         </div>
-    <footer class="flex relative ">
-        <div class="">
+    <footer class="row relative ">
+        <div class="col-lg-6 col-sm-12">
             <img class="footer-logo" src="{{asset('img/logo-white.svg')}}" alt="">
             <div class="footer-contact">
                 <p class="text-white" >Zona de Industria Ligeira <br>
@@ -99,7 +109,7 @@
                 <a  class="text-white" href="">06.00.00.00.00</a>
             </div>
         </div>
-        <div class=" footer-legale">
+        <div class=" col-lg-6 col-sm-12 footer-legale">
             <p class="mention-legale"><a href="">Mentions Légales</a> </p>
             <p>©2021</p>
 
@@ -109,6 +119,7 @@
     </footer>
     
     <script src="{{ asset('js/sal.js/dist/sal.js') }}"></script>
+    <script src="{{ asset('js/menu.js') }}"></script>
     <script>
         sal()
     </script>

@@ -84,7 +84,7 @@
                     <div class="card-footer">
                     <div class="d-flex">
                     <div class="col-lg-4">
-                         <h3 class="text-2xl">Change image :</h3>
+                        <h3 class="text-2xl">Change image :</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
                                 onchange="return fileValidation()">

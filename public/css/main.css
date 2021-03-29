@@ -21,7 +21,11 @@ a, p, h1, h2, h3, h4, h5{
 }
 
 /* */
-
+.logo-application{
+    width: 50px;
+    height: 50px;
+    margin: 10% auto;
+}
 
 /* footer */
 
@@ -37,7 +41,7 @@ footer{
 }
 
 .footer-legale{
-    height: fit-content;
+    height: max-content;
     position: absolute;
     right: 5vw;
     bottom: 0;
@@ -54,5 +58,39 @@ footer{
     font-weight: bold;
     font-size: 26px;
     line-height: 30px;
+    
+}
+
+/* responsive */
+
+
+@media (max-width: 992px){
+    .footer-legale{
+        right: 0;
+        left: 0;
+        top: 26%;
+        margin: auto 0;
+        padding-left: 3vw!important;
+        padding-bottom: 2vh;
+    }
+
+    .footer-legale p, .footer-legale a{
+        text-align: left;
+        
+    }
+    
+    
+}
+
+
+@media (max-width: 500px){
+    .footer-contact{
+        padding-left: 8vw;
+    }
+    
+
+    .footer-legale{
+        padding-left: 8vw!important;
+    }
     
 }

@@ -3,12 +3,11 @@ class Members
     constructor()
     {
         let bioContainer = $("#memberBioContainer");
-        this.C_Image = $('.product-miniature-img');
+        this.C_Image = $('.miniature-img-team');
         this.init();
     }
     init()
     {
-       
        this.C_Image.each(function(){
             $(this).click(function(e){
                 
@@ -58,7 +57,7 @@ class Members
         bioContainer.append('<p class="fonction-member">' +job + '</p>');
         bioContainer.append('<p class="description-member">' +desc+ '</p>');
         imageContainer.append(' <img class="w-full team-image relative" src="'+base_url+'/'+image+'" alt="">')
-
+        // imageContainer.append('<div id="{{$team->id}}" class="w-full team-image relative"  style="background: url("'+base_url+'/'+image+'")"></div>')
         
     }
 

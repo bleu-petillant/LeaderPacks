@@ -66,6 +66,7 @@
 
 .icon-header-home{
     color: #02558B!important;
+    margin: 5px 10px;
 }
 
 
@@ -107,6 +108,7 @@
 #inovation_homepage{
     margin: 15vh 0 22vh 0;
     padding-left:8vw;
+    min-height: 335px;
 }
 
 .home-innovation-content{
@@ -380,6 +382,7 @@
     #inovation_homepage {
         margin: 15vh 0 4vh 0;
         padding-left: 2vw;
+        padding-right: 2vw;
     }
 
     .home-innovation-text p{
@@ -475,9 +478,14 @@
 
 @media (max-width: 574px){
 
+    .home-h1 {
+        top: 0;
+    }
+
     .icon-content-header-home {
 
         left: 3vw;
+        display: flex;
 
     }
 
