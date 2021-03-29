@@ -16,6 +16,7 @@ class CreateHomePagesTable extends Migration
         Schema::create('home_pages', function (Blueprint $table) {
             $table->id();
             $table->string('header_video')->nullable();
+            $table->string('header_image')->nullable();
             $table->string('header_text',255)->nullable();
             $table->longText('inovation_text')->nullable();
             $table->integer('first_number')->nullable()->default(0);

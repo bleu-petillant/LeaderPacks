@@ -25,6 +25,7 @@ class HomePageFactory extends Factory
 
         return [
             'header_video' =>'https://www.youtube.com/embed/ISQKNR7lJgI',
+            'header_image' =>'',
             'header_text' =>$this->faker->sentence(10),
             'inovation_text' =>$this->faker->sentence(10),
             'first_number' =>$this->faker->numberBetween(1,9999),
