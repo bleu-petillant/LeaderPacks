@@ -23,31 +23,32 @@
                 <section id="header_homepage" class="card my-4">
                     <h2 class=" font-bold text-4xl text-center">Header</h2>
                     <div class="col-lg-10 my-4 ">
-                        <label class="label" for="header_video">Add video or Image</label>
+                        <p class="label">Add video or Image</p>
                         
                         <div class="flex">
-                            <input type="radio" name="color" value="yellow"> image
-                            <input type="radio" name="color" value="red"> video
+                            <input type="radio" name="color" value="image"> image
+                            <input type="radio" name="color" value="video"> video
                         </div>
                         
-                        <div class="yellow msg">
-                            <p>Image</p>
+                        <div class="image msg">
+                           
                             <input type="file" class="form-control my-2" value="{{$homepage->header_image}}" name="header_image"
-                            id="header_image" onchange="return fileValidation() " required>
-                            <div id="alert-image"></div>
+                            id="header_image" onchange="return fileValidation() ">
+                               <label  for="header_image">Sélectionner une image</label>
+                            <div id="alertheaderimage"></div>
+                            <div id="header_image_preview" class="col-lg-2"></div> 
                         </div>
-                        <div class="red msg">
-                            <p>video</p>
+                        <div class="video msg">
+                           
                             <input type="file" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
-                            id="header_video" onchange="return videoValidation() " required> 
-                            <label class="custom-file-label" for="image">Sélectionner une image</label>
+                            id="header_video" onchange="return videoValidation() "> 
+                            <label  for="header_video">Sélectionner une video</label>
                             <div id="alertvideo"></div>
                         </div>
                         
                         <div id="videoPreview" class="col-lg-4">
                             <iframe width="560" height="315" src="{{$homepage->header_video}}" frameborder="0"
                                 allowfullscreen></iframe> 
-                                <label class="custom-file-label" for="image">Sélectionner une video</label>
                         </div>
                     </div>
                     <div class="card-body">
@@ -104,13 +105,13 @@
                     <div class="col-lg-4">
                         <h3 class="text-2xl">Change image :</h3>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
-                                onchange="return fileValidation()">
-                            <label class="custom-file-label" for="image"></label>
-                            <div id="alert"></div>
+                            <input type="file" class="custom-file-input my-2" name="product_image" id="product_image" lang="fr"
+                                onchange="return ProductImageValidation()">
+                            <label class="custom-file-label" for="product_image"></label>
+                            <div id="product_alert"></div>
                         </div>
                     </div>
-                    <div id="imagePreview" class="col-lg-6">
+                    <div id="product_image_preview" class="col-lg-6">
                         <div style="max-width:100%;max-height:250px;">
                             <figure class="figure">
                                 <figcaption class="figure-caption text-right">Your current image</figcaption>
@@ -134,18 +135,21 @@
 <script>
     $(document).ready(function () {
 
-
+        $('#header_video').val("");
+        $('#header_image').val("");
         $('input[type="radio"]').click(function(){
+            $('#header_video').val("");
+            $('#header_image').val("");
             var val = $(this).attr("value");
             var target = $("." + val);
             $(".msg").not(target).hide();
             $(target).show();
+
         });
 
-        //
-        
-        $('#alert').html("");
+        $('#alertheaderimage').html("");
         $('#alertvideo').html("");
+        $('#product_alert').html("");
 
         let compteur = $('textarea');
 
@@ -170,10 +174,10 @@
     });
 
     function fileValidation() {
-        var fileInput = document.getElementById('image');
+        var fileInput = document.getElementById('header_image');
 
         var filePath = fileInput.value;
-        var alert = document.getElementById('alert');
+        var alert = document.getElementById('alertheaderimage');
         // Allowing file type 
         var allowedExtensions =
             /(\.jpg|\.jpeg|\.png|\.gif)$/i;
@@ -184,7 +188,7 @@
             alert.innerHTML =
                 '<span class="text-danger font-bold">ceci n"est pas une image valide seul les images extensions (gif, png, jpeg et jpg) sont autoriser merci !</span>';
             fileInput.value = '';
-            document.getElementById('imagePreview').innerHTML = "";
+            document.getElementById('header_image_preview').innerHTML = "";
             return false;
         } else {
             alert.innerHTML = "";
@@ -193,7 +197,41 @@
                 var reader = new FileReader();
                 reader.onload = function (e) {
                     document.getElementById(
-                            'imagePreview').innerHTML =
+                            'header_image_preview').innerHTML =
+                        '<img src="' + e.target.result +
+                        '"/>';
+                };
+
+                reader.readAsDataURL(fileInput.files[0]);
+            }
+        }
+    }
+
+        function ProductImageValidation() {
+        var fileInput = document.getElementById('product_image');
+
+        var filePath = fileInput.value;
+        var alert = document.getElementById('product_alert');
+        // Allowing file type 
+        var allowedExtensions =
+            /(\.jpg|\.jpeg|\.png|\.gif)$/i;
+
+        if (!allowedExtensions.exec(filePath)) {
+
+            alert.innerHTML = "";
+            alert.innerHTML =
+                '<span class="text-danger font-bold">ceci n"est pas une image valide seul les images extensions (gif, png, jpeg et jpg) sont autoriser merci !</span>';
+            fileInput.value = '';
+            document.getElementById('product_image_Preview').innerHTML = "";
+            return false;
+        } else {
+            alert.innerHTML = "";
+            // Image preview 
+            if (fileInput.files && fileInput.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    document.getElementById(
+                            'product_image_Preview').innerHTML =
                         '<img src="' + e.target.result +
                         '"/>';
                 };
