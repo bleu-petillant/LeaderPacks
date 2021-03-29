@@ -52,7 +52,8 @@ class ProductPageController extends Controller
             'product_text'=>'required|min:100|max:255',
             'technologie_text'=>'required|min:100|max:255',
             'innovation_text'=>'required|min:100|max:255',
-            'image'=>'image|mimes:jpeg,png,jpg,gif,svg'
+            'image'=>'image|mimes:jpeg,png,jpg,gif,svg',
+            'video' => 'mimetypes:video/mp4/avi/mov',
         ]);
            
             if($productpage->isClean('product_text'))
@@ -100,8 +101,36 @@ class ProductPageController extends Controller
             // Create unique file name
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
 
-            $file->move('storage/product/',$fileNameToStore);
-            $productpage->image = 'storage/product/' .$fileNameToStore;
+            $file->move('storage/product/thumb/',$fileNameToStore);
+            $productpage->image = 'storage/product/thumb/' .$fileNameToStore;
+
+            
+        }
+
+        if($request->hasFile('video'))
+        {
+
+            $file = $request->file('video');
+     
+            // Get filename with extension
+            $filenameWithExt = $file->getClientOriginalName();
+
+            // Get file path
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+
+            // Remove unwanted characters
+            $filename = preg_replace("/[^A-Za-z0-9 ]/", '', $filename);
+            $filename = preg_replace("/\s+/", '-', $filename);
+
+            // Get the original image extension
+            $extension = $file->getClientOriginalExtension();
+           
+            // Create unique file name
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+
+            $file->move('storage/product/video/',$fileNameToStore);
+            $productpage->video = 'storage/product/video/' .$fileNameToStore;
 
             
         }

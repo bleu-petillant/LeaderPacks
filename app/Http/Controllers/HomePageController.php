@@ -56,7 +56,6 @@ class HomePageController extends Controller
             'about_text'=>'required',
             'product_text'=>'required',
             'inovation_text'=>'required',
-            'header_video'=> 'bail|active_url'
         ]);
            
             if($homepage->isClean('header_text'))
@@ -113,6 +112,34 @@ class HomePageController extends Controller
             $homepage->third_number =$request->third_number;
 
 
+        if($request->hasFile('video'))
+        {
+
+            $file = $request->file('video');
+     
+            // Get filename with extension
+            $filenameWithExt = $file->getClientOriginalName();
+
+            // Get file path
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+
+
+            // Remove unwanted characters
+            $filename = preg_replace("/[^A-Za-z0-9 ]/", '', $filename);
+            $filename = preg_replace("/\s+/", '-', $filename);
+
+            // Get the original image extension
+            $extension = $file->getClientOriginalExtension();
+           
+            // Create unique file name
+            $fileNameToStore = $filename.'_'.time().'.'.$extension;
+
+            $file->move('storage/homepage/video/',$fileNameToStore);
+            $homepage->header_video = 'storage/homepage/video/' .$fileNameToStore;
+
+            
+        }
+
         if($request->hasFile('image'))
         {
 
@@ -136,10 +163,11 @@ class HomePageController extends Controller
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
 
             $file->move('storage/homepage/thumb/',$fileNameToStore);
-            $homepage->product_image = 'storage/homepage/thumb/' .$fileNameToStore;
+            $homepage->header_image = 'storage/homepage/thumb/' .$fileNameToStore;
 
             
         }
+
 
         $homepage->save();
 

@@ -17,6 +17,7 @@ class CreateProductPagesTable extends Migration
             $table->id();
             $table->string('product_text')->nullable();
             $table->string('image')->nullable();
+            $table->string('video')->nullable();
             $table->longText('technologie_text')->nullable();
             $table->longText('innovation_text')->nullable();
             $table->timestamps();

@@ -24,6 +24,7 @@ class ProductPageFactory extends Factory
         return [
             'product_text' => $this->faker->sentence(10),
             'image' => 'https://picsum.photos/200/300?random=' .$this->faker->numberBetween($min = 1, $max = 75) ,
+            'video' => '',
             'technologie_text' => $this->faker->sentence(10),
             'innovation_text' =>$this->faker->sentence(10),
         ];
