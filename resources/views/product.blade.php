@@ -110,7 +110,7 @@
         </section>
         
         <section id="innovation">
-            <h2 class="innovation-title about-h2 uppercase">innovation</h2>
+            <h2 class="innovation-title about-h2 uppercase">RESEARCH & DEVELOPMENT </h2>
             <p class="innovation-text-product" data-sal-duration="1000" data-sal="slide-right" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-bounce" data-sal-delay="200" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.
             neque arcu ut dictumst enim. Et vulputate purus, erat interdum. Gravida et eget sed sit.Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue hendrerit risus et arcu ipsum. </p>
         </section>

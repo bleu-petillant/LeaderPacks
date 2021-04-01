@@ -54,7 +54,7 @@
                     </div>
                 </section>
                 <section id="innovation" class="card my-4">
-                      <h2 class=" font-bold text-4xl text-center card-text">Innovation</h2>
+                      <h2 class=" font-bold text-4xl text-center card-text">RESEARCH & DEVELOPMENT </h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea name="innovation_text" class="tiny" id="innovation_text" cols="150" required>{{$productpage->innovation_text}}</textarea>
