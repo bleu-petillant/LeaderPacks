@@ -18,7 +18,7 @@
         <div class="col-lg-6 col-sm-12 relative ">
             <div class="flex relative">
                 @if (!empty($homepage->header_video))
-                <video controls>
+                <video class="video-home" controls>
                     <source src="{{asset($homepage->header_video)}}" type="video/mp4">
                     <source src="{{asset($homepage->header_video)}}" type="video/webm">
                     <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
@@ -30,7 +30,7 @@
                 @if ($homepage->header_image ?? '')
                     <img src="{{asset($homepage->header_image)}}" alt="">
                 @else
-                
+
                 @endif
             </div>
             <div id="horizontale-video-circles" class="horizontale-point-content">
