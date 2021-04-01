@@ -54,37 +54,20 @@
     </section>
 <div class="container-about">
     <section id="factory">
-        <h2 class="factory-title about-h2 "> factory</h2>
-        <div class="col-lg-12 justify-center">
-            <div class=" flex images-factory-container">
-                <!-- <img class="col-lg-3 factory-image" src="{{asset('img/factory1.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease-out-bounce">
-                <img class="col-lg-3 factory-image" src="{{asset('img/factory2.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="400" data-sal-easing="ease-out-bounce">
-                <img class="col-lg-3 factory-image" src="{{asset('img/factory3.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="600" data-sal-easing="ease-out-bounce">
-                <img class="col-lg-3 factory-image" src="{{asset('img/factory4.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="800" data-sal-easing="ease-out-bounce"> -->
-                <div class=" factory-img2" style="background: url('{{asset('img/factory1.png')}}'); background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: center center;"></div>
-                <div class=" factory-img2" style="background: url('{{asset('img/factory2.png')}}'); background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: center center;"></div>
-                <div class=" factory-img2" style="background: url('{{asset('img/factory3.png')}}'); background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: center center;"></div>
-                <div class=" factory-img2" style="background: url('{{asset('img/factory4.png')}}'); background-repeat: no-repeat;
-                                    background-size: cover;
-                                    background-position: center center;"></div>
-            </div>
-            <!-- --------------------------------------------------------------mobile -->
-            <div class="images-factory-container-mobile">
-                <div class="flex">
+        
+            <h2 class="factory-title about-h2 "> factory</h2>
+            <div class="col-lg-12 justify-center">
+                <div class=" flex images-factory-container">
+                    <!-- <img class="col-lg-3 factory-image" src="{{asset('img/factory1.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+                    <img class="col-lg-3 factory-image" src="{{asset('img/factory2.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="400" data-sal-easing="ease-out-bounce">
+                    <img class="col-lg-3 factory-image" src="{{asset('img/factory3.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="600" data-sal-easing="ease-out-bounce">
+                    <img class="col-lg-3 factory-image" src="{{asset('img/factory4.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="800" data-sal-easing="ease-out-bounce"> -->
                     <div class=" factory-img2" style="background: url('{{asset('img/factory1.png')}}'); background-repeat: no-repeat;
                                         background-size: cover;
                                         background-position: center center;"></div>
                     <div class=" factory-img2" style="background: url('{{asset('img/factory2.png')}}'); background-repeat: no-repeat;
                                         background-size: cover;
                                         background-position: center center;"></div>
-                </div>
-                <div class="flex">
                     <div class=" factory-img2" style="background: url('{{asset('img/factory3.png')}}'); background-repeat: no-repeat;
                                         background-size: cover;
                                         background-position: center center;"></div>
@@ -92,19 +75,53 @@
                                         background-size: cover;
                                         background-position: center center;"></div>
                 </div>
+                <!-- --------------------------------------------------------------mobile -->
+                <div class="images-factory-container-mobile">
+                    <div class="flex">
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory1.png')}}'); background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;"></div>
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory2.png')}}'); background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;"></div>
+                    </div>
+                    <div class="flex">
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory3.png')}}'); background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;"></div>
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory4.png')}}'); background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;"></div>
+                    </div>
+                </div>
+                <!-- -------------------------------------------------------------- -->
             </div>
-            <!-- -------------------------------------------------------------- -->
-        </div>
-        <div class="flex">
-            <div class="col-lg-6 w-full empty-factory-col">
 
+        <!-- -------------------------------------------------------------- small-mobile -->
+            <div class="images-factory-container-small-mobile">
+                        <div class=" factory-img-sm" style="background: url('{{asset('img/factory1.png')}}'); background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;"></div>
+                        <div class="factory-img-sm" style="background: url('{{asset('img/factory2.png')}}'); background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;"></div>
+                        <div class=" factory-img-sm" style="background: url('{{asset('img/factory3.png')}}'); background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;"></div>
+                        <div class="factory-img-sm" style="background: url('{{asset('img/factory4.png')}}'); background-repeat: no-repeat;
+                                            background-size: cover;
+                                            background-position: center center;"></div> 
+                </div>
+        <!-- -------------------------------------------------------------- -->
+            <div class="flex">
+                <div class="col-lg-6 w-full empty-factory-col">
+
+                </div>
+                <div class="col-lg-6 col-sm-12 w-full factory-text-container">
+                    <p class="factory-text">{!!$aboutpage->factory_text!!}</p>
+
+                </div>
             </div>
-            <div class="col-lg-6 col-sm-12 w-full factory-text-container">
-                <p class="factory-text">{!!$aboutpage->factory_text!!}</p>
-
-            </div>
-        </div>
-
     </section>
 
     <section id="recherche">
@@ -141,6 +158,7 @@
                     {{$firstTeam->desc}}
                     </p>
                 </div>
+                
                 <div class="team-arrow-container flex justify-between">
                     <i class="cursor-pointer prev team-arrow fas fa-chevron-left"></i>
                     <i class="cursor-pointer next team-arrow fas fa-chevron-right"></i>
@@ -183,10 +201,9 @@
                     </div>
 
                     <div class="slick-mobile-container">
-                        <div class="team-arrow-container-mobile flex h-full w-full justify-between">
+                        
                             <i class="cursor-pointer prev-mobile team-arrow fas fa-chevron-left"></i>
                             <i class="cursor-pointer next-mobile team-arrow fas fa-chevron-right"></i>
-                        </div>
                         
                         <div class="flex h-full w-full absolute members-image-container-mobile">
                             @foreach ($teams as $team) 

@@ -106,7 +106,7 @@
 
 /*innovation*/
 #inovation_homepage{
-    margin: 15vh 0 22vh 0;
+    margin: 15vh 0 15vh 0;
     padding-left:8vw;
     min-height: 335px;
 }
@@ -150,25 +150,25 @@
 }
 
 .blue-square-content{
-    width: 360px;
+    width: 400px;
     position: absolute;
     right: 0;
-    height: 335px;
+    height: 400px;
 }
 
 
 .blue-square{
     z-index: 2;
     position: absolute;
-    width: 360px;
-    height: 335px;
+    width: 400px;
+    height: 400px;
     background: #9CDAEA;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
     right: 0px;
 }
 
 #home-innovation-circles{
-    right: 251px;
+    right: 291px;
     bottom: -49px;
 }
 
@@ -209,7 +209,8 @@
 
 #home-aboutUs{
     margin-top: 10vh;
-    margin-left: 10vw;
+    margin-left: 8vw;
+    margin-bottom: 3vh;
 }
 
 #home-aboutUs::before{

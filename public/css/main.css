@@ -26,6 +26,13 @@ a, p, h1, h2, h3, h4, h5{
     height: 50px;
     margin: 10% auto;
 }
+/* header */
+
+
+.nav-link{
+    padding: 0.5rem 1.3rem!important;
+}
+
 
 /* footer */
 

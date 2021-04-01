@@ -8,18 +8,19 @@
 @section('contact')
 <header class="contact-header relative">
         <h1 class="contact-h1 uppercase"><span class="title-blue font-bold">contact</span></h1>
-        
+        <!-- ------------------- mobile -->
+        <p class="text-white contact-text-mobile ">{{$contactpage->contact_text}} </p>
+        <!-- -------------------  -->
         <a href=""><i class="icon-header-contact fas fa-phone-alt"></i></a>
 </header>
 <section>
     <div class="row container-contact">
         <div class="col-lg-4 col-sm-12 container-map">
             <img class="map-contact" src="{{asset('img/rectanglemap.png')}}" alt="">
-            <!-- ------------------- mobile -->
+            
             <div>
                 <img class="map-contact-mobile" src="{{asset('img/rectangle128.png')}}" alt="">
             </div>
-           
             <!-- ------------------- -->
             <div id="horizontale-contact-circles" class="horizontale-point-content">
                 <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
