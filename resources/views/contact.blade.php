@@ -14,12 +14,24 @@
         <a href=""><i class="icon-header-contact fas fa-phone-alt"></i></a>
 </header>
 <section>
-    <div class="row container-contact">
+    <div class="row container-contact ">
         <div class="col-lg-4 col-sm-12 container-map">
             <img class="map-contact" src="{{asset('img/rectanglemap.png')}}" alt="">
-            
-            <div>
+            <!-- ------------------- mobile -->
+            <div class="map-contact-mobile-container">
                 <img class="map-contact-mobile" src="{{asset('img/rectangle128.png')}}" alt="">
+                <div id="horizontale-contact-circles-mobile" class="horizontale-point-content">
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                </div>
             </div>
             <!-- ------------------- -->
             <div id="horizontale-contact-circles" class="horizontale-point-content">
@@ -37,6 +49,14 @@
             <div class="adress-container">
                 <p class="text-white">Zona de Industria Ligeira<br>Rua Hervé Joseph Matias, Lote 10-A, 7580-250, <br>Alcácer do Sal, Portugal. </p>
             </div>
+
+            <!-- ------------------- mobile -->
+            <div class="adress-container-mobile">
+                <p class="text-white">Zona de Industria Ligeira<br>Rua Hervé Joseph Matias, Lote 10-A, 7580-250, <br>Alcácer do Sal, Portugal. </p>
+            </div>
+            <!-- ------------------- -->
+
+
         </div>
         <div class="col-lg-8 col-sm-12">
             <p class="text-white contact-text ">{{$contactpage->contact_text}} </p>
@@ -44,14 +64,21 @@
             <div class="contact-form">
             <form class="grid form-contact" action="{{route('message')}}" method="post" id="message">
                 @csrf
-                <div class=" flex justify-between">
-                    <div class="required col-lg-3"><input type="text" class=" input-contact required" name="prenom" id="prenom" required autofocus placeholder="First Name"></div>
-                    <div class="required col-lg-3"><input type="text" class=" input-contact required" name="name" id="name" required placeholder="Last Name"></div>
-                    <input type="text" class="col-lg-3 input-contact" name="city" id="city" required placeholder="City">
+                <div class=" row justify-between padding-form-mobile">
+                    <div class="required col-lg-3 col-sm-5">
+                        <input type="text" class=" input-contact required" name="prenom" id="prenom" required autofocus placeholder="First Name">
+                    </div>
+                    <div class="required col-lg-3 col-sm-5">
+                        <input type="text" class=" input-contact required" name="name" id="name" required placeholder="Last Name">
+                    </div>
+                    <div class="col-lg-3 col-sm-12">
+                        <input type="text" class="input-contact" name="city" id="city" required placeholder="City">
+                    </div>
+                    
                 </div>
 
-                <div class="flex justify-between">
-                    <div class="required col-lg-3">
+                <div class="row justify-between padding-form-mobile">
+                    <div class="required col-lg-3 col-sm-12">
                         <select id="country" name="country" class="input-contact required" required>
                             <option value="" selected>Select Your Country</option>
                             <option value="Afghanistan">Afghanistan</option>
@@ -301,8 +328,11 @@
                         </select>
                     </div>
 
-                    <div class="required col-lg-3"><input type="email" class=" input-contact required" name="email" id="email" required placeholder="Email"></div>    
-                    <div class="col-lg-3 empty-input"></div>
+                    <div class="required col-lg-3 col-sm-12">
+                        <input type="email" class=" input-contact required" name="email" id="email" required placeholder="Email"></div>    
+                    <div class="col-lg-3 empty-input">
+                        
+                    </div>
 
                 </div>
 

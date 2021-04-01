@@ -44,8 +44,14 @@
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                </div>
-
+            </div>
+            <!-- --------------------------------------------------------------mobile -->
+            <div class=" flex icon-content-home-mobile">
+                <a href=""><i class="icon-header-home fas fa-envelope"></i></a>
+                <a href=""><i class="icon-header-home fas fa-phone-alt"></i></a>
+                
+            </div>
+            <!-- ---------------------------------------------------------------->
         </div>
 
         <div class="col-lg-6 col-sm-12 header-home-text-container relative">

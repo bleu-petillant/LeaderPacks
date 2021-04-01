@@ -128,7 +128,7 @@
 .factory-title::after{
     content: "";
     position: absolute;
-    width: 300px;
+    width: 200px;
     height: 2px;
     background: #D9272D;
     bottom: 15px;
@@ -148,7 +148,7 @@
 }
 
 .factory-img2{
-    height: 25vh;
+    height: 30vh;
     width: 19vw;
     margin: 0 20px;
     border-top: 16px solid #9CDAEA;
@@ -545,6 +545,15 @@
 
 
 @media (max-width: 574px){
+
+    .header-text, .header-text p {
+        color: #2B465A;
+        margin: 11vh auto 5vh auto;
+        font-size: 19px;
+        width: 82%;
+        text-align: justify;
+        font-weight: 500;
+    }
 
     .prev-mobile , .next-mobile{
         font-size: 35px;
