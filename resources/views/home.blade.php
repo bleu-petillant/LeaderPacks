@@ -18,16 +18,19 @@
         <div class="col-lg-6 col-sm-12 relative ">
             <div class="flex relative">
                 @if (!empty($homepage->header_video))
-            <video controls>
-                <source src="{{asset($homepage->header_video)}}" type="video/mp4">
-                <source src="{{asset($homepage->header_video)}}" type="video/webm">
-                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
-                    Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a>.</p>
-            </video>
-                <iframe class=" video-home" src="{{asset($homepage->header_video)}}" frameborder="0 " allowfullscreen></iframe>
+                <video controls>
+                    <source src="{{asset($homepage->header_video)}}" type="video/mp4">
+                    <source src="{{asset($homepage->header_video)}}" type="video/webm">
+                    <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                        Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a>.</p>
+                </video>
+                @else
+                <!-- <iframe class=" video-home" src="{{asset($homepage->header_video)}}" frameborder="0 " allowfullscreen></iframe> -->
                 @endif
                 @if ($homepage->header_image ?? '')
                     <img src="{{asset($homepage->header_image)}}" alt="">
+                @else
+                
                 @endif
             </div>
             <div id="horizontale-video-circles" class="horizontale-point-content">
