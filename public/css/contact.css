@@ -9,7 +9,7 @@
     background: url("../img/rectangle10.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 376px;
 }
 
 .contact-h1{
@@ -43,21 +43,23 @@
     right: 0;
 }
 
-.contact-header-text{
-   
+.icon-header-contact{
+    font-size: 42px;
 }
 
-.icon-header-contact{
+.laptop-contact-phone{
     position: absolute;
     bottom: 20px;
     right: 20px;
     font-size: 25px;
     color: #02558B!important;
+    z-index: 999;
 }
 
 
 .contact-text{
     font-size: 24px;
+    font-weight: bold;
     width: 80%;
     margin: 0 auto;
 }
@@ -139,6 +141,13 @@
     height: 50vh;
 }
 
+
+.button-container{
+    height: 78px;
+    margin: 2vh 0;
+    position: relative;
+}
+
 #submit{
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -147,11 +156,14 @@
     text-align: center;
     font-size: 24px;
     line-height: 28px;
-    padding: 10px 28px;
+    padding: 10px 44px;
     color: #02558B;
     background: #FFFFFF;
     margin: 20px 0;
     box-shadow: 0px 0px 18px rgb(0 0 0 / 15%);
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /*mobile*/
@@ -165,6 +177,10 @@
     margin-right: auto;
 }
 
+
+.mobile-contact-phone{
+    display: none;
+}
 
 .map-contact-mobile-container{
     display: none;
@@ -212,11 +228,29 @@
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 991px){
 
 
     .container-contact{
         margin-top: -5vh;
+    }
+
+    .laptop-contact-phone{
+        display: none;
+    }
+
+    .mobile-contact-phone{
+        display: block;
+        position: absolute;
+        bottom: 40px;
+        right: 20px;
+        font-size: 25px;
+        color: #02558B !important;
+        z-index: 999;
+    }
+
+    .contact-header{
+        height: 38vh;
     }
 
     .contact-text{
@@ -225,13 +259,12 @@
 
     .contact-text-mobile{
         display: block;
-        font-size: 24px;
-        width: 80%;
+        font-size: 20px;
+        width: 60%;
         margin: 0 auto;
         text-align: justify;
         position: absolute;
-        left: 0;
-        right: 0;
+        left: 10%;
         bottom: 10vh;
     }
 
@@ -267,12 +300,25 @@
         margin:  initial;
         height: 160px;
     }
+
+    .button-container {
+        margin: 2vh 0;
+    }
+
+    #submit {
+        left: 0;
+        margin: 0 auto;
+    }
     
 }
 
 
 
 @media (max-width: 575px){
+
+    .contact-h1{
+        font-size: 40px;
+    }
 
     .padding-form-mobile{
         padding: 0 7%;
@@ -287,34 +333,37 @@
     }
 
     .contact-text-mobile{
-        bottom: 7vh;
+        font-size: 16px;
+        font-weight: bold;
+        left: 10%;
+        width: 60%;
+        right: inherit;
+        bottom: 11vh;
+    }
+
+    
+
+    .icon-header-contact {
+        font-size: 36px;
     }
 
 
     .icon-header-contact {
         bottom: 7vh;
     }
-
-    .contact-h1{
-        font-size: 50px;
-    }
 }
 
 @media (max-width: 344px){
 
-    .contact-h1{
-        font-size: 40px;
-    }
-
     .contact-text-mobile{
-        font-size: 16px;
+        font-size: 13px;
         width: 60%;
         margin: 0 auto;
         text-align: justify;
         position: absolute;
         left: 10%;
         right: initial;
-        bottom: 14vh;
+        bottom: 9vh;
     }
 
 

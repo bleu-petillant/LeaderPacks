@@ -11,7 +11,20 @@
         <!-- ------------------- mobile -->
         <p class="text-white contact-text-mobile ">{{$contactpage->contact_text}} </p>
         <!-- -------------------  -->
-        <a href=""><i class="icon-header-contact fas fa-phone-alt"></i></a>
+
+
+        <a class="laptop-contact-phone relative social-button-container" href="">
+            <div class="slider-social-tel-contact">
+                <p>06.00.00.00.00</p>
+            </div>
+            <i class="icon-header-contact fas fa-phone-alt"></i>
+        </a>
+        <!-- ------------------- mobile -->
+        <div class="mobile-contact-phone">
+            <i class=" icon-header-contact fas fa-phone-alt"></i>
+        </div>
+        
+        <!-- -------------------  -->
 </header>
 <section>
     <div class="row container-contact ">
@@ -62,7 +75,7 @@
             <p class="text-white contact-text ">{{$contactpage->contact_text}} </p>
 
             <div class="contact-form">
-            <form class="grid form-contact" action="{{route('message')}}" method="post" id="message">
+            <form class="grid form-contact relative" action="{{route('message')}}" method="post" id="message">
                 @csrf
                 <div class=" row justify-between padding-form-mobile">
                     <div class="required col-lg-3 col-sm-5">
@@ -335,10 +348,14 @@
                     </div>
 
                 </div>
-
-                <textarea name="message" class="textarea-contact" id="message" required placeholder="Message"></textarea>
-
-                <bouton type="submit" id="submit" class="bouton">Submit</bouton>
+                <div class="row">
+                    <textarea name="message" class="textarea-contact w-full" id="message" required placeholder="Message"></textarea>
+                </div>
+                
+                <div class="button-container">
+                    <bouton type="submit" id="submit" class="bouton">Submit</bouton>
+                </div>
+                
 
             </form>
             

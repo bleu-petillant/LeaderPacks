@@ -52,7 +52,7 @@
                             <a href="{{route('about')}}" class="nav-link">About us</a>
                             <a href="{{route('products')}}" class="nav-link">Products</a>
                             <a href="{{route('contact')}}" class="nav-link">Contact</a>
-                            <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button bg-red-700 text-white"></span></a>
+                            <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button  text-white"></span></a>
                         </div>
                 </div>
             </nav>
@@ -68,11 +68,11 @@
                                 <a href="{{route('about')}}">About us</a>
                                 <a href="{{route('products')}}">Products</a>
                                 <a href="{{route('contact')}}">Contact</a>
-                                <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button bg-red-700 text-white"></span></a>
+                                <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button text-white"></span></a>
                                 <p class="text-center"><img class="logo-mobile" src="{{asset('img/logo.png')}}" alt=""></p>
                             </div>
                             
-                            <a href="#" class="closebtn" onclick="closeFunction()"><i class="far fa-times-circle"></i></a>
+                            <a href="#" class="closebtn" onclick="closeFunction()"><i class="fas fa-times"></i></a>
                         </div>
                     </div>
                 </div>

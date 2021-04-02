@@ -101,7 +101,7 @@
     font-weight: normal;
     font-size: 18px;
     /* line-height: 18px; */
-    width: 60%;
+    width: 68%;
     margin: 2vh auto;
 }
 
@@ -145,6 +145,7 @@
 .images-factory-container{
     width: fit-content;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .factory-img2{
@@ -172,7 +173,7 @@
 
 .recherche-title{
     text-align: right;
-
+    margin-bottom: 3vh;
 }
 
 .recherche-title::before{
@@ -384,7 +385,7 @@
     }
 
     .spirit-text {
-        width: 74%;
+        width: 100%;
     }
 
     .spirit-image {
@@ -441,7 +442,7 @@
 
     .spirit-title {
         text-align: right;
-        margin-right: 2%;
+        margin-right: 5%;
     }
 
     .images-factory-container{
@@ -550,9 +551,10 @@
         color: #2B465A;
         margin: 11vh auto 5vh auto;
         font-size: 19px;
-        width: 82%;
+        width: 90%;
         text-align: justify;
         font-weight: 500;
+        font-weight: bold;
     }
 
     .prev-mobile , .next-mobile{
