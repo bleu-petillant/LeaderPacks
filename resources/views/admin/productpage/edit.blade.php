@@ -28,22 +28,35 @@
                             <span id="compt_spirit" class="text-right">max 255 signs</span>
                         </div>
                     </section>
-                    <div class="d-flex">
-                        <div class="col-lg-4">
-                             <h3 class="text-2xl">Change image :</h3>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
-                                onchange="return fileValidation()">
-                                <label class="custom-file-label" for="image"></label>
-                                <div id="alert"></div>
-                            </div>
+                    <div class="col-lg-10 my-4 ">
+                        <p class="label">Add video or Image</p>
+                        
+                        <div class="flex">
+                            <input type="radio" name="color" value="product-image"> image
+                            <input type="radio" name="color" value="product-video"> video
                         </div>
-                        <div id="imagePreview" class="col-lg-4">
-                            <figure class="figure">
-                                <figcaption class="figure-caption text-right">Your current image</figcaption>
-                                <img src="{{ asset($productpage->image) }}" class="figure-img img-fluid" alt="">
-                            </figure>
+                        
+                        <div class="product-image msg">
+                        
+                            <input type="file" class="form-control my-2" value="{{$productpage->image}}" name="image"
+                            id="image" onchange="return fileValidation() ">
+                            <label  for="image">Sélectionner une image</label>
+                            <div id="alertheaderimage"></div>
+                            <div id="header_image_preview" class="col-lg-2"></div> 
                         </div>
+                        <div class="product-video msg">
+                        
+                            <input type="file" class="form-control my-2" value="{{$productpage->video}}" name="video"
+                            id="video" onchange="return videoValidation() "> 
+                            <label  for="video">Sélectionner une video</label>
+                            <div id="alertvideo"></div>
+                        </div>
+                        
+                        <div id="current_video_preview" class="col-lg-4">
+                            <iframe width="560" height="315" src="{{$productpage->video}}" frameborder="0"
+                                allowfullscreen></iframe> 
+                        </div>
+                        <div id="header_video_preview"></div>
                     </div>
                 <section class="card my-4" id="Technology">
                     <h2 class=" font-bold text-4xl text-center card-text">Technology</h2>
@@ -69,10 +82,26 @@
 
 <script>
         $(document).ready(function () {
+            
+        $('#video').val("");
+        $('#image').val("");
+        $('input[type="radio"]').click(function(){
+            var val = $(this).attr("value");
+            var target = $("." + val);
+            console.log(target)
+            $(".msg").not(target).hide();
+            $(target).show();
+
+        });
+
+        $('#alertheaderimage').html("");
+        $('#alertvideo').html("");
+        $('#product_alert').html("");
 
             $('#alert').html("");
-        }); 
-         function fileValidation() {
+        });
+
+    function fileValidation() {
         var fileInput = document.getElementById('image');
 
         var filePath = fileInput.value;
@@ -103,6 +132,43 @@
                 reader.readAsDataURL(fileInput.files[0]);
             }
         }
+    }
+
+    function videoValidation() {
+  
+            var fileInput =  document.getElementById('video'); 
+                    
+            var filePath = fileInput.value; 
+            var alert = document.getElementById('alertvideo');
+            // Allowing file type 
+            var allowedExtensions =  
+                    /(\.mp4)$/i; 
+                
+            if (!allowedExtensions.exec(filePath)) { 
+                
+                alert.innerHTML = "";
+                alert.innerHTML = '<span class="text-danger font-bold">Ceci n\'est pas une vidéo valide. Seules les extensions (mp4, mov, avi) sont autorisées ici.</span>';
+                fileInput.value = ''; 
+                document.getElementById( 'header_video_preview').innerHTML ="";
+                document.getElementById( 'current_video_preview').innerHTML ="";
+                return false; 
+            }  
+            else  
+            { 
+            alert.innerHTML = "";
+            // Image preview 
+            if (fileInput.files && fileInput.files[0]) { 
+                var reader = new FileReader(); 
+                reader.onload = function(e) { 
+                    document.getElementById('current_video_preview').innerHTML='';
+                    document.getElementById( 
+                        'header_video_preview').innerHTML =  
+                        '<video controls playsinline width="800" height"800"'+ ' src="' + e.target.result +'">'+'</video>'; 
+                }; 
+                    
+                reader.readAsDataURL(fileInput.files[0]); 
+            } 
+        } 
     }
 </script>
 @endsection

@@ -49,11 +49,11 @@ class ProductPageController extends Controller
     {
         $this->validate($request,
         [
-            'product_text'=>'required|min:100|max:255',
-            'technologie_text'=>'required|min:100|max:255',
-            'innovation_text'=>'required|min:100|max:255',
-            'image'=>'image|mimes:jpeg,png,jpg,gif,svg',
-            'video' => 'mimetypes:video/mp4/avi/mov',
+            'product_text'=>'required',
+            'technologie_text'=>'required',
+            'innovation_text'=>'required',
+            // 'image'=>'image|mimes:jpeg,png,jpg,gif,svg',
+            // 'video' => 'mimetypes:video/mp4/avi/mov',
         ]);
            
             if($productpage->isClean('product_text'))
@@ -81,7 +81,7 @@ class ProductPageController extends Controller
 
         if($request->hasFile('image'))
         {
-
+            $productpage->video = '';
             $file = $request->file('image');
      
             // Get filename with extension
@@ -109,7 +109,7 @@ class ProductPageController extends Controller
 
         if($request->hasFile('video'))
         {
-
+            $productpage->image = '';
             $file = $request->file('video');
      
             // Get filename with extension

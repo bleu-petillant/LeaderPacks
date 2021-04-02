@@ -22,7 +22,21 @@
 
         <div class="col-lg-6 col-sm-12 relative ">
             <div class="flex relative">
-                <iframe class=" video-home" src="https://www.youtube.com/embed/7X8II6J-6mU" frameborder="0 " allowfullscreen></iframe>
+                @if (!empty($productpage->video))
+                    <video class="video-home" controls>
+                        <source src="{{asset($productpage->video)}}" type="video/mp4">
+                        <source src="{{asset($productpage->video)}}" type="video/webm">
+                        <p>Votre navigateur ne prend pas en charge les vidéos HTML5.
+                            Voici <a href="myVideo.mp4">un lien pour télécharger la vidéo</a>.</p>
+                    </video>
+                @else
+                
+                @endif
+                @if ($productpage->image ?? '')
+                    <div class="image-home" style="background: url('{{asset($productpage->image)}}')"></div>
+                @else
+
+                @endif
             </div>
             <div id="horizontale-video-products-circles" class="horizontale-point-content">
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>

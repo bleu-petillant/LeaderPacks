@@ -106,7 +106,7 @@
                     <div class="col-lg-4">
                         <h3 class="text-2xl">Change image :</h3>
                         <div class="custom-file">
-                            <input type="file" class="custom-file-input my-2" name="product_image" id="product_image" lang="fr"
+                            <input type="file" class="custom-file-input my-2" value="{{ $homepage->product_image }}" name="product_image" id="product_image" lang="fr"
                                 onchange="return ProductImageValidation()">
                             <label class="custom-file-label" for="product_image"></label>
                             <div id="product_alert"></div>

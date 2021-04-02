@@ -56,8 +56,8 @@ class HomePageController extends Controller
             'about_text'=>'required',
             'product_text'=>'required',
             'inovation_text'=>'required',
-            'header_image' => 'image|mimes:jpeg,png,jpg,gif,svg',
-            'product_image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            // 'header_image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            // 'product_image' => 'image|mimes:jpeg,png,jpg,gif,svg',
 
         ]);
            
@@ -119,8 +119,8 @@ class HomePageController extends Controller
             $homepage->about_text = $request->about_text;
             $homepage->product_text =$request->product_text;
             $homepage->header_video = $request->header_video;
-            $homepage->header_image = $request->header_image;
-            $homepage->product_image = $request->product_image;
+            // $homepage->header_image = $request->header_image;
+            // $homepage->product_image = $request->product_image;
             $homepage->inovation_text =$request->inovation_text;
             $homepage->first_number =$request->first_number;
             $homepage->second_number =$request->second_number;
@@ -130,10 +130,10 @@ class HomePageController extends Controller
         if($request->hasFile('header_video'))
         {
             $homepage->header_image = '';
-            if(file_exists(public_path($homepage->header_video)))
-            {
-                unlink(public_path($homepage->header_video));
-            }
+            // if(file_exists(public_path($homepage->header_video)))
+            // {
+            //     unlink(public_path($homepage->header_video));
+            // }
             $file = $request->file('header_video');
      
             // Get filename with extension
@@ -159,13 +159,13 @@ class HomePageController extends Controller
             
         }
 
-        if($request->hasFile('header_image') && !empty($request->header_image))
+        if($request->hasFile('header_image') )
         {
             $homepage->header_video = '';
-            if(file_exists(public_path($homepage->header_image)))
-            {
-                unlink(public_path($homepage->header_image));
-            }
+            // if(file_exists(public_path($homepage->header_image)))
+            // {
+            //     unlink(public_path($homepage->header_image));
+            // }
             $file = $request->file('header_image');
      
             // Get filename with extension
@@ -213,8 +213,8 @@ class HomePageController extends Controller
             // Create unique file name
             $fileNameToStore = $filename.'_'.time().'.'.$extension;
 
-            $file->move('storage/homepage/thumb/',$fileNameToStore);
-            $homepage->product_image = 'storage/homepage/thumb/' .$fileNameToStore;
+            $file->move('storage/homepage/thumb/product/',$fileNameToStore);
+            $homepage->product_image = 'storage/homepage/thumb/product/' .$fileNameToStore;
 
             
         }
