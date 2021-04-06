@@ -117,6 +117,12 @@
     margin: 10px 0px 10px 0px;
     position: relative;
     width: 100%;
+    font-size: 18px;
+}
+
+.input-contact:focus{
+    outline-color: transparent;
+    outline-style: none;
 }
 
 .empty-input{
@@ -210,6 +216,13 @@
 
 /*responsive */
 
+@media (max-width: 1244px){
+    
+    .contact-form {
+        margin-top: 3vh;
+    }
+}
+
 @media (max-width: 1044px){
 
     .map-contact {
@@ -246,7 +259,7 @@
         right: 20px;
         font-size: 25px;
         color: #02558B !important;
-        z-index: 999;
+        z-index: 996;
     }
 
     .contact-header{
@@ -259,13 +272,13 @@
 
     .contact-text-mobile{
         display: block;
-        font-size: 20px;
-        width: 60%;
+        font-size: 19px;
+        width: 64%;
         margin: 0 auto;
         text-align: justify;
         position: absolute;
         left: 10%;
-        bottom: 10vh;
+        bottom: 6vh;
     }
 
 
@@ -333,12 +346,12 @@
     }
 
     .contact-text-mobile{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: bold;
         left: 10%;
-        width: 60%;
+        width: 69%;
         right: inherit;
-        bottom: 11vh;
+        bottom: 6vh;
     }
 
     
@@ -350,6 +363,10 @@
 
     .icon-header-contact {
         bottom: 7vh;
+    }
+
+    .textarea-contact{
+        margin: 0 7%;
     }
 }
 

@@ -21,6 +21,7 @@
     color: #02558B;
     position: relative;
     /* width: fit-content; */
+    margin-bottom: 4vh;
 }
 
 
@@ -30,7 +31,7 @@
     background: url("../img/rectangle8.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 376px;
 }
 
 .about-h1{
@@ -106,7 +107,7 @@
 }
 
 .spirit-image{
-    margin-top: -15vh;
+    margin-top: -20vh;
     right: 0;
     z-index: 2;
 }
@@ -161,8 +162,9 @@
 }
 
 .factory-text{
-    width: 93%;
+    width: 100%;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Recherche et développement */
@@ -190,9 +192,13 @@
     margin-top: 3vh;
 }
 
-.recherche-text p{
-    width: 84%;
+.recherche-text {
+    width: 90%;
     margin: 0 auto;
+}
+
+.recherche-text p{
+    margin: 2vh auto;
 }
 
 .frame-recherche{
@@ -354,7 +360,7 @@
     background-size: cover !important;
     background-repeat: no-repeat!important;
     background-position: center!important;
-    height: 100vh;
+    height: 60vh;
 }
 
 
@@ -404,12 +410,16 @@
         font-size: 60px;
     }
 
+    .about-header {
+        height: 203px;
+    }
+
     .about-h2 {
         font-size: 53px;
     }
 
     .spirit-image {
-        margin-top: -12vh;
+        margin-top: -9vh;
         margin-bottom: 5vh;
     }
 
@@ -457,10 +467,15 @@
         display: none;
     }
 
-    .factory-text {
+    .factory-text p {
         text-align: justify;
         padding-right: 20px;
         width: 100%;
+    }
+
+    .factory-text{
+
+        padding-right: 0px;
     }
 
     .factory-img2 {
@@ -481,7 +496,7 @@
     .frame-recherche-mobile{
         display: block;
         margin: 5vh auto 10px auto;
-        width: 64%;
+        width: 83%;
     }
 
     #team {
@@ -577,7 +592,7 @@
     }
 
     .spirit-image {
-        margin-top: -2vh;
+        margin-top: -7vh;
     }
 
     .about-h2 {
@@ -593,11 +608,19 @@
         display: block;
     }
 
+    .factory-text {
+        padding: 0;
+    }
+
     .factory-img-sm{
         width: 100%;
         height: 300px;
         margin: 10px 0;
         border-top: 16px solid #9CDAEA;
+    }
+
+    .recherche-text p {
+        width: 100%;
     }
 }
 

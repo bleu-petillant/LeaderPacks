@@ -29,7 +29,7 @@
     background: url("../img/rectangle7.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 50vh;
+    height: 449px;
 }
 
 .home-h1{
@@ -80,16 +80,19 @@
     margin-top: -6vh;
     width: 100%;
     height: 50vh;
+    background-color: black;
+    filter: drop-shadow(0px 11px 52px rgba(0, 0, 0, 0.2));
 }
 
-.image-home{
-    background-position: center!important;
-    background-repeat: no-repeat!important;
-    background-size: cover!important;
+.image-home {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     z-index: 2;
-    margin-top: -6vh;
+    margin-top: -5vh;
     width: 100%;
     height: 57vh;
+    filter: drop-shadow(0px 11px 52px rgba(0, 0, 0, 0.2));
 }
 
 
@@ -111,14 +114,15 @@
     font-size: 24px;
     width: 56%;
     text-align: justify;
-    font-weight: 500;
+    font-weight: bold;
+
 }
 
 /*innovation*/
 #inovation_homepage{
-    margin: 15vh 0 15vh 0;
+    margin: 15vh 0 11vh 0;
     padding-left:8vw;
-    min-height: 335px;
+    min-height: 400px;
 }
 
 .home-innovation-content{
@@ -134,12 +138,17 @@
     line-height: 75px;
     color: #02558B;
     position: relative;
-    width: max-content;
+    
 }
 
 #home-innovation_title{
-    margin-left: 11vw;
-    
+    margin-right: 8vw;
+    margin-bottom: 3vh;
+    text-align: right;
+}
+
+.innovation-content{
+    margin-top: 5vh;
 }
 
 #home-innovation_title::after{
@@ -215,8 +224,8 @@
 
 #about_homepage{
     margin-bottom: 11vh;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 #home-aboutUs{
@@ -243,7 +252,7 @@
     width: 214px;
     font-size: 24px;
     line-height: 28px;
-    padding: 10px 75px;
+    padding: 10px 52.4px;
     color: #02558B;
     background: #FFFFFF;
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.15)
@@ -263,6 +272,7 @@
     position: relative;
     z-index: 2;
     border-top: solid 16px #9CDAEA;
+    filter: drop-shadow(0px 11px 52px rgba(0, 0, 0, 0.2));
 }
 
 #home-product-circles{
@@ -310,14 +320,13 @@
     font-size: 18px;
     line-height: 21px;
     color: #2B465A;
-    margin-bottom: 7vh;
 }
 
 .home-product-frame{
     width: 132.49px;
     height: 148.82px;
     margin-left: 4vw;
-    margin-right: 4vw;
+    margin-right: 0vw;
 }
 
 .home-product-bouton{
@@ -439,9 +448,14 @@
     }
 
     #inovation_homepage {
-        margin: 15vh 0 4vh 0;
-        padding-left: 2vw;
-        padding-right: 2vw;
+        padding-left: 4vw;
+        padding-right: 4vw;
+    }
+
+    #home-innovation_title {
+        margin-right: 8vw;
+        margin-bottom: 3vh;
+        text-align: left;
     }
 
     .home-innovation-text p{
@@ -494,12 +508,21 @@
         display: block;
     }
 
+    .home-product-text p{
+        width: 65%;
+        text-align: justify;
+    }
+
     .home-product-frame {
         width: 74.49px;
         height: 72.82px;
         margin-left: 1vw;
-        margin-right: 12vw;
-        margin-top: 4vh;
+        margin-top: auto;
+        margin-bottom: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
     }
 
     .product-home-img-container{
@@ -513,7 +536,7 @@
     }
 
     .home-product-content {
-        margin-left: 2vw;
+        margin-left: 4vw;
         margin-top: 10vh;
         margin-right: 6vw;
         margin-bottom: 5vh;
@@ -522,7 +545,7 @@
     .home-product-bouton {
         width: max-content;;
         /* margin: auto; */
-        margin-left: 2.5vw;
+        margin-left: 6vw;
         margin-top: 0vh;
         margin-bottom: 5vh;
     }
@@ -532,10 +555,13 @@
 @media (max-width: 768px){
 
     .home-product-text p {
-        margin-top: 3vh;
-        width: initial;
+        width: 65%;
         text-align: justify;
         margin-right: 8vw;
+    }
+
+    .home-product-text{
+        margin-top: 5vh;
     }
 }
 
@@ -562,11 +588,11 @@
     
     
     #frame-mobile-home{
-        display: none;
+        display: block;
     }
 
     #inovation_homepage {
-        margin: 9vh 0 0vh 0;
+        margin: 9vh 4vw 0vh 4vw;
     }
 
     #home-aboutUs {
@@ -604,7 +630,8 @@
     }
 
     .home-product-text p {
-        margin-bottom: 0vh;
+        margin-bottom: 4vh;
+        margin-left: 4vw;
     }
 }
 
@@ -620,7 +647,7 @@
 @media (max-width: 400px){
     .home-product-text p {
         margin-top: 3vh;
-        width: initial;
+        width: 61%;
         text-align: justify;
         margin-right: 20px;
         margin-left: 20px;

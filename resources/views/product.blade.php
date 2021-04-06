@@ -9,10 +9,6 @@
 
 <header class="products-header relative">
         <h1 class="products-h1 uppercase" data-sal-duration="1000" data-sal="slide-left" data-sal-delay="200" data-sal-easing="ease-out-bounce"><span class="title-blue font-bold">Products</span></h1>
-        <div class="icon-content-header-contact">
-            <a href=""><i class="icon-header-home fas fa-phone-alt"></i></a>
-            <!-- <a href=""><i class="icon-header-home fas fa-envelope"></i></a> -->
-        </div>
 </header>
     <section id="header_products" class="row flex-column-reverse flex-lg-row">
         
@@ -33,7 +29,7 @@
                 
                 @endif
                 @if ($productpage->image ?? '')
-                    <div class="image-home" style="background: url('{{asset($productpage->image)}}')"></div>
+                    <div class="image-product" style="background: url('{{asset($productpage->image)}}')"></div>
                 @else
 
                 @endif
@@ -123,11 +119,26 @@
             </div>
         </section>
         
-        <section id="innovation">
+        <section id="innovation" class="relative">
             <h2 class="innovation-title about-h2 uppercase">RESEARCH & DEVELOPMENT </h2>
             <p class="innovation-text-product" data-sal-duration="1000" data-sal="slide-right" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-bounce" data-sal-delay="200" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.
             neque arcu ut dictumst enim. Et vulputate purus, erat interdum. Gravida et eget sed sit.Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue hendrerit risus et arcu ipsum. </p>
-        </section>
+            <!-- ------------------------------------------------mobile -->
+            
+            <div id="horizontale-recherche-content-circles" class="horizontale-point-content" >
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+            </div>
+            <!-- -------------------------------------------------->
+            </section>
 
         <section id="ourProducts">
             <h2 class="ourproducts-title about-h2 uppercase">Our <br> products</h2>

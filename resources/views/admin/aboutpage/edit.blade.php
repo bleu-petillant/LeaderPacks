@@ -34,8 +34,8 @@
                     <div id="imagePreview" class="col-lg-6">
                         <div style="max-width:100%;max-height:250px;">
                             <figure class="figure">
-                                <figcaption class="figure-caption text-right">Your current image</figcaption>
-                                <img src="{{ asset($aboutpage->image) }}" class="figure-img img-fluid" alt="">
+                                <figcaption class="figure-caption  text-right">Your current image</figcaption>
+                                <img src="{{ asset($aboutpage->image) }}" class="figure-img current-image-admin img-fluid" alt="">
                             </figure>
                         </div>
                         <div>

@@ -22,10 +22,10 @@
                 @csrf
                 <section id="header_homepage" class="card my-4">
                     <h2 class=" font-bold text-4xl text-center">Header</h2>
-                    <div class="col-lg-10 my-4 ">
+                    <div class="col-lg-12 my-4 ">
                         <p class="label">Add video or Image</p>
                         
-                        <div class="flex">
+                        <div class="flex justify-center">
                             <input type="radio" name="color" value="image"> image
                             <input type="radio" name="color" value="video"> video
                         </div>
@@ -46,7 +46,7 @@
                             <div id="alertvideo"></div>
                         </div>
                         
-                        <div id="current_video_preview" class="col-lg-4">
+                        <div id="current_video_preview" class="col-lg-4 my-0 mx-auto" >
                             <iframe width="560" height="315" src="{{$homepage->header_video}}" frameborder="0"
                                 allowfullscreen></iframe> 
                         </div>

@@ -118,7 +118,7 @@
 
                 </div>
                 <div class="col-lg-6 col-sm-12 w-full factory-text-container">
-                    <p class="factory-text">{!!$aboutpage->factory_text!!}</p>
+                    <div class="factory-text">{!!$aboutpage->factory_text!!}</div>
 
                 </div>
             </div>

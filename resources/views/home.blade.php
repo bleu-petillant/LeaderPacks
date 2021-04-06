@@ -123,17 +123,17 @@
         <div class="flex">
             <div class="col-sm-6">
                 <p class="number">{{$homepage->first_number}}</p>
-                <p class="text-center number-text">Lorem ipsum dolor sit <br> amet, consectetur </p>
+                <p class="text-center number-text">years of cumulated experience</p>
             </div>
             <div class="col-sm-6">
                 <p class="number">{{$homepage->second_number}}</p>
-                <p class="text-center number-text">Lorem ipsum dolor sit <br> amet, consectetur </p>
+                <p class="text-center number-text">continents </p>
             </div>
         </div>
         
         <div class="col-lg-6">
             <p class="number">{{$homepage->third_number}}</p>
-            <p class="text-center number-text">Lorem ipsum dolor sit <br> amet, consectetur </p>
+            <p class="text-center number-text">m2 build area</p>
         </div>
     </section>
     <!-- ------------------------------------------------------------- -->
@@ -145,12 +145,12 @@
             <div class="col-lg-6">
                 <h2 id="home-aboutUs" class="home-h2">About <span class="skinny-h2">Us</span></h2>
                 <div class="home-innovation-text" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">{!!$homepage->about_text!!}</div>
-                <a href="" class=" bouton-aboutus-home bouton">read more</a>
+                <a href="{{route('about')}}" class=" bouton-aboutus-home bouton">read more</a>
             </div>
         </div>
         <!-- --------------------------------------------------------------mobile -->
         <div class=" bouton-aboutus-home-mobile">
-            <a href="" class=" bouton">read more</a>
+            <a href="" class=" bouton">Read more</a>
         </div>
         <!-- -------------------------------------------------------------- -->
 
@@ -182,7 +182,7 @@
                     
                 </div>
                 <div class="home-product-bouton">
-                    <a href="" class="bouton ">bouton</a>
+                    <a href="{{route('products')}}" class="bouton">Read more</a>
                 </div>
             </div>
         </div>
@@ -191,14 +191,13 @@
         <div class=" col-sm-12 product-home-content-mobile">
             <div class="flex relative home-product-content" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce"> 
                 <div class="home-product-text">{!!$homepage->product_text!!}</div>
-                <div class="relative">
-                    <img id="frame-mobile-home" class="home-product-frame" src="{{asset('img/frame.png')}}" alt="">
-                </div>
+
+                <img id="frame-mobile-home" class="home-product-frame" src="{{asset('img/frame.png')}}" alt="">
                 
                 
             </div>
             <div class="home-product-bouton">
-                <a href="" class="bouton ">bouton</a>
+                <a href="{{route('products')}}" class="bouton ">Read more</a>
             </div>
         </div>
         <!-- -------------------------------------------------------------- -->

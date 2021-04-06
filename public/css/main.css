@@ -209,7 +209,14 @@ footer{
         text-align: left;
         
     }
+
+    .footer-contact{
+        padding-left: 9vw;
+    }
     
+    .footer-legale{
+        padding-left: 9vw!important;
+    }
     
 }
 

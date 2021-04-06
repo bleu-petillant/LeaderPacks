@@ -4,6 +4,10 @@
 }
 
 
+.tox-tinymce{
+    height: 400px!important;
+}
+
 .sidebar-menu{
     height: 100%;
 }
@@ -27,4 +31,10 @@
     margin-top: 25px;
     padding: 25px;
     display: none;
-  }
+}
+
+/* about us page */
+
+.current-image-admin{
+    height: 25vh;
+}
