@@ -47,6 +47,7 @@
                 </div>
             </div>
             <!-- ------------------- -->
+
             <div id="horizontale-contact-circles" class="horizontale-point-content">
                 <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                 <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
@@ -93,7 +94,7 @@
                 <div class="row justify-between padding-form-mobile">
                     <div class="required col-lg-3 col-sm-12">
                         <select id="country" name="country" class="input-contact required" required>
-                            <option value="" selected>Select Your Country</option>
+                            <option value="" selected>Country</option>
                             <option value="Afghanistan">Afghanistan</option>
                             <option value="Åland Islands">Åland Islands</option>
                             <option value="Albania">Albania</option>
@@ -348,6 +349,7 @@
                     </div>
 
                 </div>
+                
                 <div class="row">
                     <textarea name="message" class="textarea-contact w-full" id="message" required placeholder="Message"></textarea>
                 </div>

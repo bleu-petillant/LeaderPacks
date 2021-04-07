@@ -125,7 +125,7 @@
     </section>
 
     <section id="recherche">
-        <h2 class="uppercase about-h2 recherche-title">Wordlwide commercial organization</h2>
+        <h2 class="uppercase about-h2 recherche-title">Worldwide commercial organization</h2>
         <div class="row mt-3">
             <div class="col-lg-6 col-sm-12">
                 <div class="recherche-text" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="200" data-sal-easing="ease-out-bounce">
@@ -151,11 +151,23 @@
         
         <div id="team-laptop" class="flex relative">
             <div class="col-lg-8 col-sm-12 relative">
-                <div id="memberBioContainer" class="member-bio-container">
+                <!-- <div id="memberBioContainer" class="member-bio-container">
                     <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">{{$firstTeam->teammates}} </h3>
                     <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> {{$firstTeam->job_title}}</p>
                     <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
                     {{$firstTeam->desc}}
+                    </p>
+                </div> -->
+
+                <div id="memberBioContainer" class="member-bio-container">
+                    <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce"> Quality </h3>
+                    <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> Comprehensive high standard testing </p>
+                    <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
+                    “Exceptional product assessment is our philosophy to achieve high-quality products and the best customer satisfaction.”<br><br>
+
+                    Leaderpacks high-quality product is based on the understanding of our customer needs and reflects the team commitment and experience on producing with knowledge and intelligent effort. <br>
+                    The whole team is driven by quality, and the quality control is established in a culture of standardized testing and knowledge of the medical packaging requirements, providing product excellency. 
+
                     </p>
                 </div>
                 
@@ -181,7 +193,7 @@
 
 
             <div class="col-lg-4 col-sm-12">
-                <div id="teamImage" class=" relative">
+                <div id="teamImage" class=" relative h-full">
                     <div id="{{$team->id}}" class="w-full team-image relative"  style="background: url('{{asset($firstTeam->image)}}')"></div>
                 </div>
                 

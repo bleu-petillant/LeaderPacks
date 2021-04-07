@@ -11,11 +11,11 @@
     height: 376px;
 }
 
-.products-h1{
+.products-h1 {
     position: absolute;
     width: fit-content;
     height: fit-content;
-    top: 33%;
+    top: 0;
     bottom: 0;
     left: 11%;
     margin: auto;
@@ -39,23 +39,25 @@
     background-repeat: no-repeat !important;
     background-size: cover !important;
     z-index: 2;
-    margin-top: -15vh;
+    margin-top: -18vh;
     width: 100%;
     height: 57vh;
     filter: drop-shadow(0px 11px 52px rgba(0, 0, 0, 0.2));
 }
 
+
+
 #header_products{
     margin-bottom: 11vh;
 }
 
-.header-text-products{
+.header-text-products {
     color: #2B465A;
     margin: 10vh auto 16vh;
     font-size: 24px;
     width: 76%;
     text-align: justify;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 .products-video{
@@ -66,8 +68,8 @@
 }
 
 
-#horizontale-video-products-circles{
-    bottom: -25px;
+#horizontale-video-products-circles {
+    bottom: -28px;
     left: -50px;
 }
 
@@ -125,8 +127,9 @@
     left: 3%;
 }
 
-.technology-text{
+.technology-text {
     margin: 3vh 0 10vh 5vh;
+    width: 87%;
 }
 
 /*innovation*/
@@ -145,11 +148,12 @@
     margin-left: -80px;
 }
 
-    .innovation-text-product {
-        width: 72%;
-        margin: 0 auto 0 5vw;
-        padding-left: 0%;
-    }
+.innovation-text-product {
+    width: 44%;
+    margin: 0 auto 0 auto;
+    padding-left: 0%;
+    text-align: justify;
+}
 
     #horizontale-recherche-content-circles{
         display: none;
@@ -187,7 +191,7 @@
     z-index: 3;  
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 1fr 1fr;
-    grid-gap: 12px;
+    grid-gap: 12px 12px;
     justify-content: center;
 }
 
@@ -196,7 +200,6 @@
     background-repeat: no-repeat!important;
     background-size: cover!important;
     background-position: center!important;
-    width: 300px;
     height: 300px; 
     border-top: 16px solid #9CDAEA;
     cursor: pointer;
@@ -215,6 +218,10 @@
     overflow: hidden;
     height: 0;
     transition: .5s ease;
+}
+
+.item-products:hover{
+    border-top: 16px solid #2470A2;
 }
 
 .item-products:hover .description-products{
@@ -307,6 +314,14 @@
         height: 202px;
     }
 
+    #header_products {
+        margin-bottom: 0vh;
+    }
+
+    .header-text-products {
+        margin: 10vh auto 0vh;
+    }
+
     .image-product {
         margin-top: 0vh;
         height: 55vh;
@@ -332,6 +347,10 @@
     #product-tech-circles-mobile{
         top: 37%;
         left: -144px;
+    }
+
+    .technology-title {
+        margin-left: 4%;
     }
 
     .innovation-title {
@@ -391,8 +410,12 @@
 @media (max-width: 532px){
 
     .products-h1 {
-        font-size: 47px;
+        font-size: 36px;
         left: 8%;
+    }
+
+    .product-text {
+        font-size: 12px;
     }
 
     .image-product {

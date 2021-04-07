@@ -108,19 +108,20 @@
 
 /*heder text*/
 
-.header-text, .header-text p{
+.header-text, .header-text p {
     color: #2B465A;
     margin: 11vh auto;
-    font-size: 24px;
-    width: 56%;
+    font-size: 27px;
+    width: 65%;
+    line-height: 34px;
     text-align: justify;
     font-weight: bold;
-
 }
+
 
 /*innovation*/
 #inovation_homepage{
-    margin: 15vh 0 11vh 0;
+    margin: 0 0 8vh 0;
     padding-left:8vw;
     min-height: 400px;
 }
@@ -148,7 +149,7 @@
 }
 
 .innovation-content{
-    margin-top: 5vh;
+    margin-top: 11vh;
 }
 
 #home-innovation_title::after{
@@ -161,11 +162,11 @@
     margin-left: 20px;
 }
 
-.home-innovation-text{
+.home-innovation-text {
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 7vh;
-
+    width: 90%;
 }
 
 .blue-square-content{
@@ -258,15 +259,14 @@
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.15)
 }
 
-.us{
-    
-}
 
 .bouton:hover{
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.3)
 }
 
 /* Product */
+
+
 
 .product-home-img{
     position: relative;
@@ -280,7 +280,9 @@
     top: -51px;
 }
 
-
+.product-home-content{
+    padding-top: 5vh;
+}
 
 #home-product-title{
     padding-left: 11vw;
@@ -407,9 +409,25 @@
         font-size: 50px;
     }
 
+    .image-home {
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        z-index: 2;
+        margin-top: -5vh;
+        width: 100%;
+        height: 28vh;
+        filter: drop-shadow(0px 11px 52px rgba(0, 0, 0, 0.2));
+    }
+
     .video-home {
         margin-top: 0vh;
     }
+
+    .innovation-content {
+        margin-top: 0vh;
+    }
+    
 
     .header-home-text-container{
         display: none;
@@ -572,6 +590,10 @@
         height: 28vh;
     }
 
+    #inovation_homepage {
+        margin: 6vh 4vw 0vh 3vw;
+    }
+
     .home-h1 {
         top: 26%;
         font-size: 30px;
@@ -596,7 +618,7 @@
     }
 
     #home-aboutUs {
-        margin-top: 10vh;
+        margin-top: 6vh;
         margin-left: 0vw;
         margin-bottom: 3vh;
         padding-right: 2.5vw;
@@ -640,6 +662,10 @@
     .home-h2 {
         font-size: 39px;
         line-height: 47px;
+    }
+
+    .image-home {
+        height: 236px;
     }
 }
 

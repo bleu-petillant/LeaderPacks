@@ -11,7 +11,7 @@
 
 
 
-.about-h2{
+.about-h2 {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
@@ -21,7 +21,7 @@
     color: #02558B;
     position: relative;
     /* width: fit-content; */
-    margin-bottom: 4vh;
+    margin-bottom: 6vh;
 }
 
 
@@ -38,7 +38,7 @@
     position: absolute;
     width: fit-content;
     height: fit-content;
-    top: 40%;
+    top: 0;
     bottom: 0;
     left: 20%;
     margin: auto;
@@ -107,7 +107,7 @@
 }
 
 .spirit-image{
-    margin-top: -20vh;
+    margin-top: -25vh;
     right: 0;
     z-index: 2;
 }
@@ -162,7 +162,8 @@
 }
 
 .factory-text{
-    width: 100%;
+    width: 94%;
+    text-align: justify;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -175,7 +176,7 @@
 
 .recherche-title{
     text-align: right;
-    margin-bottom: 3vh;
+    margin-bottom: 5vh;
 }
 
 .recherche-title::before{
@@ -198,7 +199,7 @@
 }
 
 .recherche-text p{
-    margin: 2vh auto;
+    margin: 0 auto 2vh auto;
 }
 
 .frame-recherche{
@@ -223,14 +224,16 @@
     margin-left: 20px;
 }
 
-.team-image{
+.team-image {
     border-top: 16px solid #9CDAEA;
     margin-top: -110px;
     z-index: 3;
     background-size: cover !important;
     background-repeat: no-repeat!important;
     background-position: center!important;
-    height: 731px;
+    height: 792px;
+    position: absolute;
+    bottom: 0;
 }
 
 
@@ -277,10 +280,11 @@
     margin-left: 44%;
 }
 
-.team-arrow-container{
-    width: 20%;
+.team-arrow-container {
+    width: 15%;
     margin-left: 78%;
     margin-top: 5vh;
+    margin-bottom: 2vh;
 }
 
 .miniature-img-team{
@@ -301,7 +305,6 @@
 }
 
 .members-image-container{
-    position: absolute!important;
     bottom: 0;
     right: 0;
     padding-left: 4%;
@@ -404,10 +407,10 @@
 @media (max-width: 992px){
 
     .about-h1 {
-        top: 18%;
+        top: 0;
         left: 3%;
         margin: auto 0 auto 1%;
-        font-size: 60px;
+        font-size: 36px;
     }
 
     .about-header {
@@ -416,6 +419,7 @@
 
     .about-h2 {
         font-size: 53px;
+        margin-bottom: 4vh;
     }
 
     .spirit-image {
@@ -433,6 +437,15 @@
 
     #horizontale-spirit-circles{
         display: none;
+    }
+
+    #spirit{
+        margin-bottom: 5vh;
+    }
+
+    .spirit-image {
+        margin-top: -6vh;
+        margin-bottom: 5vh;
     }
 
     .ourspirit-img{
@@ -469,12 +482,12 @@
 
     .factory-text p {
         text-align: justify;
-        padding-right: 20px;
         width: 100%;
+        font-size: 18px;
     }
 
     .factory-text{
-
+        width: 100%;
         padding-right: 0px;
     }
 
@@ -485,8 +498,14 @@
         border-top: 16px solid #9CDAEA;
     }
 
-    .recherche-text p{
+    #recherche {
+        margin: 6vh 0 5vh 0;
+    }
+    
+
+    .recherche-text p {
         text-align: justify;
+        font-size: 18px;
     }
 
     .frame-recherche{
@@ -549,6 +568,32 @@
         margin-left: 4%;
     }
 
+    .miniature-img-team-mobile {
+        height: 14vh;
+    }
+
+    .prev-mobile {
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        left: 0;
+        background: linear-gradient(
+    90deg
+    , rgba(0,0,0,0.8127626050420168) 7%, rgba(0,0,0,0) 100%);
+        padding: 5vh 10px;
+    }
+    
+    .next-mobile {
+        position: absolute;
+        z-index: 3;
+        height: 100%;
+        right: 0;
+        background: linear-gradient(
+    -90deg
+    , rgba(0,0,0,0.8127626050420168) 7%, rgba(0,0,0,0) 100%);
+        padding: 5vh 10px;
+    }
+
     
 
 }
@@ -561,6 +606,10 @@
 
 
 @media (max-width: 574px){
+
+    #inovation_homepage {
+        margin: 6vh 4vw 0vh 3vw;
+    }
 
     .header-text, .header-text p {
         color: #2B465A;
@@ -592,7 +641,7 @@
     }
 
     .spirit-image {
-        margin-top: -7vh;
+        margin-top: -6vh;
     }
 
     .about-h2 {

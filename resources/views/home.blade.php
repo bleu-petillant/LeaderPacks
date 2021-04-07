@@ -38,7 +38,7 @@
                 <!-- <iframe class=" video-home" src="{{asset($homepage->header_video)}}" frameborder="0 " allowfullscreen></iframe> -->
                 @endif
                 @if ($homepage->header_image ?? '')
-                    <div class="image-home" style="background: url('{{asset($homepage->header_image)}}')"></div>
+                    <div class="image-home" aria-label="ceci est un label" title="{{ $homepage->header_image_alt }}" style="background: url('{{asset($homepage->header_image)}}')"></div>
                     <!-- <img class="image-home" src="{{asset($homepage->header_image)}}" alt=""> -->
                 @else
 
@@ -77,12 +77,12 @@
 <!-- ------------------------- -->
     <section id="inovation_homepage">
         <div class="flex">
-            <div class="col-lg-6 innovation-content"  data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">
+            <div class="col-lg-7 innovation-content"  data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">
                 <h2 id="home-innovation_title" class="home-h2">Our vision</h2>
                 <div class="home-innovation-text">{!!$homepage->inovation_text!!}</div>
             </div>
             <div class=" blue-square-content">
-                <div class="blue-square"></div>
+                <div class="blue-square" ></div>
                 <div id="home-innovation-circles" class="horizontale-point-content">
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
@@ -107,11 +107,11 @@
                     <p class="number">{{$homepage->first_number}}</p>
                     <p class="text-center number-text">years of cumulated experience </p>
                 </div>
-                <div class="col-md-4" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="350" data-sal-easing="ease-out-bounce">
+                <div class="col-md-4" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="450" data-sal-easing="ease-out-bounce">
                     <p class="number">{{$homepage->second_number}}</p>
                     <p class="text-center number-text"> continents </p>
                 </div>
-                <div class="col-md-4" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="450" data-sal-easing="ease-out-bounce">
+                <div class="col-md-4" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="650" data-sal-easing="ease-out-bounce">
                     <p class="number">{{$homepage->third_number}}</p>
                     <p class="text-center number-text">m2 build area</p>
                 </div>
@@ -123,7 +123,8 @@
         <div class="flex">
             <div class="col-sm-6">
                 <p class="number">{{$homepage->first_number}}</p>
-                <p class="text-center number-text">years of cumulated experience</p>
+                <p class="text-center number-text">years of cumulated
+                    <br> experience</p>
             </div>
             <div class="col-sm-6">
                 <p class="number">{{$homepage->second_number}}</p>
@@ -145,7 +146,7 @@
             <div class="col-lg-6">
                 <h2 id="home-aboutUs" class="home-h2">About <span class="skinny-h2">Us</span></h2>
                 <div class="home-innovation-text" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce">{!!$homepage->about_text!!}</div>
-                <a href="{{route('about')}}" class=" bouton-aboutus-home bouton">read more</a>
+                <a href="{{route('about')}}" class=" bouton-aboutus-home bouton">Read more</a>
             </div>
         </div>
         <!-- --------------------------------------------------------------mobile -->
