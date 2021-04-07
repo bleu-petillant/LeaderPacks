@@ -56,8 +56,6 @@ class HomePageController extends Controller
             'about_text'=>'required',
             'product_text'=>'required',
             'inovation_text'=>'required',
-            // 'header_image' => 'image|mimes:jpeg,png,jpg,gif,svg',
-            // 'product_image' => 'image|mimes:jpeg,png,jpg,gif,svg',
 
         ]);
            
@@ -86,10 +84,20 @@ class HomePageController extends Controller
                 
                 $homepage->header_image  = $homepage->header_image;
             }
+            if($homepage->isClean('header_image_alt'))
+            {
+                
+                $homepage->header_image_alt  = $homepage->header_image_alt;
+            }
             if($homepage->isClean('product_image'))
             {
                 
                 $homepage->product_image  = $homepage->product_image;
+            }
+            if($homepage->isClean('product_image_alt'))
+            {
+                
+                $homepage->product_image_alt  = $homepage->product_image_alt;
             }
             if($homepage->isClean('inovation_text'))
             {
@@ -119,8 +127,8 @@ class HomePageController extends Controller
             $homepage->about_text = $request->about_text;
             $homepage->product_text =$request->product_text;
             $homepage->header_video = $request->header_video;
-            // $homepage->header_image = $request->header_image;
-            // $homepage->product_image = $request->product_image;
+            $homepage->header_image_alt = $request->header_image_alt;
+            $homepage->product_image_alt = $request->product_image_alt;
             $homepage->inovation_text =$request->inovation_text;
             $homepage->first_number =$request->first_number;
             $homepage->second_number =$request->second_number;

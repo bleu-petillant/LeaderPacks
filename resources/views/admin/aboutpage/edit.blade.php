@@ -23,6 +23,8 @@
                     <h2 class=" font-bold text-4xl text-center">Our values</h2>
                     <div class="d-flex">
                     <div class="col-lg-4">
+                        <label for="image_alt">Change the description for your picture</label>
+                            <input type="text" id="image_alt" name="image_alt" value="{{ $aboutpage->image_alt }}" placeholder="Add picture description">
                          <h3 class="text-2xl">Change image :</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"

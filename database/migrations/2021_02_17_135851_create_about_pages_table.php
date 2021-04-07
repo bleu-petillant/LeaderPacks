@@ -16,6 +16,7 @@ class CreateAboutPagesTable extends Migration
         Schema::create('about_pages', function (Blueprint $table) {
             $table->id();
             $table->string('image')->nullable();
+            $table->string('image_alt')->nullable();
             $table->longText('spirit_text')->nullable();
             $table->longText('factory_text')->nullable();
             $table->longText('research_text')->nullable();

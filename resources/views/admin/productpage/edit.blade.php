@@ -37,7 +37,8 @@
                         </div>
                         
                         <div class="product-image msg">
-                        
+                        <label for="image_alt">Change the description for your picture</label>
+                            <input type="text" id="image_alt" name="image_alt" value="{{$productpage->image_alt}}" placeholder="Add picture description">
                             <input type="file" class="form-control my-2" value="{{$productpage->image}}" name="image"
                             id="image" onchange="return fileValidation() ">
                             <label  for="image">Sélectionner une image</label>

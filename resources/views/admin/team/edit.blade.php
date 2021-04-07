@@ -33,6 +33,8 @@
 
                     <div class="container my-5">
                          <div class="col-lg-4">
+                            <label for="image_alt">Change description for the picture</label>
+                             <input type="text" name="image_alt" id="image_alt" value="{{ $team->image_alt }}" placeholder="Little description" required>
                          <h3 class="text-2xl">Change profile picture :</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
