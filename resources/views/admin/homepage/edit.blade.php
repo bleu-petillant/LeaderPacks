@@ -31,10 +31,11 @@
                         </div>
                         
                         <div class="image msg">
-                           
+                            <label for="header_image_alt">Change the description for your picture</label>
+                            <input type="text" id="header_image_alt" name="header_image_alt" value="{{$homepage->header_image_alt}}" placeholder="Add picture description"> <br>
                             <input type="file" class="form-control my-2" value="{{$homepage->header_image}}" name="header_image"
                             id="header_image" onchange="return fileValidation() ">
-                               <label  for="header_image">Sélectionner une image</label>
+                               <label  for="header_image">Select new picture</label>
                             <div id="alertheaderimage"></div>
                             <div id="header_image_preview" class="col-lg-2"></div> 
                         </div>
@@ -42,7 +43,7 @@
                            
                             <input type="file" class="form-control my-2" value="{{$homepage->header_video}}" name="header_video"
                             id="header_video" onchange="return videoValidation() "> 
-                            <label  for="header_video">Sélectionner une video</label>
+                            <label  for="header_video">Select new video</label>
                             <div id="alertvideo"></div>
                         </div>
                         
@@ -105,6 +106,8 @@
                     <div class="d-flex">
                     <div class="col-lg-4">
                         <h3 class="text-2xl">Change image :</h3>
+                        <label for="product_image_alt">Change the description for your picture</label>
+                        <input type="text" name="product_image_alt" id="product_image_alt" value="{{ $homepage->product_image_alt }}" placeholder="Add picture description">
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" value="{{ $homepage->product_image }}" name="product_image" id="product_image" lang="fr"
                                 onchange="return ProductImageValidation()">

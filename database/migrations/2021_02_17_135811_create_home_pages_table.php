@@ -17,6 +17,7 @@ class CreateHomePagesTable extends Migration
             $table->id();
             $table->string('header_video')->nullable();
             $table->string('header_image')->nullable();
+            $table->string('header_image_alt')->nullable();
             $table->string('header_text',255)->nullable();
             $table->longText('inovation_text')->nullable();
             $table->integer('first_number')->nullable()->default(0);
@@ -24,6 +25,7 @@ class CreateHomePagesTable extends Migration
             $table->integer('third_number')->nullable()->default(0);
             $table->longText('about_text')->nullable();
             $table->string('product_image')->nullable();
+            $table->string('product_image_alt')->nullable();
             $table->longText('product_text')->nullable();
             $table->timestamps();
         });

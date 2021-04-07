@@ -26,6 +26,7 @@ class HomePageFactory extends Factory
         return [
             'header_video' =>'https://www.youtube.com/embed/ISQKNR7lJgI',
             'header_image' =>'',
+            'header_image_alt' =>'image',
             'header_text' =>$this->faker->sentence(10),
             'inovation_text' =>$this->faker->sentence(10),
             'first_number' =>$this->faker->numberBetween(1,9999),
@@ -33,6 +34,7 @@ class HomePageFactory extends Factory
             'third_number' =>$this->faker->numberBetween(1,9999),
             'about_text' =>$this->faker->sentence(10),
             'product_image' =>'https://picsum.photos/200/200?random=' .$this->faker->numberBetween($min = 1, $max = 75) ,
+            'product_image_alt' =>'image',
             'product_text' =>$this->faker->sentence(10),
         ];
     }

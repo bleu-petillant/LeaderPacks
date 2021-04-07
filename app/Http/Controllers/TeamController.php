@@ -45,14 +45,15 @@ class TeamController extends Controller
             'teammates'=>'required',
 
             'image' => 'image|mimes:jpeg,png,jpg,gif,svg',
+            'image_alt'=>'required',
             'desc'=>'required',
             'job_title'=>'required',
         ]);
 
         $team = Team::create([
             'teammates' => $request->teammates,
-
             'image' => 'image',
+            'image_alt' =>$request->image_alt,
             'job_title'=>$request->job_title,
             'desc'=>$request->desc,
             'page_id'=>1
@@ -121,7 +122,6 @@ class TeamController extends Controller
         $this->validate($request,
         [
             'teammates'=>'required',
-
             'job_title'=>'required',
             'desc'=>'required',
         ]);
@@ -142,9 +142,14 @@ class TeamController extends Controller
                 
                 $team->desc  = $team->desc;
             }
+            if($team->isClean('image_alt'))
+            {
+                
+                $team->image_alt  = $team->ilmage_alt;
+            }
 
             $team->teammates  = $request->teammates;
-
+            $team->image_alt  = $request->image_alt;
             $team->job_title =$request->job_title;
             $team->desc = $request->desc;
 

@@ -71,11 +71,17 @@ class ProductPageController extends Controller
                 
                 $productpage->innovation_text  = $productpage->innovation_text;
             }
+            if($productpage->isClean('image_alt'))
+            {
+                
+                $productpage->image_alt  = $productpage->image_alt;
+            }
 
 
             $productpage->product_text  = $request->product_text;
             $productpage->technologie_text = $request->technologie_text;
             $productpage->innovation_text =$request->innovation_text;
+            $productpage->image_alt =$request->image_alt;
 
 
 

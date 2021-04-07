@@ -72,11 +72,18 @@ class AboutPageController extends Controller
                 
                 $aboutpage->factory_text  = $aboutpage->factory_text;
             }
+            if($aboutpage->isClean('image_alt'))
+            {
+                
+                $aboutpage->image_alt  = $aboutpage->image_alt;
+            }
 
 
             $aboutpage->spirit_text  = $request->spirit_text;
             $aboutpage->research_text = $request->research_text;
             $aboutpage->factory_text =$request->factory_text;
+            $aboutpage->image_alt =$request->image_alt;
+
 
 
 

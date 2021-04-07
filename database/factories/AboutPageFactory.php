@@ -23,6 +23,7 @@ class AboutPageFactory extends Factory
     {
         return [
             'image' =>'https://picsum.photos/200/200?random=' .$this->faker->numberBetween($min = 1, $max = 75) ,
+             'image_alt' =>'image',
             'spirit_text' =>$this->faker->sentence(10),
             'factory_text' =>$this->faker->sentence(10),
             'research_text' =>$this->faker->sentence(10),
