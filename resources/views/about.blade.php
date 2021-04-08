@@ -155,9 +155,9 @@
                 <div id="memberBioContainer" class="member-bio-container">
                     <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">{{$firstTeam->teammates}} </h3>
                     <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> {{$firstTeam->job_title}}</p>
-                    <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
-                    {{$firstTeam->desc}}
-                    </p>
+                    <div class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
+                    {!!$firstTeam->desc!!}
+                    </div>
                 </div>
 
                 <!-- <div id="memberBioContainer" class="member-bio-container">
@@ -223,8 +223,8 @@
                             @foreach ($teams as $team) 
                             <form action="" method="post">
                             @csrf
-                                <div id="{{$team->id}}" class="miniature-img-team-mobile mini-mobile cursor-pointer" style="background: url('{{asset($team->image)}}')"></div>
-                                <!-- <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt=""> -->
+                                <!-- <div id="{{$team->id}}" class="miniature-img-team-mobile mini-mobile cursor-pointer" style="background: url('{{asset($team->image)}}')"></div> -->
+                                <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt="">
                             </form>
                             @endforeach
                         </div>
