@@ -20,7 +20,7 @@
     line-height: 75px;
     color: #02558B;
     position: relative;
-    width: max-content;
+    width: unset;
     margin-bottom: 6vh;
 }
 
