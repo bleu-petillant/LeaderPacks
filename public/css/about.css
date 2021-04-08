@@ -20,7 +20,7 @@
     line-height: 75px;
     color: #02558B;
     position: relative;
-    /* width: fit-content; */
+    width: max-content;
     margin-bottom: 6vh;
 }
 
@@ -90,6 +90,7 @@
 .spirit-title{
     text-align: right;
     margin-right: 10%;
+    width: unset!important;
 }
 
 .spirit-title::before{
@@ -242,7 +243,7 @@
     background-size: cover !important;
     background-repeat: no-repeat!important;
     background-position: center!important;
-    height: 931px;
+    height: 800px;
     position: absolute;
     bottom: 0;
 }
@@ -398,6 +399,43 @@
 
 /*_______________________________________________ responsive*/
 
+@media (max-width: 1401px){
+
+    .team-image {
+        height: 766px;
+    }
+
+    .team-title{
+        margin-bottom: 2vh!important;
+    }
+
+    .miniature-img-team {
+        height: 167px;
+    }
+
+    .team-title::after {
+        width: 235px;
+    }
+}
+
+@media (max-width: 1221px){
+    .factory-text {
+        width: 94%;
+        text-align: justify;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+
+
+    .team-image {
+        height: 730px;
+    }
+
+    .member-bio-container {
+        padding: 2vh 3% 0 0;
+    }
+}
+
 @media (max-width: 1164px){
 
     .about-h2 {
@@ -410,6 +448,10 @@
 
     .spirit-image {
         margin-top: -7vh;
+    }
+
+    .team-image {
+        height: 666px;
     }
 
 }
@@ -548,6 +590,17 @@
         bottom: 0;
         right: 0;
         padding-left: 0;
+    }
+
+    .team-image-mobile {
+        border-top: 16px solid #9CDAEA;
+        z-index: 3;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        height: 600px;
+        object-fit: contain;
+        background-color: black;
     }
 
     .membre-img-mobile{

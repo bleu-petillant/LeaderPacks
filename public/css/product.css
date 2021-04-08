@@ -56,7 +56,6 @@
     margin: 5vh auto 16vh;
     font-size: 24px;
     width: 76%;
-    text-align: justify;
     font-weight: bold;
 }
 
@@ -327,10 +326,6 @@
 
     #header_products {
         margin-bottom: 0vh;
-    }
-
-    .header-text-products {
-        margin: 10vh auto 0vh;
     }
 
     .image-product {
