@@ -20,15 +20,8 @@
                         @method('PATCH')
                         @csrf
                       @include('includes.errors')
-                    <section class="card my-4" id="product_text">
-                        <h2 class=" font-bold text-4xl text-center card-text">Header</h2>
-                        <div class="card-body">
-                            <h2 class="text-2xl text-center">Change text : </h2>
-                            <textarea class="w-full" name="product_text" id="product_text" cols="150"  minlength="100" maxlength="180">{{$productpage->product_text}}</textarea>
-                            <span id="compt_spirit" class="text-center">0 word(s) | 180 sign(s) left</span>
-                        </div>
-                    </section>
                     <div class=" card my-4 ">
+                        <h2 class=" font-bold text-4xl text-center card-text">Header</h2>
                         <p class="label">Add video or Image</p>
                         
                         <div class="flex justify-center">
