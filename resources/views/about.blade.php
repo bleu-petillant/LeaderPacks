@@ -23,9 +23,10 @@
             </div>  
             
             <div class="col-lg-4 relative ourspirit-img-container">
-                    <div class=" relative ourspirit-img">
-                    
-                        <img class="w-full spirit-image relative" src="{{asset('img/aboutus.png')}}" alt="">    
+                    <div class="flex relative ourspirit-img">
+
+                        <div class="image-about" aria-label="ceci est un label" title="{{ $aboutpage->image_alt }}" style="background: url('{{asset($aboutpage->image)}}')"></div>
+                        <!-- <img class="w-full spirit-image relative" src="{{$aboutpage->image}}" alt="">     -->
                         <div id="horizontale-spirit-circles" class="horizontale-point-content">
                             <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                             <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
@@ -62,36 +63,36 @@
                     <img class="col-lg-3 factory-image" src="{{asset('img/factory2.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="400" data-sal-easing="ease-out-bounce">
                     <img class="col-lg-3 factory-image" src="{{asset('img/factory3.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="600" data-sal-easing="ease-out-bounce">
                     <img class="col-lg-3 factory-image" src="{{asset('img/factory4.png')}}" alt="" data-sal-duration="1000" data-sal="slide-down" data-sal-delay="800" data-sal-easing="ease-out-bounce"> -->
-                    <div class=" factory-img2" style="background: url('{{asset('img/factory1.png')}}'); background-repeat: no-repeat;
+                    <div class=" factory-img2" style="background: url('{{asset('img/factory1.jpg')}}'); background-repeat: no-repeat;
                                         background-size: cover;
-                                        background-position: center center;"></div>
-                    <div class=" factory-img2" style="background: url('{{asset('img/factory2.png')}}'); background-repeat: no-repeat;
+                                        background-position: center center;" title=""></div>
+                    <div class=" factory-img2" style="background: url('{{asset('img/factory2.jpg')}}'); background-repeat: no-repeat;
                                         background-size: cover;
-                                        background-position: center center;"></div>
-                    <div class=" factory-img2" style="background: url('{{asset('img/factory3.png')}}'); background-repeat: no-repeat;
+                                        background-position: center center;" title=""></div>
+                    <div class=" factory-img2" style="background: url('{{asset('img/factory3.jpg')}}'); background-repeat: no-repeat;
                                         background-size: cover;
-                                        background-position: center center;"></div>
-                    <div class=" factory-img2" style="background: url('{{asset('img/factory4.png')}}'); background-repeat: no-repeat;
+                                        background-position: center center;" title=""></div>
+                    <div class=" factory-img2" style="background: url('{{asset('img/factory4.jpg')}}'); background-repeat: no-repeat;
                                         background-size: cover;
-                                        background-position: center center;"></div>
+                                        background-position: center center;" title=""></div>
                 </div>
                 <!-- --------------------------------------------------------------mobile -->
                 <div class="images-factory-container-mobile">
                     <div class="flex">
-                        <div class=" factory-img2" style="background: url('{{asset('img/factory1.png')}}'); background-repeat: no-repeat;
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory1.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
-                                            background-position: center center;"></div>
-                        <div class=" factory-img2" style="background: url('{{asset('img/factory2.png')}}'); background-repeat: no-repeat;
+                                            background-position: center center;" title=""></div>
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory2.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
-                                            background-position: center center;"></div>
+                                            background-position: center center;" title=""></div>
                     </div>
                     <div class="flex">
-                        <div class=" factory-img2" style="background: url('{{asset('img/factory3.png')}}'); background-repeat: no-repeat;
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory3.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
-                                            background-position: center center;"></div>
-                        <div class=" factory-img2" style="background: url('{{asset('img/factory4.png')}}'); background-repeat: no-repeat;
+                                            background-position: center center;" title=""></div>
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory4.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
-                                            background-position: center center;"></div>
+                                            background-position: center center;" title=""></div>
                     </div>
                 </div>
                 <!-- -------------------------------------------------------------- -->
@@ -99,16 +100,16 @@
 
         <!-- -------------------------------------------------------------- small-mobile -->
             <div class="images-factory-container-small-mobile">
-                        <div class=" factory-img-sm" style="background: url('{{asset('img/factory1.png')}}'); background-repeat: no-repeat;
+                        <div class=" factory-img-sm" style="background: url('{{asset('img/factory1.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
                                             background-position: center center;"></div>
-                        <div class="factory-img-sm" style="background: url('{{asset('img/factory2.png')}}'); background-repeat: no-repeat;
+                        <div class="factory-img-sm" style="background: url('{{asset('img/factory2.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
                                             background-position: center center;"></div>
-                        <div class=" factory-img-sm" style="background: url('{{asset('img/factory3.png')}}'); background-repeat: no-repeat;
+                        <div class=" factory-img-sm" style="background: url('{{asset('img/factory3.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
                                             background-position: center center;"></div>
-                        <div class="factory-img-sm" style="background: url('{{asset('img/factory4.png')}}'); background-repeat: no-repeat;
+                        <div class="factory-img-sm" style="background: url('{{asset('img/factory4.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
                                             background-position: center center;"></div> 
                 </div>
@@ -151,15 +152,15 @@
         
         <div id="team-laptop" class="flex relative">
             <div class="col-lg-8 col-sm-12 relative">
-                <!-- <div id="memberBioContainer" class="member-bio-container">
+                <div id="memberBioContainer" class="member-bio-container">
                     <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce">{{$firstTeam->teammates}} </h3>
                     <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> {{$firstTeam->job_title}}</p>
                     <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
                     {{$firstTeam->desc}}
                     </p>
-                </div> -->
+                </div>
 
-                <div id="memberBioContainer" class="member-bio-container">
+                <!-- <div id="memberBioContainer" class="member-bio-container">
                     <h3 class="name-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="100" data-sal-easing="ease-out-bounce"> Quality </h3>
                     <p class="fonction-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="800" data-sal-easing="ease-out-bounce"> Comprehensive high standard testing </p>
                     <p class="description-member" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="1000" data-sal-easing="ease-out-bounce">
@@ -169,7 +170,7 @@
                     The whole team is driven by quality, and the quality control is established in a culture of standardized testing and knowledge of the medical packaging requirements, providing product excellency. 
 
                     </p>
-                </div>
+                </div> -->
                 
                 <div class="team-arrow-container flex justify-between">
                     <i class="cursor-pointer prev team-arrow fas fa-chevron-left"></i>
@@ -194,7 +195,8 @@
 
             <div class="col-lg-4 col-sm-12">
                 <div id="teamImage" class=" relative h-full">
-                    <div id="{{$team->id}}" class="w-full team-image relative"  style="background: url('{{asset($firstTeam->image)}}')"></div>
+                    <img d="{{$team->id}}" class="w-full team-image relative" src="{{asset($firstTeam->image)}}" alt="">
+                    <!-- <div id="{{$team->id}}" class="w-full team-image relative"  style="background: url('{{asset($firstTeam->image)}}')"></div> -->
                 </div>
                 
             </div>

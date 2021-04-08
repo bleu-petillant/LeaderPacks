@@ -55,16 +55,16 @@
                     </div>
                     <div class="card-body">
                         <h3 class="text-2xl">Change header :</h3>
-                        <textarea name="header_text" id="header_text" cols="150" required minlength="100" maxlength="255">{{$homepage->header_text}}</textarea>
-                        <span id="compt_header" class="text-right">max 255 signs</span>
+                        <textarea name="header_text" id="header_text" cols="150" required minlength="100" maxlength="180">{{$homepage->header_text}}</textarea>
+                        <p id="compt_header" class="text-center">0 word(s) | 180 sign(s) left</p>
                     </div>
                 </section>
                 <section class="card my-4" id="inovation_homepage">
                     <h2 class=" font-bold text-4xl text-center card-text"> Our Vision </h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
-                        <textarea name="inovation_text" class="tiny" id="inovation_text" cols="150" required minlength="100" maxlength="255">{{$homepage->inovation_text}}</textarea>
-                        <span id="compt_innovation" class="text-right">max 255 signs</span>
+                        <textarea name="inovation_text" class="tiny" id="inovation_text" cols="150" required minlength="100" maxlength="775">{{$homepage->inovation_text}}</textarea>
+                        <p id="compt_innovation" class="text-center">Max 775 signs</p>
                     </div>
                 </section>
                 <section id="number" class="card my-4">
@@ -91,16 +91,16 @@
                     <h2 class=" font-bold text-4xl text-center card-text"> About us</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change text : </h3>
-                        <textarea name="about_text" class="tiny" id="about_text" cols="150" required minlength="100" maxlength="255">{{$homepage->about_text}}</textarea>
-                        <span id="compt_about" class="text-right">max 255 signs</span>
+                        <textarea name="about_text" class="tiny" id="about_text" cols="150" required minlength="100" maxlength="600">{{$homepage->about_text}}</textarea>
+                        <p id="compt_about" class="text-center">Max 600 signs</p>
                     </div>
                 </section>
                 <section class="card my-4" id="product_homepage">
                     <h2 class=" font-bold text-4xl text-center card-text">Products</h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
-                        <textarea name="product_text" class="tiny" id="product_text" cols="150" required minlength="100" maxlength="255">{{$homepage->product_text}}</textarea>
-                        <span id="compt_product" class="text-right">max 255 signs</span>
+                        <textarea name="product_text" class="tiny" id="product_text" cols="150" required minlength="100" maxlength="450">{{$homepage->product_text}}</textarea>
+                        <p id="compt_about" class="text-center">Max 450 signs</p>
                     </div>
                     <div class="card-footer">
                     <div class="d-flex">
@@ -155,25 +155,22 @@
         $('#alertvideo').html("");
         $('#product_alert').html("");
 
-        let compteur = $('textarea');
+        $('#header_text').keyup(function(){
+                    
+                    var nombreCaractere0 = $(this).val().length;
+                    var nombreCaractere0 = 180 - nombreCaractere0;
+                    console.log("entrer");
+                    
+                    var nombreMots0 = jQuery.trim($(this).val()).split(' ').length;
+                    if($(this).val() === '') {
+                        nombreMots = 0;
+                        console.log(' nombre 0');
+                    }
+                    
+                    var msg0 = ' ' + nombreMots0 + ' word(s) | ' + nombreCaractere0 + ' sign(s) left';
+                    $('#compt_header').text(msg0);
 
-        for (let i = 0; i < compteur.length; i++) {
-            
-        $(compteur[i]).keyup(function() {
-            
-            var nombreCaractere2 = $(this).val().length;
-            var nombreCaractere2 = 255 - nombreCaractere2;
-            
-            var nombreMots2 = jQuery.trim($(this).val()).split(' ').length;
-            if($(this).val() === '') {
-                nombreMots2 = 0;
-            }
-            var msg2 = ' ' + nombreMots2 + ' mot(s) | ' + nombreCaractere2 + ' Caractere(s) restant';
-           //compteur[i].after('<span class="text-right">'+msg2+'</span>');
-
-
-        }); 
-        }
+        });  
 
     });
 

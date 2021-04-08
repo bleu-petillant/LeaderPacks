@@ -49,9 +49,24 @@
                 <div class="relative menu-content container-fluid">
                 <a href="{{route('home')}}" class="nav-logo"><img src="{{asset('img/logo.png')}}" alt="" style="width: 86%;"></a> 
                         <div class="absolute  menu-laptop flex">
+                        @if ( request()->routeIs('about'))
+                            <a href="{{route('about')}}" class="nav-link-selected">About us</a>
+                        @else   
                             <a href="{{route('about')}}" class="nav-link">About us</a>
+                        @endif
+
+                        @if ( request()->routeIs('products'))
+                            <a href="{{route('products')}}" class="nav-link-selected">Products</a>
+                        @else
                             <a href="{{route('products')}}" class="nav-link">Products</a>
+                        @endif
+                        
+                        @if ( request()->routeIs('contact'))
+                            <a href="{{route('contact')}}" class="nav-link-selected">Contact</a>
+                        @else
                             <a href="{{route('contact')}}" class="nav-link">Contact</a>
+                        @endif
+
                             <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button  text-white"></span></a>
                         </div>
                 </div>
@@ -65,9 +80,23 @@
                         <div id="menu" class="sidemenu">
                             <div class="mobile-menu-link">
                                 <a href="{{route('home')}}"><i class="fas fa-home"></i></a>
-                                <a class="uppercase" href="{{route('about')}}">About us</a>
-                                <a class="uppercase" href="{{route('products')}}">Products</a>
-                                <a class="uppercase" href="{{route('contact')}}">Contact</a>
+                                @if ( request()->routeIs('about'))
+                                    <a href="{{route('about')}}" class="uppercase mobile-link-selected">About us</a>
+                                @else   
+                                    <a href="{{route('about')}}" class="uppercase">About us</a>
+                                @endif
+
+                                @if ( request()->routeIs('products'))
+                                    <a href="{{route('products')}}" class="uppercase mobile-link-selected">Products</a>
+                                @else
+                                    <a href="{{route('products')}}" class="uppercase">Products</a>
+                                @endif
+                                
+                                @if ( request()->routeIs('contact'))
+                                    <a href="{{route('contact')}}" class="uppercase mobile-link-selected">Contact</a>
+                                @else
+                                    <a href="{{route('contact')}}" class="uppercase">Contact</a>
+                                @endif
                                 <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button text-white"></span></a>
                                 <p class="text-center"><img class="logo-mobile" src="{{asset('img/logo.png')}}" alt=""></p>
                             </div>
@@ -106,7 +135,7 @@
                     Rua Hervé Joseph Matias, Lote 10-A, 7580-250,<br>
                     Alcácer do Sal, Portugal.</p>
                 
-                <a  class="text-white" href="">06.00.00.00.00</a>
+                <a  class="text-white" href="tel:+351265245180">+351 265 245 180</a>
             </div>
         </div>
         <div class=" col-lg-6 col-sm-12 footer-legale">

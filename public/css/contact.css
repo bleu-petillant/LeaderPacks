@@ -63,6 +63,7 @@
     font-size: 24px;
     font-weight: bold;
     width: 77%;
+    margin-left: 2vw;
 }
 
 .container-contact{
@@ -87,7 +88,7 @@
 .adress-container{
     background-color: #2470A1;
     position: absolute;
-    bottom: -26px;
+    bottom: -68px;
     right: 0;
     z-index: 1;
     padding: 72px 10px 10px 10px;
@@ -179,8 +180,7 @@
 .map-contact-mobile{
     position: relative;
     z-index: 4;
-    margin-bottom: 110px;
-    width: 83vw;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -191,7 +191,7 @@
 }
 
 .map-contact-mobile-container{
-    display: none;
+    display: none!important;
 }
 
 .contact-text-mobile{
@@ -200,28 +200,31 @@
 
 .adress-container-mobile{
     display: none;
-    background-color: #2470A1;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 1;
-    padding: 50px 20px 10px 20px;
+
 }
 
 #horizontale-contact-circles-mobile{
+    display: none;
     position: absolute;
     z-index: 1;
-    left: -51px;
-    bottom: -51px;
     height: 160px;
+    top: 0;
+    right: 0;
 }
 
 /*responsive */
 
+@media (max-width: 1350px){
+    .adress-container {
+        bottom: -90px;
+        padding: 72px 10px 10px 26px;
+    }
+}
+
 @media (max-width: 1244px){
     
     .contact-form {
-        margin-top: 3vh;
+        margin-top: 13vh;
     }
 }
 
@@ -236,7 +239,7 @@
     .adress-container {
         background-color: #2470A1;
         position: absolute;
-        bottom: 0;
+        bottom: -95px;
         right: 0;
         z-index: 1;
         padding: 72px 10px 10px 26px;
@@ -247,7 +250,7 @@
 
 
     .container-contact{
-        margin-top: -5vh;
+        margin-top: -2vh;
     }
 
     .laptop-contact-phone{
@@ -265,7 +268,7 @@
     }
 
     .contact-header{
-        height: 38vh;
+        height: 376px;
     }
 
     .contact-text{
@@ -283,13 +286,30 @@
         bottom: 6vh;
     }
 
+    .adress-container{
+        display: none;
+    }
+
+    .adress-container-mobile{
+        display: block;
+        background-color: #2470A1;
+        z-index: 1;
+        padding: 50px 20px 10px 20px;
+    }
+
 
     #horizontale-contact-circles{
         display: none;
     }
 
+    #horizontale-contact-circles-mobile{
+        display: block;
+    }
+
     .map-contact{
-        display: none;
+        display: block;
+        width: 100%!important;
+        margin-bottom: 0!important;
     }
 
     .map-contact-mobile-container{
@@ -339,16 +359,8 @@
         padding: 0 7%;
     }
 
-    .adress-container{
-        display: none;
-    }
-
-    .adress-container-mobile{
-        display: block;
-    }
-
     .contact-text-mobile{
-        font-size: 15px;
+        font-size: 18px;
         font-weight: bold;
         left: 10%;
         width: 69%;
@@ -356,12 +368,9 @@
         bottom: 6vh;
     }
 
-    
-
     .icon-header-contact {
         font-size: 36px;
     }
-
 
     .icon-header-contact {
         bottom: 7vh;
@@ -375,19 +384,18 @@
 @media (max-width: 344px){
 
     .contact-text-mobile{
-        font-size: 13px;
+        font-size: 16px;
         width: 60%;
         margin: 0 auto;
         text-align: justify;
         position: absolute;
         left: 10%;
         right: initial;
-        bottom: 9vh;
+        bottom: 7vh;
     }
 
 
     .map-contact-mobile {
-        margin-bottom: 131px;
         width: 100vw;
     }
 

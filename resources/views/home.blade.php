@@ -19,7 +19,7 @@
             <a class="social-button-container" href="">
                 <i class="icon-header-home fas fa-envelope"></i>
                 <div class="slider-social-mail">
-                    <p>contact@leaderpacks.com</p>
+                    <p>info@leaderpacks.com</p>
                 </div>
             </a>
         </div>
@@ -58,8 +58,8 @@
             </div>
             <!-- --------------------------------------------------------------mobile -->
             <div class=" flex icon-content-home-mobile">
-                <a href=""><i class="icon-header-home fas fa-envelope"></i></a>
-                <a href=""><i class="icon-header-home fas fa-phone-alt"></i></a>
+                <a href="mailto:info@leaderpacks.com"><i class="icon-header-home fas fa-envelope"></i></a>
+                <a href="tel:+351265245180"><i class="icon-header-home fas fa-phone-alt"></i></a>
                 
             </div>
             <!-- ---------------------------------------------------------------->
@@ -161,7 +161,7 @@
     <h2 id="home-product-title-mobile" class="home-h2">Products </h2>
         <div class=" flex">
             <div class="col-lg-5 col-md-6 col-sm-7 relative product-home-img-container">
-                <img src="{{asset($homepage->product_image)}}" class="w-full product-home-img"  alt="">
+                <img src="{{asset($homepage->product_image)}}" class="w-full product-home-img"  alt="image of a stethoscope">
                 <div id="home-product-circles" class="horizontale-point-content">
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
@@ -193,7 +193,7 @@
             <div class="flex relative home-product-content" data-sal-duration="1200" data-sal="slide-right" data-sal-delay="300" data-sal-easing="ease-out-bounce"> 
                 <div class="home-product-text">{!!$homepage->product_text!!}</div>
 
-                <img id="frame-mobile-home" class="home-product-frame" src="{{asset('img/frame.png')}}" alt="">
+                <img id="frame-mobile-home" class="home-product-frame" src="{{asset('img/frame.png')}}" alt="{{ $homepage->product_image_alt }}">
                 
                 
             </div>

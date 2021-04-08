@@ -47,7 +47,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea class="tiny" name="spirit_text" id="spirit_text" cols="150"  minlength="100" maxlength="650">{{$aboutpage->spirit_text}}</textarea>
-                        <span id="compt_spirit" class="text-right">max 650 signs</span>
+                        <p id="compt_spirit" class="text-center">Max 650 signs</p>
                     </div>
                 </section>
                 <section class="card my-4" id="factory_aboutpage">
@@ -55,7 +55,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea class="tiny" name="factory_text" id="factory_text" cols="150"  minlength="100" maxlength="575">{{$aboutpage->factory_text}}</textarea>
-                        <span id="compt_factory" class="text-right">max 575 signs</span>
+                        <p id="compt_factory" class="text-center">Max 575 signs</p>
                     </div>
                 </section>
                 <section id="research_aboutpage" class="card my-4">
@@ -63,7 +63,7 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea name="research_text" class="tiny" id="research_text" cols="150" minlength="100" maxlength="550" required>{{$aboutpage->research_text}}</textarea>
-                        <span id="compt_research" class="text-right">max 550 signs</span>
+                        <p id="compt_research" class="text-center">Max 550 signs</p>
                     </div>
                 </section>
                     <button class="btn btn-success btn-md" type="submit"><span class="fas fa-pen pr-2"></span>Update the About us page</button>
@@ -78,22 +78,7 @@
     $(document).ready(function () {
 
         $('#alert').html("");
-        let compteur_spirit = $('#compt_spirit');
-        $('#spirit_text').keyup(function() {
-                    
-            var nombreCaractere2 = $(this).val().length;
-            var nombreCaractere2 = 255 - nombreCaractere2;
-            
-            var nombreMots2 = jQuery.trim($(this).val()).split(' ').length;
-            if($(this).val() === '') {
-                nombreMots2 = 0;
-            }
-            var msg2 = ' ' + nombreMots2 + ' mot(s) | ' + nombreCaractere2 + ' Caractere(s) restant';
-            $('#compt_spirit').text(msg2);
 
-
-        }); 
-     
     });
 
     function fileValidation() {

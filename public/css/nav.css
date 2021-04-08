@@ -80,6 +80,17 @@
     text-align: center;
 }
 
+.mobile-link-selected{
+    padding: 20px 8px 20px 8px!important;
+    text-decoration: underline!important;
+    font-size: 24px!important;
+    font-weight: bold!important;
+    line-height: 28px!important;
+    color: black!important;
+    display: block!important;
+    text-align: center!important;
+}
+
 .sidemenu a:hover{
     color: black;
 }

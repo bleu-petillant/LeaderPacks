@@ -34,6 +34,21 @@ a, p, h1, h2, h3, h4, h5{
     padding: 0.5rem 1.3rem!important;
 }
 
+.nav-link-selected{
+    height: max-content;
+    margin: auto;
+    padding: 0.5rem 1.3rem!important;
+    font-size: 24px;
+    color: #2B465A !important;
+    font-weight: bold;
+}
+
+.nav-link-selected:hover{
+    text-decoration: none;
+}
+
+
+
 
 /* footer */
 
@@ -51,6 +66,11 @@ footer{
     padding-left: 5vw;
     margin-bottom: 10px;
 }
+
+.footer-contact a, .footer-contact p{
+    font-size: 20px;
+}
+
 
 .footer-legale{
     height: max-content;
@@ -91,7 +111,6 @@ footer{
     left: 54px;
     width: 0px;
     height: 50px;
-    background: #2470A2;
     border-radius: 3px;
     transition: all 0.5s 0.3s ease;
 }
@@ -101,7 +120,7 @@ footer{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 900;
-    color: #fff;
+    color: #02558B!important;
     text-align: center;
     line-height: 50px;
     opacity: 0;
@@ -127,17 +146,15 @@ footer{
     left: 54px;
     width: 0px;
     height: 50px;
-    background: #2470A2;
     border-radius: 3px;
     transition: all 0.5s 0.3s ease;
 }
 
 .slider-social-mail p {
     font-family: arial;
-    text-transform: uppercase;
     font-size: 16px;
     font-weight: 900;
-    color: #fff;
+    color: #02558B!important;
     text-align: center;
     line-height: 50px;
     opacity: 0;
@@ -164,7 +181,6 @@ footer{
     right: 54px;
     width: 0px;
     height: 50px;
-    background: #2470A2;
     border-radius: 3px;
     transition: all 0.5s 0.3s ease;
 }
@@ -174,7 +190,7 @@ footer{
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 900;
-    color: #fff;
+    color: #02558B!important;
     text-align: center;
     line-height: 50px;
     opacity: 0;

@@ -3,11 +3,7 @@
     position: fixed !important;
 }
 
-
-.tox-tinymce{
-    height: 400px!important;
-}
-
+/*menu*/
 .sidebar-menu{
     height: 100%;
 }
@@ -23,6 +19,22 @@
 .nav-item-admin-logout{
     color: red!important;
 }
+
+/*tiny-mce*/
+.tox-tinymce{
+    height: 400px!important;
+}
+
+label.mce-charactercount {
+    margin: 2px 0 2px 2px;
+    padding: 8px;
+  }
+  
+  /* Optional: Remove the html path code from the status bar. */
+  .mce-path {
+    display: none !important;
+  }
+
 
 
 /*hide/show image/video*/

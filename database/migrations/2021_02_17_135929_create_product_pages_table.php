@@ -15,7 +15,7 @@ class CreateProductPagesTable extends Migration
     {
         Schema::create('product_pages', function (Blueprint $table) {
             $table->id();
-            $table->string('product_text')->nullable();
+            $table->longText('product_text')->nullable();
             $table->string('image')->nullable();
             $table->string('image_alt')->nullable();
             $table->string('video')->nullable();

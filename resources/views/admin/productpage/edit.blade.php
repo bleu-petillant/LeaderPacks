@@ -24,14 +24,14 @@
                         <h2 class=" font-bold text-4xl text-center card-text">Header</h2>
                         <div class="card-body">
                             <h2 class="text-2xl text-center">Change text : </h2>
-                            <textarea name="product_text" id="product_text" cols="150"  minlength="100" maxlength="255">{{$productpage->product_text}}</textarea>
-                            <span id="compt_spirit" class="text-right">max 255 signs</span>
+                            <textarea class="w-full" name="product_text" id="product_text" cols="150"  minlength="100" maxlength="180">{{$productpage->product_text}}</textarea>
+                            <span id="compt_spirit" class="text-center">0 word(s) | 180 sign(s) left</span>
                         </div>
                     </section>
-                    <div class="col-lg-10 my-4 ">
+                    <div class=" card my-4 ">
                         <p class="label">Add video or Image</p>
                         
-                        <div class="flex">
+                        <div class="flex justify-center">
                             <input type="radio" name="color" value="product-image"> image
                             <input type="radio" name="color" value="product-video"> video
                         </div>
@@ -64,15 +64,15 @@
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea name="technologie_text" class="tiny" id="technologie_text" cols="150"  minlength="100" maxlength="255">{{$productpage->technologie_text}}</textarea>
-                        <span id="compt_factory" class="text-right">max 255 signs</span>
+                        <p id="compt_factory" class="text-center">Max 550 signs</p>
                     </div>
                 </section>
                 <section id="innovation" class="card my-4">
-                      <h2 class=" font-bold text-4xl text-center card-text">RESEARCH & DEVELOPMENT </h2>
+                    <h2 class=" font-bold text-4xl text-center card-text">RESEARCH & DEVELOPMENT </h2>
                     <div class="card-body">
                         <h3 class="text-2xl">Change text :</h3>
                         <textarea name="innovation_text" class="tiny" id="innovation_text" cols="150" required>{{$productpage->innovation_text}}</textarea>
-                        <span id="compt_research" class="text-right">max 255 signs</span>
+                        <p id="compt_research" class="text-center">Max 450 signs</p>
                     </div>
                 </section>
                     <button class="btn btn-success my-3" type="submit"><span class="pr-2 fas fa-pen"></span>Update modification</button>
@@ -101,6 +101,24 @@
 
             $('#alert').html("");
         });
+
+
+        $('#product_text').keyup(function(){
+                    
+            var nombreCaractere0 = $(this).val().length;
+            var nombreCaractere0 = 180 - nombreCaractere0;
+            console.log("entrer");
+            
+            var nombreMots0 = jQuery.trim($(this).val()).split(' ').length;
+            if($(this).val() === '') {
+                nombreMots = 0;
+                console.log(' nombre 0');
+            }
+            
+            var msg0 = ' ' + nombreMots0 + ' word(s) | ' + nombreCaractere0 + ' sign(s) left';
+            $('#compt_spirit').text(msg0);
+
+        });  
 
     function fileValidation() {
         var fileInput = document.getElementById('image');

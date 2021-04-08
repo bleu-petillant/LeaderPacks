@@ -15,13 +15,13 @@
 
         <a class="laptop-contact-phone relative social-button-container" href="">
             <div class="slider-social-tel-contact">
-                <p>06.00.00.00.00</p>
+                <p>+351 265 245 180</p>
             </div>
             <i class="icon-header-contact fas fa-phone-alt"></i>
         </a>
         <!-- ------------------- mobile -->
         <div class="mobile-contact-phone">
-            <i class=" icon-header-contact fas fa-phone-alt"></i>
+            <a href="tel:+351265245180"><i class=" icon-header-contact fas fa-phone-alt"></i></a>
         </div>
         
         <!-- -------------------  -->
@@ -29,23 +29,26 @@
 <section>
     <div class="row container-contact ">
         <div class="col-lg-4 col-sm-12 container-map">
-            <img class="map-contact" src="{{asset('img/rectanglemap.png')}}" alt="">
-            <!-- ------------------- mobile -->
-            <div class="map-contact-mobile-container">
-                <img class="map-contact-mobile" src="{{asset('img/rectangle128.png')}}" alt="">
-                <div id="horizontale-contact-circles-mobile" class="horizontale-point-content">
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
-                    <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+            <!-- <img class="map-contact" src="{{asset('img/rectanglemap.png')}}" alt=""> -->
+            <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3" class="map-contact">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                    var setting = {"height":580,"width":419,"zoom":17,"queryString":"L.E.F S.A - Leaderpacks, Rua Hervé Joseph Matias, Alcácer do Sal, Portugal","place_id":"ChIJDdztvAV_GQ0RqOIVsHgh9t0","satellite":false,"centerCoord":[38.39338556258359,-8.50593965000001],"cid":"0xddf62178b015e2a8","lang":"fr","cityUrl":"/norway/a-281743","cityAnchorText":"Carte de Å, Northern Norway, Norvège","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"452596"};
+                    var d = document;
+                    var s = d.createElement('script');
+                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=452596';
+                    s.async = true;
+                    s.onload = function (e) {
+                    window.OneMap.initMap(setting)
+                    };
+                    var to = d.getElementsByTagName('script')[0];
+                    to.parentNode.insertBefore(s, to);
+                    })();</script>
                 </div>
-            </div>
+
+            <!-- ------------------- mobile -->
+            <!-- <div class="map-contact-mobile-container">
+                <img class="map-contact-mobile" src="{{asset('img/rectangle128.png')}}" alt="">
+            </div> -->
             <!-- ------------------- -->
 
             <div id="horizontale-contact-circles" class="horizontale-point-content">
@@ -62,12 +65,25 @@
             </div>
             <div class="adress-container">
                 <p class="text-white">Zona de Industria Ligeira<br>Rua Hervé Joseph Matias, Lote 10-A, 7580-250, <br>Alcácer do Sal, Portugal. </p>
+                <p class="text-white" >GPS: 38.4010544, -8.4975132,20904</p>
             </div>
 
             <!-- ------------------- mobile -->
-            <div class="adress-container-mobile">
-                <p class="text-white">Zona de Industria Ligeira<br>Rua Hervé Joseph Matias, Lote 10-A, 7580-250, <br>Alcácer do Sal, Portugal. </p>
+            <div class="flex">
+                <div class="w-2/5 relative">
+                    <div id="horizontale-contact-circles-mobile" class="horizontale-point-content">
+                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                        <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
+                    </div>
+                </div>
+                <div class=" w-3/5 adress-container-mobile">
+                    <p class="text-white">Zona de Industria Ligeira<br>Rua Hervé Joseph Matias, Lote 10-A, 7580-250, <br>Alcácer do Sal, Portugal. </p>
+                    <p class="text-white" >GPS: 38.4010544, -8.4975132,20904</p>
+                </div>
             </div>
+            
             <!-- ------------------- -->
 
 

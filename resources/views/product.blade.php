@@ -13,7 +13,7 @@
     <section id="header_products" class="row flex-column-reverse flex-lg-row">
         
         <div class="col-lg-6 col-sm-12 relative">
-            <p class="header-text-products" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="400" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in</p>
+            <p class="header-text-products" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="400" data-sal-easing="ease-out-bounce"> All our products can be printed or unprinted : <br>- Paper Grid Lacquered Solvent-Based <br>- Direct Seal Paper<br> -Cold Seal Latex Free<br> -Allover Coated Reinforced Paper Water-Based<br> -Allover Coated Paper Water-Based <br>- Grid lacquer coated Tyvek®<br> - Paper/Polyethy</p>
         </div>
 
         <div class="col-lg-6 col-sm-12 relative ">
@@ -29,12 +29,11 @@
                 
                 @endif
                 @if ($productpage->image ?? '')
-                    <div class="image-product" style="background: url('{{asset($productpage->image)}}')"></div>
+                    <div class="image-product" title="{{ $productpage->image_alt }}" style="background: url('{{asset($productpage->image)}}')"></div>
                 @else
 
                 @endif
-            </div>
-            <div id="horizontale-video-products-circles" class="horizontale-point-content">
+                <div id="horizontale-video-products-circles" class="horizontale-point-content">
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
@@ -46,6 +45,9 @@
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                     <div class="flex "><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span><span class="round-red"></span></div>
                 </div>
+            </div>
+
+            
 
         </div>
 
@@ -110,10 +112,7 @@
                 <!-- ------------------------------------------------ -->
 
                 <div class="col-lg-8 w-full">
-                    <p class="technology-text" data-sal-duration="1000" data-sal="slide-left" data-sal-delay="200" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.
-                    <br><br>
-                    neque arcu ut dictumst enim. Et vulputate purus, erat interdum. Gravida et eget sed sit.
-                    Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue hendrerit risus et arcu ipsum. Urna, eget justo pretium non feugiat laoreet vitae. Morbi dictum sed proin eu. Accumsan consequat ut praesent viverra risus aliquet.  </p>
+                    <div class="technology-text" data-sal-duration="1000" data-sal="slide-left" data-sal-delay="200" data-sal-easing="ease-out-bounce">{!! $productpage->technologie_text !!} </div>
                 </div>
 
             </div>
@@ -121,8 +120,7 @@
         
         <section id="innovation" class="relative">
             <h2 class="innovation-title about-h2 uppercase">RESEARCH & DEVELOPMENT </h2>
-            <p class="innovation-text-product" data-sal-duration="1000" data-sal="slide-right" data-sal-duration="1000" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease-out-bounce" data-sal-delay="200" data-sal-easing="ease-out-bounce">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna in nisl convallis lacus faucibus morbi amet mauris eu. Non morbi tristique mauris eget. Faucibus auctor dictum penatibus consectetur accumsan in. Venenatis, imperdiet urna ipsum, adipiscing netus aliquet tellus.
-            neque arcu ut dictumst enim. Et vulputate purus, erat interdum. Gravida et eget sed sit.Mollis eu id lacus, eu porttitor diam sagittis. Pellentesque urna bibendum augue hendrerit risus et arcu ipsum. </p>
+            <div class="innovation-text-product" data-sal-duration="1000" data-sal="slide-right" ata-sal-delay="200"  data-sal-easing="ease-out-bounce">{!! $productpage->innovation_text !!}</div>
             <!-- ------------------------------------------------mobile -->
             
             <div id="horizontale-recherche-content-circles" class="horizontale-point-content" >
@@ -140,7 +138,7 @@
             <!-- -------------------------------------------------->
             </section>
 
-        <section id="ourProducts">
+        <section id="ourProducts" class="hidden">
             <h2 class="ourproducts-title about-h2 uppercase">Our <br> products</h2>
             
             <div class="grid-content relative">
