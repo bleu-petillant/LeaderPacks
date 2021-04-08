@@ -25,8 +25,9 @@
                     <label class="label" for="job_title">Slogan</label>
                         <input type="text" name="job_title" id="job_title" class="form-control my-4" required placeholder="Slogan department" required>
                         <div class="container my-2">
-                            <label for="desc">Enter a little description here: (max 450 signs)</label> <br>
-                            <textarea class="tiny" name="desc" id="desc" cols="50" required></textarea>
+                            <label for="desc">Change description : </label> <br>
+                            <textarea class="tiny" name="desc" id="desc" cols="50"></textarea>
+                            <p class="text-center"> Max 450 signs</p>
                         </div>
 
                     <div class="container my-5">
@@ -42,13 +43,9 @@
                         </div>
                     </div>
                     <div id="imagePreview" class="col-lg-6">
-                        <div class="col-lg-4">
-                            <img src="" class="img-fluid" alt="avatar">
-                        </div>
-                    <div>
+                    
                     </div>
-                    </div>
-                    </div>
+
                     <button class="btn btn-outline-pink raleway my-4" type="submit"><span class="fas fa-plus pr-2"></span>Add this department</button>
                 </form>
             </div>
