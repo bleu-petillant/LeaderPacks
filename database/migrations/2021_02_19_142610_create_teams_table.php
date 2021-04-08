@@ -19,7 +19,7 @@ class CreateTeamsTable extends Migration
             $table->string('image_alt')->nullable();
             $table->string('teammates')->nullable();
             $table->string('job_title')->nullable();
-            $table->string('desc',255)->nullable();
+            $table->longText('desc')->nullable();
             $table->unsignedInteger('page_id')->nullable()->default(1);
             $table->timestamps();
         });

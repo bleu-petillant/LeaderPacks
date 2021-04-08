@@ -49,18 +49,12 @@ class ProductPageController extends Controller
     {
         $this->validate($request,
         [
-            'product_text'=>'required',
             'technologie_text'=>'required',
             'innovation_text'=>'required',
             // 'image'=>'image|mimes:jpeg,png,jpg,gif,svg',
             // 'video' => 'mimetypes:video/mp4/avi/mov',
         ]);
            
-            if($productpage->isClean('product_text'))
-            {
-                
-                $productpage->product_text  = $productpage->product_text;
-            }
             if($productpage->isClean('technologie_text'))
             {
                 
@@ -77,8 +71,6 @@ class ProductPageController extends Controller
                 $productpage->image_alt  = $productpage->image_alt;
             }
 
-
-            $productpage->product_text  = $request->product_text;
             $productpage->technologie_text = $request->technologie_text;
             $productpage->innovation_text =$request->innovation_text;
             $productpage->image_alt =$request->image_alt;

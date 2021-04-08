@@ -25,15 +25,15 @@
                     <label class="label" for="job_title">Slogan</label>
                         <input type="text" name="job_title" id="job_title" class="form-control my-4" required placeholder="Slogan department" required>
                         <div class="container my-2">
-                            <label for="desc">Enter a little description here: (max 255 signs)</label> <br>
-                            <textarea name="desc" id="desc" cols="50" required></textarea>
+                            <label for="desc">Enter a little description here: (max 450 signs)</label> <br>
+                            <textarea class="tiny" name="desc" id="desc" cols="50" required></textarea>
                         </div>
 
                     <div class="container my-5">
-                         <div class="col-lg-4">
-                             <label for="image_alt">Add little description for the picture</label>
-                             <input type="text" name="image_alt" id="image_alt" placeholder="Little description" required>
-                         <h3 class="text-2xl">Add your profile picture</h3>
+                        <div class="col-lg-4">
+                            <label for="image_alt">Add little description for the picture</label>
+                            <input type="text" name="image_alt" id="image_alt" placeholder="Little description" required>
+                        <h3 class="text-2xl">Add your profile picture</h3>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input my-2" name="image" id="image" lang="fr"
                                 onchange="return fileValidation()">
@@ -46,7 +46,7 @@
                             <img src="" class="img-fluid" alt="avatar">
                         </div>
                     <div>
-                     </div>
+                    </div>
                     </div>
                     </div>
                     <button class="btn btn-outline-pink raleway my-4" type="submit"><span class="fas fa-plus pr-2"></span>Add this department</button>

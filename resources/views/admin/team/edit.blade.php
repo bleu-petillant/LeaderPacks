@@ -26,9 +26,9 @@
                     <label class="label" for="job_title">Change slogan</label>
                         <input type="text" name="job_title" id="job_title" class="form-control my-4" value="{{$team->job_title}}" placeholder="{{$team->job_title}}">
                         <div class="container my-2">
-                            <label for="desc">Change description : </label> max 255 signs<br>
-                            <textarea name="desc" id="desc" cols="50">{{$team->desc}}</textarea>
-                            
+                            <label for="desc">Change description : </label> <br>
+                            <textarea class="tiny" name="desc" id="desc" cols="50">{{$team->desc}}</textarea>
+                            <p class="text-center"> Max 450 signs</p>
                         </div>
 
                     <div class="container my-5">
