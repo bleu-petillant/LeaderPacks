@@ -211,7 +211,7 @@
             <div id="team-mobile" class="w-full">
                 <div class=" relative">
                     <div id="teamImageMobile" class="w-full relative">
-                        <div id="{{$team->id}}" class="w-full team-image-mobile relative"  style="background: url('{{asset($firstTeam->image)}}')"></div>
+                        <img d="{{$team->id}}" class="w-full team-image-mobile relative" src="{{asset($firstTeam->image)}}" alt="">
                     </div>
 
                     <div class="slick-mobile-container">
@@ -223,8 +223,8 @@
                             @foreach ($teams as $team) 
                             <form action="" method="post">
                             @csrf
-                                <!-- <div id="{{$team->id}}" class="miniature-img-team-mobile mini-mobile cursor-pointer" style="background: url('{{asset($team->image)}}')"></div> -->
-                                <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt="">
+                                <div id="{{$team->id}}" class="miniature-img-team-mobile mini-mobile cursor-pointer" style="background: url('{{asset($team->image)}}')"></div>
+                                <!-- <img src="{{asset($team->image)}}" id="{{$team->id}}" class="product-miniature-img  cursor-pointer membre-img " alt=""> -->
                             </form>
                             @endforeach
                         </div>

@@ -242,7 +242,7 @@
     background-size: cover !important;
     background-repeat: no-repeat!important;
     background-position: center!important;
-    height: 792px;
+    height: 931px;
     position: absolute;
     bottom: 0;
 }
@@ -361,7 +361,7 @@
 }
 
 .miniature-img-team-mobile{
-    height: 20vh;
+    height: 200px;
     background-size: cover!important;
     background-position: center!important;
     background-repeat: no-repeat!important;
@@ -384,7 +384,7 @@
     height: 100%;
     right: 0;
     background: linear-gradient(-90deg, rgba(0,0,0,0.8127626050420168) 7%, rgba(0,0,0,0) 100%);
-    padding: 8vh 10px;
+    padding: 40px 10px;
 }
 
 .prev-mobile{
@@ -393,7 +393,7 @@
     height: 100%;
     left: 0;
     background: linear-gradient(90deg, rgba(0,0,0,0.8127626050420168) 7%, rgba(0,0,0,0) 100%);
-    padding: 8vh 10px;
+    padding: 40px 10px;
 }
 
 /*_______________________________________________ responsive*/
@@ -585,8 +585,20 @@
         margin-left: 4%;
     }
 
+    .description-member p {
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: justify;
+        color: #2B465A;
+        width: 100%;
+        margin-left: 0%;
+    }
+
     .miniature-img-team-mobile {
-        height: 14vh;
+        height: 150px;
     }
 
     .prev-mobile {
@@ -597,7 +609,7 @@
         background: linear-gradient(
     90deg
     , rgba(0,0,0,0.8127626050420168) 7%, rgba(0,0,0,0) 100%);
-        padding: 5vh 10px;
+        padding: 45px 10px;
     }
     
     .next-mobile {
@@ -608,7 +620,7 @@
         background: linear-gradient(
     -90deg
     , rgba(0,0,0,0.8127626050420168) 7%, rgba(0,0,0,0) 100%);
-        padding: 5vh 10px;
+        padding: 45px 10px;
     }
 
     

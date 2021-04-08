@@ -54,8 +54,8 @@ class MembersMobile
         bioContainer.html("");
         bioContainer.append('<h3 class="name-member">' +teammates+ '</h3>');
         bioContainer.append('<p class="fonction-member">' +job + '</p>');
-        bioContainer.append('<p class="description-member">' +desc+ '</p>');
-        imageContainer.append(' <img class="w-full team-image relative" src="'+base_url+'/'+image+'" alt="">')
+        bioContainer.append('<div class="description-member">' +desc+ '</div>');
+        imageContainer.append(' <img class="w-full team-image-mobile relative" src="'+base_url+'/'+image+'" alt="">')
         // imageContainer.append('<div id="{{$team->id}}" class="w-full team-image-mobile relative"  style="background: url('+image+')"></div>');
         
     }
