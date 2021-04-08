@@ -13,7 +13,7 @@
             <a class="social-button-container" href="">
                 <i class="icon-header-home fas fa-phone-alt"></i>
                 <div class="slider-social-tel">
-                    <p>+351 265 245 180<</p>
+                    <p>+351 265 245 180</p>
                 </div>
             </a>
             <a class="social-button-container" href="">
