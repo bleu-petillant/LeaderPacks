@@ -138,12 +138,20 @@
                 <a  class="text-white" href="tel:+351265245180">+351 265 245 180</a>
             </div>
         </div>
-        <div class=" col-lg-6 col-sm-12 footer-legale">
-            <p class="mention-legale"><a href="">Mentions Légales</a> </p>
-            <p>©2021</p>
-
+        <div class="col-lg-6 col-sm-12">
+            <div class="footer-legale flex">
+                <div class="">
+                    <p class="mention-legale"><a href="">Mentions Légales</a> </p>
+                    <p>©2021</p>
+                </div>
+                <div class=" footer-fleche-container">
+                    <a href="#"><img class="footerfleche" src="{{ asset('img/footerfleche.svg') }}" alt=""></a>
+                </div>
+                
+            </div>
         </div>
-
+       
+        
 
     </footer>
     

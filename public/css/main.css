@@ -93,6 +93,12 @@ footer{
     
 }
 
+.footerfleche{
+    width: 46%;
+    float: right;
+    margin-right: 22%;
+}
+
 /* ----- social icon */
 
 .social-button-container{
@@ -214,12 +220,7 @@ footer{
 
 @media (max-width: 992px){
     .footer-legale{
-        right: 0;
-        left: 0;
-        top: 26%;
-        margin: auto 0;
-        padding-left: 5vw!important;
-        padding-bottom: 2vh;
+        position: initial;
     }
 
     
@@ -238,6 +239,10 @@ footer{
     
     .footer-legale{
         padding-left: 9vw!important;
+    }
+
+    .footer-fleche-container{
+        display: none;
     }
     
 }
