@@ -9,6 +9,10 @@ body, html{
     overflow-x: hidden!important;
 }
 
+body{
+    overflow: hidden;
+}
+
 
 /* font */
 
