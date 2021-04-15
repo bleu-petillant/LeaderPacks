@@ -66,8 +66,8 @@
                         @else
                             <a href="{{route('contact')}}" class="nav-link">Contact</a>
                         @endif
-
-                            <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button  text-white"></span></a>
+                            <img style="width:9%" class="puce" src="{{asset('img/frame.png')}}" alt="">
+                            <a style="display:none" class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button  text-white"></span></a>
                         </div>
                 </div>
             </nav>
@@ -97,7 +97,7 @@
                                 @else
                                     <a href="{{route('contact')}}" class="uppercase">Contact</a>
                                 @endif
-                                <a class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button text-white"></span></a>
+                                <a style="display:none" class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button text-white"></span></a>
                                 <p class="text-center"><img class="logo-mobile" src="{{asset('img/logo.png')}}" alt=""></p>
                             </div>
                             
@@ -141,7 +141,7 @@
         <div class="col-lg-6 col-sm-12">
             <div class="footer-legale flex">
                 <div class="">
-                    <p class="mention-legale"><a href="">Mentions Légales</a> </p>
+                    <p style="display:none" class="mention-legale"><a href="">Mentions Légales</a> </p>
                     <p>©2021</p>
                 </div>
                 <div class=" footer-fleche-container">

@@ -13,7 +13,7 @@
     <section id="header_products" class="row flex-column-reverse flex-lg-row">
         
         <div class="col-lg-6 col-sm-12 relative">
-            <p class="header-text-products" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="400" data-sal-easing="ease-out-bounce"> All our products can be printed or unprinted : <br><br>- Paper Grid Lacquered Solvent-Based <br>- Direct Seal Paper<br>- Cold Seal Latex Free<br>- Allover Coated Reinforced Paper Water-Based<br>- Allover Coated Paper Water-Based <br>- Grid lacquer coated Tyvek®<br>- Paper/Polyethy</p>
+            <p class="header-text-products" data-sal-duration="1000" data-sal="slide-right" data-sal-delay="400" data-sal-easing="ease-out-bounce"> All our products can be printed or unprinted : <br><br>- Paper Grid Lacquered Solvent-Based <br>- Direct Seal Paper<br>- Cold Seal Latex Free<br>- Allover Coated Reinforced Paper Water-Based<br>- Allover Coated Paper Water-Based <br>- Grid lacquer coated Tyvek®<br>- Paper/Polyethylene</p>
         </div>
 
         <div class="col-lg-6 col-sm-12 relative ">
