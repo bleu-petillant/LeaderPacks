@@ -66,7 +66,7 @@
                         @else
                             <a href="{{route('contact')}}" class="nav-link">Contact</a>
                         @endif
-                            <img style="width:9%" class="puce" src="{{asset('img/frame.png')}}" alt="">
+                            <img style="width:50px; height:50px" class="puce" src="{{asset('img/frame.png')}}" alt="">
                             <a style="display:none" class="link-red-user-button" href="#"><span class="fas fa-user nav-user-button  text-white"></span></a>
                         </div>
                 </div>
