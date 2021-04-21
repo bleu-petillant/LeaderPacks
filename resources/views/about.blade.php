@@ -87,7 +87,7 @@
                                             background-position: center center;" title=""></div>
                     </div>
                     <div class="flex">
-                        <div class=" factory-img2" style="background: url('{{asset('img/factory3.jpg')}}'); background-repeat: no-repeat;
+                        <div class=" factory-img2" style="background: url('{{asset('img/factory32.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
                                             background-position: center center;" title=""></div>
                         <div class=" factory-img2" style="background: url('{{asset('img/factory4.jpg')}}'); background-repeat: no-repeat;
@@ -106,7 +106,7 @@
                         <div class="factory-img-sm" style="background: url('{{asset('img/factory2.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
                                             background-position: center center;"></div>
-                        <div class=" factory-img-sm" style="background: url('{{asset('img/factory3.jpg')}}'); background-repeat: no-repeat;
+                        <div class=" factory-img-sm" style="background: url('{{asset('img/factory32.jpg')}}'); background-repeat: no-repeat;
                                             background-size: cover;
                                             background-position: center center;"></div>
                         <div class="factory-img-sm" style="background: url('{{asset('img/factory4.jpg')}}'); background-repeat: no-repeat;
