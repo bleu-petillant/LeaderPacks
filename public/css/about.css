@@ -651,7 +651,7 @@
     }
 
     .miniature-img-team-mobile {
-        height: 150px;
+        height: 230px;
     }
 
     .prev-mobile {
@@ -662,7 +662,7 @@
         background: linear-gradient(
     90deg
     , rgba(0,0,0,0.8127626050420168) 7%, rgba(0,0,0,0) 100%);
-        padding: 45px 10px;
+        padding: 81px 10px;
     }
     
     .next-mobile {
@@ -673,7 +673,7 @@
         background: linear-gradient(
     -90deg
     , rgba(0,0,0,0.8127626050420168) 7%, rgba(0,0,0,0) 100%);
-        padding: 45px 10px;
+        padding: 81px 10px;
     }
 
     
@@ -705,6 +705,7 @@
 
     .prev-mobile , .next-mobile{
         font-size: 35px;
+        padding: 61px 10px;
     }
 
     .factory-img2 {
@@ -712,6 +713,10 @@
         width: 45%;
         margin: 10px 20px;
         border-top: 16px solid #9CDAEA;
+    }
+
+    .miniature-img-team-mobile {
+        height: 157px;
     }
 }
 
