@@ -33,10 +33,11 @@ class FormContact extends Mailable
      */
     public function build(Request $request)
     {
-        $firstname = $request->firstname;
-        $lastname = $request->lastname;
+        $firstname = $request->prenom;
+        $lastname = $request->name;
         $email = $request->email;
         $country = $request->country;
+        $city = $request->city;
         $message = $request->message;
         $contact_mail = 'info@leaderpacks.com';
         return $this

@@ -6,12 +6,22 @@
     
 @endsection
 @section('contact')
+   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css'/>
+    @if(Session::has('success'))
+    <script>
+        toastr.success("{{ Session::get('success') }}");
+    </script>
+    @endif
+    @if(Session::has('error'))
+    <script>
+        toastr.error("{{ Session::get('error') }}");
+    </script>
+    @endif
 <header class="contact-header relative">
         <h1 class="contact-h1 uppercase"><span class="title-blue font-bold">contact</span></h1>
         <!-- ------------------- mobile -->
         <p class="text-white contact-text-mobile ">{{$contactpage->contact_text}} </p>
         <!-- -------------------  -->
-
 
         <a class="laptop-contact-phone relative social-button-container" href="">
             <div class="slider-social-tel-contact">
@@ -92,7 +102,7 @@
             <p class="text-white contact-text ">{{$contactpage->contact_text}} </p>
 
             <div class="contact-form">
-            <form class="grid form-contact relative" action="{{route('message')}}" method="post" id="message">
+            <form class="grid form-contact relative" action="{{route('message')}}" method="post"  id="message">
                 @csrf
                 <div class=" row justify-between padding-form-mobile">
                     <div class="required col-lg-3 col-sm-5">
@@ -371,7 +381,7 @@
                 </div>
                 
                 <div class="button-container">
-                    <bouton type="submit" id="submit" class="bouton">Submit</bouton>
+                    <button type="submit" id="submit" class="bouton">Submit</bouton>
                 </div>
                 
 
@@ -382,4 +392,5 @@
 
     </div>
 </section>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js'></script>
 @endsection

@@ -13,10 +13,11 @@ class MessageController extends Controller
     public function send(Request $request)
     {
         $this->validate($request, [
-            'firstname' => 'required',
+            'prenom' => 'required',
             'email' => 'bail|required|email',
-            'lastname' => 'required',
+            'name' => 'required',
             'country'=>'required',
+            'city'=>'required',
             'message' => 'required'
         ]);
 
