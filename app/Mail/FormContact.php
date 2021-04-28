@@ -38,7 +38,7 @@ class FormContact extends Mailable
         $email = $request->email;
         $country = $request->country;
         $message = $request->message;
-        $contact_mail = 'leaderpacks.conatct@test.com';
+        $contact_mail = 'info@leaderpacks.com';
         return $this
         ->subject('message from Leaderpacks contact page')
         ->from($email)
