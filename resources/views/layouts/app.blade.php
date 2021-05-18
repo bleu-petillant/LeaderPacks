@@ -47,7 +47,7 @@
             @endauth
             <nav id="laptop-menu" x-data="{ open: false }" class="bg-white border-b border-gray-100 navbar navbar-expand-lg">
                 <div class="relative menu-content container-fluid">
-                <a href="{{route('home')}}" class="nav-logo"><img src="{{asset('img/logo.png')}}" alt="" style="width: 86%;"></a> 
+                <a href="{{route('home')}}" class="nav-logo"><img src="{{asset('img/logo.png')}}" alt="" style="width: 80%;"></a> 
                         <div class="absolute  menu-laptop flex">
                         @if ( request()->routeIs('about'))
                             <a href="{{route('about')}}" class="nav-link-selected">About us</a>
@@ -145,7 +145,7 @@
                     <p>©2021</p>
                 </div>
                 <div class=" footer-fleche-container">
-                    <a href="#"><img class="footerfleche" src="{{ asset('img/footerfleche.svg') }}" alt=""></a>
+                    <a href="#"><img class="footerfleche" src="{{ asset('img/footerfleche.svg') }}" alt="" width="60%"></a>
                 </div>
                 
             </div>

@@ -62,7 +62,8 @@ footer{
 }
 
 .footer-logo{
-    padding-left: 3vw;
+    padding-left: 2vw;
+    width: 60%;
 }
 
 .footer-contact{
