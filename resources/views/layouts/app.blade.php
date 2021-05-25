@@ -10,7 +10,7 @@
         <meta name="description"content="">
         <link rel="alternate" href="rss.xml" type="application/rss+xml" title="RSS">
         <title>@yield('title')</title>
-
+        <link rel="shortcut icon" href="{{ asset('img/Icone/ico.ico') }}" type="image/x-icon">
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
         <link rel="preconnect" href="https://fonts.gstatic.com">
