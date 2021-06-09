@@ -234,4 +234,6 @@ class HomePageController extends Controller
         return redirect()->route('home');
     }
 
+
+
 }

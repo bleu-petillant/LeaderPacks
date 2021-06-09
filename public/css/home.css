@@ -68,7 +68,13 @@
     margin: 5px 10px;
 }
 
-
+.mention
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
 
 /* video */
 #header_homepage{

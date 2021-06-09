@@ -48,5 +48,9 @@ class MainController extends Controller
             return response()->json(['status'=>'success',$memberSelect]);
         }
     }
+    public function mentions()
+    {
+        return view('mentions');
+    }
 
 }

@@ -124,6 +124,7 @@
                 @yield('about')
                 @yield('products')
                 @yield('contact')
+                @yield('mentions')
             </main>
             
         </div>
@@ -141,7 +142,7 @@
         <div class="col-lg-6 col-sm-12">
             <div class="footer-legale flex">
                 <div class="">
-                    <p style="display:none" class="mention-legale"><a href="">Mentions Légales</a> </p>
+                    <p class="mention-legale"><a href="{{ route('mentions') }}">Mentions Légales</a> </p>
                     <p>©2021</p>
                 </div>
                 <div class=" footer-fleche-container">
