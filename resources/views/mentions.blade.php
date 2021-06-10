@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-    Mentions légales
+    Legal Notices
 @endsection
 @section('meta')
     
@@ -8,7 +8,7 @@
 
 @section('mentions')
         <header class="home-header relative">
-        <h1 class="title-blue font-bold text-center text-7xl mention">Mentions légales</h1>
+        <h1 class="title-blue font-bold text-center text-7xl mention">Legal Notices</h1>
         <div class="icon-content-header-home">
             <a class="social-button-container" href="">
                 <i class="icon-header-home fas fa-phone-alt"></i>
