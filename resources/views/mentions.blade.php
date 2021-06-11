@@ -8,7 +8,7 @@ Terms and Conditions of Sale
 
 @section('mentions')
         <header class="home-header relative">
-        <h1 class="title-blue font-bold text-center text-7xl mention">Terms and Conditions of Sale</h1>
+        <h1 class="title-blue font-bold text-center text-6xl mention">Terms and Conditions of Sale</h1>
         <div class="icon-content-header-home">
             <a class="social-button-container" href="">
                 <i class="icon-header-home fas fa-phone-alt"></i>
