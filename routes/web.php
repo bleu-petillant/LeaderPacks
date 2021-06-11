@@ -28,7 +28,7 @@ Route::get('/',[MainController::class,'index'])->name('home');
 Route::get('/about us',[MainController::class,'about'])->name('about');
 Route::get('/products',[MainController::class,'product'])->name('products');
 Route::get('/contact',[MainController::class,'contact'])->name('contact');
-Route::get('/legal notices',[MainController::class,'mentions'])->name('mentions');
+Route::get('/terms and conditions of sale',[MainController::class,'mentions'])->name('mentions');
 // send messages
 Route::post('/message',[MessageController::class,'send'])->name('message');
 Route::post('get/member',[MainController::class,'GetMembers'])->name('getmember');

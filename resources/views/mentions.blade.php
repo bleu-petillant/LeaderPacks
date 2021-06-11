@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title')
-    Legal Notices
+Terms and Conditions of Sale
 @endsection
 @section('meta')
     
@@ -8,7 +8,7 @@
 
 @section('mentions')
         <header class="home-header relative">
-        <h1 class="title-blue font-bold text-center text-7xl mention">Legal Notices</h1>
+        <h1 class="title-blue font-bold text-center text-7xl mention">Terms and Conditions of Sale</h1>
         <div class="icon-content-header-home">
             <a class="social-button-container" href="">
                 <i class="icon-header-home fas fa-phone-alt"></i>
@@ -26,8 +26,8 @@
     </header>
     <section>
 <div class="container text-justify">
-            <h2 class="text-center my-10">TERMS AND CONDITIONS</h2>
-            <p>
+           
+            <p class="mt-20">
                 These Terms and Conditions shall apply to all supply agreements regarding products and/or service agreements entered into by L.E.F., S. A., with registered office at Rua Comandante Ramiro Correia, nº 5, 3º direito, 2700-205 Amadora, legal entity no. 513 518 266, registered at the Commercial Registry Office under the same number, with a share capital of EUR 7,974,615.00 (the "Company"), with the respective buyer (the "Buyer"). The products and services marketed by the Company are exclusively aimed at companies and professionals; therefore, these Terms and Conditions shall not apply to consumers.
                 These Terms and Conditions, together with all other documents relating to the supply of products and/or the provision of contracted services, including purchase orders, order forms and order confirmations constitute the entire legally binding agreement entered into by and between the Company and the Buyer (the "Agreement").
                 No variation of these Terms and Conditions shall be binding unless if previously and expressly accepted in writing by both parties, and, therefore, no amendment to them shall be made by means of a mere order confirmation, order receipt from the Buyer’s purchase or any other form containing different terms and conditions from those established herein.
@@ -53,9 +53,8 @@
         </p>
         <strong> <h3>4. Transport and delivery/service</h3></strong> <br>
         <p>
-            
             4.1 The delivery times for products and services communicated by the Company are indicative, without prejudice to the Company making its best efforts to supply all of the products or services ordered at the agreed time. Notwithstanding the foregoing, and in the event that the impossibility to supply all of the products or services is due to objectively justified causes, including, without limitation, cases of force majeure or delays by the shipping company or suppliers, the Company may carry out partial deliveries of products and provision of services. In such a situation, the Buyer undertakes to accept partial deliveries/services and to grant an extension to the Company so that the Company may deal with the pending deliveries of products or provision of services as soon as possible, in which case the Buyer may not suspend the payment of invoices issued by the Company, the order or future orders on the grounds of the delay occurred.
-            4.2 In addition, the Company reserves the right to make the delivery of products to the Buyer partially, with a quantitative error margin of up to 10% of the quantity ordered (for quantities >10,000m2) or up to 20% (for quantities </=10,000m2).
+            4.2 In addition, the Company reserves the right to make the delivery of products to the Buyer partially, with a quantitative error margin of up to 10% of the quantity ordered (for quantities >10,000m2) or up to 20% (for quantities < / = 10,000m2).
             4.3 Unless otherwise agreed, the products ordered from the Company shall be transported at the expense and risk of the Buyer, who shall be fully liable in case of damage or loss caused during transportation.
             4.4 The cost of transportation, transfer and delivery of the products will be determined in the Agreement between the parties. In lack thereof, the Company reserves the right to select the means of transportation and carriers to the point of delivery, being said costs of transfer and delivery of the goods borne by the Buyer.
             4.5 Where it has been agreed that the Buyer will provide transportation for the goods, the Company agrees to store the goods at its premises for a maximum period of 15 days from the date agreed for the respective collection. After such period, the Company reserves the right to send the products to the Buyer at the Buyer's expense.
@@ -86,7 +85,8 @@
             7.1 The Company guarantees that the products are in conformity with the established in the respective technical specification for a period of 12 months from the date in which they were produced, provided that the products are maintained in good condition by the customer from the date of their receipt until the date of claiming non-conformity, in accordance with the conditions presented in the respective technical specification. Any non-conformities or deficiencies of the products must be claimed in writing during the 12-month period referred to above.
             7.2 The Buyer is obliged to check the quantity and quality of the goods upon delivery. Should the Buyer detect any damage to the goods resulting from transport, liability for such damage shall be assessed in accordance with the Incoterms terms specified for the order. If the Company is responsible for the carriage, the claim for damage resulting therefrom shall only be accepted if the Buyer remits the delivery document describing the non-conformity found.
             7.3 The Company is in no event responsible for the suitability of the goods for a particular purpose, nor does it extend its warranty on the goods to any third party.
-            7.4 Any attempt to repair non-conforming products by a person not belonging to or appointed by the Company, as well as the modification and/or incorrect storage, maintenance or use of the products, or claiming non-conformities after the period established in clause 9.1 above will prevent the exercise of the right of repair or replacement under the terms of the warranty provided herein.
+            7.4 Any attempt to repair non-conforming products by a person not belonging to or appointed by the Company, as well as the modification and/or incorrect storage, maintenance or use of the products, or claiming non-conformities after the period established in clause 
+             9.1 above will prevent the exercise of the right of repair or replacement under the terms of the warranty provided herein.
         </p>
          <strong><h3>8. Liability</h3></strong> <br>
         <p>
@@ -106,7 +106,7 @@
             <p>
                 
                 11.1 The Company shall endeavour to resolve any disputes arising with the Buyer without recourse to the courts. Such attempts shall not affect the Company's legal rights.
-11.2 These Terms and Conditions are subject to and shall be construed in accordance with Portuguese law. The courts of the district of Lisbon shall have exclusive jurisdiction over any disputes arising hereunder.
+                11.2 These Terms and Conditions are subject to and shall be construed in accordance with Portuguese law. The courts of the district of Lisbon shall have exclusive jurisdiction over any disputes arising hereunder.
             </p>
         </div>
     </section>

@@ -142,7 +142,7 @@
         <div class="col-lg-6 col-sm-12">
             <div class="footer-legale flex">
                 <div class="">
-                    <p class="mention-legale"><a href="{{ route('mentions') }}">Legal Notices</a> </p>
+                    <p class="mention-legale"><a href="{{ route('mentions') }}">Terms and Conditions of Sale</a> </p>
                     <p>©2021</p>
                 </div>
                 <div class=" footer-fleche-container">
